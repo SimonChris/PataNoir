@@ -1602,7 +1602,7 @@ Instead of attacking the giant with the steel strand when the giant is asleep:
 	if the steel strand is cool:
 		say "You poke the giant with the sharp steel strand. The giant absentmindedly swats in your general direction, but it doesn't wake up. Maybe you could find a way to make the strand hurt more?";
 	otherwise:
-		say "The red hot steel strand sizzles as it penetrates the skin. The giant roars, and scrambles to its feet, its eyes ablaze with rage. It looks around for its attacker, but luckily it seems to be looking for someone of the same size. It doesn't notice you huddling at its feet.";
+		say "The red hot steel strand sizzles as it penetrates the skin. The giant roars and scrambles to its feet, its eyes ablaze with rage. It looks around for its attacker, but luckily it seems to be looking for someone of the same size. It doesn't notice you huddling at its feet.";
 		wake the giant.
 		
 Instead of attacking the giant with something when the giant is awake:
