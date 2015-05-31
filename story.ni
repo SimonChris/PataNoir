@@ -1246,7 +1246,7 @@ Instead of assimilating the smoldering ember into something that is not describe
 The embers are a pataphor in the office. "A few glowing pieces of coal are left at the camp site." Understand "smoldering", "ember", "dying","piece/pieces of coal" and "coal" as the embers. The embers are scenery.
 
 Instead of taking the embers:
-	say "You carefully pick up one of the embers from the camp fire.";
+	say "You carefully pick up one of the embers from the campfire.";
 	Now the player is carrying the smoldering ember;
 	remove the camp fire from play;
 	remove the embers from play.
