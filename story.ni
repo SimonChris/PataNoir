@@ -14,16 +14,9 @@ Include Punctuation Removal by Emily Short.
 
 Include Unicode Full Character Names by Graham Nelson.
 
-Include Kindleizer by Jimmy Maher.
+Include Interactive Tutorial - Italic by Jimmy Maher.
 
-Include Interactive Tutorial by Jimmy Maher.
-
-[Just need to set the background image number. The Kindleizer extension will then handle painting it. --JM]
-The background image is 50.
-
-[To say tutor type: say "[roman type][italic type][bold type]".]
-
-[To say only bold: say "[bold type]".]
+To say only bold: say "[bold type]".
 
 [To do:
 	Change the standard assimilation failure messages into check rules, so they can be more easily overridden by instead rules.]
@@ -31,53 +24,47 @@ The background image is 50.
 Part 1 - Rules
 
 When play begins:
-	now the Tutor-introduction is "Welcome to PataNoir! This is the tutorial. I will be with you for just a little while, to familiarize you a bit with interacting with the story. If you grow tired of me at any time, type 'tutorial off' at any prompt and I'll go away. You should probably complete this tutorial at least once, to learn how to interact with the game. Experienced interactive fiction players can skip the tutorial and instead type 'about' for a description of the important game mechanics. Type 'credits' if you want to see the credits for the game."
+	now the Tutor-introduction is "Welcome to PataNoir! This is the tutorial. I will be with you for just a little while, to familiarize you a bit with interacting with the story. If you grow tired of me at any time, type [only bold]tutorial off[tutor type] at any prompt and I'll go away. You should probably complete this tutorial at least once, to learn how to interact with the game. Experienced interactive fiction players can skip the tutorial and instead type [only bold]help[tutor type], for a description of the important game mechanics. Type [only bold]credits[tutor type] if you want to see the credits for the game."
 	
 To say desk instruction:
-	say "When you make it to the end of this introductory text, a virtual keyboard and input box will appear. This is where you will interact with the story. Above the keyboard you can see a see a description of your current location, in this case your office. You can interact with everything mentioned in the room description. To examine an object closer, simply enter its name.
+	say "When you make it to the end of this introductory text, you will see a > prompt at the bottom of the screen. This is where you will interact with the story.  Above the cursor you can see a description of your current location, in this case your office. You can interact with everything mentioned in the room description. To examine an object closer, simply type its name, and press enter.
 	
-Let's start by taking a closer look at some of the things in the office. Type 'desk' into the input box. "
+Let's start by taking a closer look at some of the things in the office. Type [only bold]desk[tutor type] and press enter. "
 
 To say drawer instruction:
-	say "The story unfolds up here on the main body of the screen, where you are reading this. Just like when reading a non-interactive book, you can page through this text by tapping or swiping in the main text area; tap once at the left end of the screen to move backward, once in the center or right edge of the screen to move forward, or simply make a leftward or rightward swiping motion to go backward or forward respectively. The font size can be changed by using two fingers to pinch the screen. The small arrows at the bottom of the text area appear when there is more to be read before or after your current position.
-
-No time passes in the storyworld between your commands, so feel free to take your time and savor the story. When you finish it, you will have your own unique detective story stored on your device to reread and enjoy, as you will.
-
-I try my best to judge when it would be best to show the keyboard and input area and when you might rather have the full screen to view text. If you disagree with my judgment, however, you can manually show or hide the keyboard by simply swiping up or down.
-
-That drawer might contain something useful. Type 'drawer' to check it out. "
+	say "That drawer might contain something useful. Type [only bold]drawer[tutor type] to check it out. "
 	
 To say drawer open instruction:
-	say "Typing the name of the drawer resulted in a description, but you probably wanted to know what's inside. Once you have examined an object, typing its name again will make you interact with it. Interacting with something will perform a default action tied to that object. In the case of the drawer this means opening it. Type 'drawer' again to open the drawer. "
+	say "Typing the name of the drawer resulted in a description, but you probably wanted to know what's inside. Once you have examined an object, typing its name again will make you interact with it. Interacting with something will perform a default action tied to that object. In the case of the drawer this means opening it. Type [only bold]drawer[tutor type] again to open the drawer. "
 	
 To say revolver instruction:
-	say "A weapon might certainly come in handy! Type 'revolver' twice to examine the revolver, and then pick it up. "
+	say "A weapon might certainly come in handy! Type [only bold]revolver[tutor type] twice to examine the revolver, and then pick it up. "
 	
 To say drawer close instruction:
-	say "The default action for most objects is to pick them up, but other objects, like the drawer, have different actions associated with them. Interacting with the drawer caused us to open it, but maybe now we can try to take it? Type 'drawer' again, and see what happens. "
+	say "The default action for most objects is to pick them up, but other objects, like the drawer, have different actions associated with them. Interacting with the drawer caused us to open it, but maybe now we can try to take it? Type [only bold]drawer[tutor type] again, and see what happens. "
 	
 To say drawer take instruction:
-	say "Well, that didn't work. The default action associated with the drawer is to open or close it. I'll do my best to predict what you want to do with an object, but sometimes you may need to try something more unusual than the default action. To do this, you can specify the exact action you want to perform by adding a verb in front of the noun. For example, you can try to take the drawer by typing 'take drawer'. Try that now. "
+	say "Well, that didn't work. The default action associated with the drawer is to open or close it. I'll do my best to predict what you want to do with an object, but sometimes you may need to try something more unusual than the default action. To do this, you can specify the exact action you want to perform by adding a verb in front of the noun. For example, you can try to take the drawer by typing [only bold]take drawer[tutor type]. Try that now. "
 	
 To say looking instruction:
-	say "It would be silly to carry around a desk drawer anyway. The game understands a wide variety of verbs, but the most common ones are 'take' and 'examine'.  The latter can be shortened to just 'x', so you can reexamine objects by typing 'x object'.  Feel free to experiment with other verbs. You never know what might happen.
+	say "It would be silly to carry around a desk drawer anyway. The game understands a wide variety of verbs, but the most common ones are [only bold]take[tutor type] and [only bold]examine[tutor type].  The latter can be shortened to just [only bold]x[tutor type], so you can reexamine objects by typing [only bold]x object[tutor type].  Feel free to experiment with other verbs. You never know what might happen.
 	
-Some verbs don't require an object. For example, you can always repeat the description of your surroundings by typing 'look', or just 'l', for short. Try typing 'l' now. "
+Some verbs don't require an object. For example, you can always repeat the description of your surroundings by typing [only bold]look[tutor type], or just [only bold]l[tutor type], for short. Try typing [only bold]l[tutor type] now. "
 
 To say cigarette instruction:
-	say "Let's take a closer look at some of the other objects in the office. There is a cigarette smoldering in the ashtray. Try interacting with it, by typing 'cigarette' twice, or just 'take cigarette', if you can't be bothered to examine it closely. If you get bored with typing the same commands twice, you can always repeat the previous command, by typing 'g'."
+	say "Let's take a closer look at some of the other objects in the office. There is a cigarette smoldering in the ashtray. Try interacting with it, by typing [only bold]cigarette[tutor type] twice, or just [only bold]take cigarette[tutor type], if you can't be bothered to examine it closely. If you get bored with typing the same commands twice, you can always repeat the previous command, by typing [only bold]g[tutor type]."
 	
 To say embers instruction:
 	say "The cigarette doesn't seem to be useful. Remember when I said that you can interact with anything mentioned in the room description? The cigarette is described as being like 'the last embers from a dying campfire', but that's just a simile. Surely, that doesn't count as an object. Why not give it a try, for the hell of it? Try interacting with the campfire, and the embers. "
 	
 To say simile instruction:
-	say "What the hell just happened? Type 'look' to inspect the room again. "
+	say "What the hell just happened? Type [bold type]look[tutor type] to inspect the room again. "
 	
 To say inventory instruction:
-	say "The cigarette is now just a cigarette. What happened to the simile? You can always inspect what you are carrying by typing 'inventory', or just 'i' for short. Try doing that now. "
+	say "The cigarette is now just a cigarette. What happened to the simile? You can always inspect what you are carrying by typing [only bold]inventory[tutor type], or just [only bold]i[tutor type] for short. Try doing that now. "
 	
 To say door instruction:
-	say "You are now carrying the simile of the smoldering ember! You will soon learn how that can be useful. First, let's check out who is at the door. You can open the door by either typing 'door' twice, or just 'open door'. "
+	say "You are now carrying the simile of the smoldering ember! You will soon learn how that can be useful. First, let's check out who is at the door. You can open the door by either typing [only bold]door[tutor type] twice, or just [only bold]open door[tutor type]. "
 	
 To say talking instruction:
 	say "Looks like a case might be forthcoming! Try to interact with the visitor, in the usual way. "
@@ -88,7 +75,7 @@ To say allan instruction:
 	now the Done entry is false.
 
 To say revolver examination instruction:
-	say "Conversation doesn't seem to be working in this case, anyway. You can try talking to him some more, but it probably won't help. Let's try something different. Remember that revolver you picked up earlier? Let's check it out again, by typing 'revolver'. Since you are already carrying the revolver, typing its name will examine it. "
+	say "Conversation doesn't seem to be working in this case, anyway. You can try talking to him some more, but it probably won't help. Let's try something different. Remember that revolver you picked up earlier? Let's check it out again, by typing [only bold]revolver[tutor type]. Since you are already carrying the revolver, typing its name will examine it. "
 	
 To say wesson instruction:
 	say "Apparently, you think of your revolver as a trusty servant. Remember what happened with the smoldering ember earlier? Try interacting with the servant. "
@@ -106,16 +93,16 @@ For now, let's follow his current advice. Try interacting with the marble. ";
 	now the Done entry is false.
 
 To say jameson examination instruction:
-	say "That seemed to do something, but it's hard to tell if anything changed. Perhaps we should take another look at Mr. Jameson? Since you have already examined him, typing his name will continue the conversation, so you will have to use a verb. You can examine him again by typing 'examine Jameson', or just 'x Jameson' for short. "
+	say "That seemed to do something, but it's hard to tell if anything changed. Perhaps we should take another look at Mr. Jameson? Since you have already examined him, typing his name will continue the conversation, so you will have to use a verb. You can examine him again by typing [only bold]examine Jameson[tutor type], or just [only bold]x Jameson[tutor type] for short. "
 	
 To say second talking instruction:
 	say "He no longer seems as cold! Try talking to him some more. "
 	
 To say second inventory instruction:
-	say "He still seems a bit too reserved, even without the marble. Maybe there is a way to make him warm up to you? Try checking your inventory, by typing 'inventory', or just 'i', for short. "
+	say "He still seems a bit too reserved, even without the marble. Maybe there is a way to make him warm up to you? Try checking your inventory, by typing [only bold]inventory[tutor type], or just [only bold]i[tutor type], for short. "
 	
 To say application instruction:
-	say "If the marble made him cold, perhaps the ember can make him warm? To use an object on another, you can simply type out the names of the objects in order. Type ember allan to use the ember on Mr. Jameson. "
+	say "If the marble made him cold, perhaps the ember can make him warm? To use an object on another, you can simply type out the names of the objects in order. Type [bold type]ember allan[tutor type] to use the ember on Mr. Jameson. "
 	
 Tutorial read is a truth state variable. Tutorial read is false.
 	
@@ -124,11 +111,11 @@ To say persuasion instruction:
 	now tutorial read is true.
 	
 To say tutor conclusion:
-	say "That worked wonders! You now have a case, and a larger game world to explore. Movement in the game is handled by typing in the direction you want to go. The directions understood by the game are 'north', 'south', 'east', 'west', 'up', 'down', 'in' and  'out'. For convenience, you only need to type the first letter of the direction word, except in the case of 'in/out', where the full word is needed. Sometimes, choosing a direction will result in a list of possible locations. Just type in the number corresponding to the location you would like to visit.
+	say "That worked wonders! You now have a case, and a larger game world to explore. Movement in the game is handled by typing in the direction you want to go. The directions understood by the game are [only bold]north, south, east, west, up, down, in[tutor type] and [only bold] out[tutor type]. For convenience, you only need to type the first letter of the direction word, except in the case of [only bold]in/out[tutor type], where the full word is needed. Sometimes, choosing a direction will result in a list of possible locations. Just type in the number corresponding to the location you would like to visit.
 	
-That's all I have for now! Typing 'n' will take you inside the mansion of the baron who wants to hire you. You can also return to your office by typing 's'. There is plenty of other stuff in the office. You should probably fix that old chair at some point, for example. 
+That's all I have for now! Typing [only bold]n[tutor type] will take you inside the mansion of the baron who wants to hire you. You can also return to your office by typing [only bold]s[tutor type]. There is plenty of other stuff in the office. You should probably fix that old chair at some point, for example. 
 
-If you need more help, typing 'about' will provide you with more information about the game. If you get completely stuck, typing 'walkthru' will print a walkthrough. Don't forget to talk to Mr. Wesson first, though. He will usually be able to help you.
+If you need more help, the [only bold]Info[tutor type] tab contains some more information about the game. If you get completely stuck, typing [only bold]walkthru[tutor type] will print a walkthrough. Don't forget to talk to Mr. Wesson first, though. He will usually be able to help you.
 
 Good luck with the case! "
 
@@ -165,9 +152,11 @@ Table of Tutorial Locations
 Where	First		Last
 Your Office	1	23
 
+To say picture unlocked: say "[line break][italic type]You have unlocked a new picture. Check the Info tab to see it.[roman type][line break]".
+
 Chapter 1 - Game Rules
 
-Test Introduction with "desk / open drawer / gun / servant / take gun / talk to wesson / talk to wesson / take blood / take ember / open door"
+Test Introduction with "open drawer / take gun / talk to wesson / talk to wesson / take blood / take ember / open door"
 
 Test Visitation with "test introduction / x man / talk to man / talk to wesson / take marble / put marble on wheels / move chair / get coin / get knife / get marble / x man / talk to man / talk to wesson / give coal to man / x man / talk to man"
 
@@ -187,13 +176,13 @@ Test Assault1 with "Test camino / w / 1 / talk to wesson / talk to wesson / x al
 
 Test Copernik with "test assault1 / talk to copernik / talk to copernik / talk to copernik / talk to wesson / talk to wesson / x man / x walls / x man / wrap icicle in rag / touch man with icicle / x walls / talk to copernik / talk to copernik / talk to wesson / talk to wesson / give toupee to copernik / talk to copernik / talk to copernik "
 
-Test Climax with "Test Copernik / w / 6 / talk to wesson / take silver / n / x lisa / u / n / w / talk to wesson / talk to wesson / show cocoon to officer / w / exit / enter cabin / talk to wesson / talk to wesson / drink brandy / 1 / w / enter car / n / e / s / throw oil in river / grab wound / talk to lisa"
+Test Climax with "Test Copernik / w / 6 / talk to wesson / take silver / n / x lisa / u / n / w / talk to wesson / talk to wesson / show cocoon to officer / w / exit / enter cabin / talk to wesson / talk to wesson / drink brandy / yes / w / enter car / n / e / s / throw oil in river / grab wound / talk to lisa"
 
 Test thruline with "Test Climax  / x baron / x lisa / u / n / w / exit / e / talk to wesson / w / enter car / n / e / s / take marble / give marble to baron / x baron / talk to baron / open door / talk to doctor"
 
 Test AlternateA with "Test Climax / talk to baron / open door / talk to doctor"
 
-Test FreeLisa with "Test copernik / w / 6 / n / throw brick in river / grab wound / talk to lisa / 1 / open door / talk to doctor"
+Test FreeLisa with "Test copernik / w / 6 / n / throw brick in river / grab wound / talk to lisa / yes / open door / talk to doctor"
 
 Test oiling with "test meeting / w / d / s / s / 1 / drop fluid / get oil / put oil on wheels"
 
@@ -227,7 +216,7 @@ Test letterbug with "test gambling / talk to camino / show letter to camino / x 
 
 Test heldknife with "test meeting / w / d / s / s / 4 / give knife to wesson / cut fog / tell wesson to give me the sharp knife / cut fog"
 
-Test MarbleBug with "test copernik / w / 1 / n / u / get marble / d / s / s / 6 / take silver / n / x lisa / u / n / w / talk to wesson / talk to wesson / show cocoon to officer / w / exit / enter cabin / talk to wesson / talk to wesson / drink brandy / 1 / w / enter car / n / e / s / throw brick in river / grab wound / talk to lisa / take marble"
+Test MarbleBug with "test copernik / w / 1 / n / u / get marble / d / s / s / 6 / take silver / n / x lisa / u / n / w / talk to wesson / talk to wesson / show cocoon to officer / w / exit / enter cabin / talk to wesson / talk to wesson / drink brandy / yes / w / enter car / n / e / s / throw brick in river / grab wound / talk to lisa / take marble"
 
 Test Businessman with "test camino / w / 1 / l" [The businessman should not be mentioned in the room description]
 
@@ -251,6 +240,8 @@ Test CDrop with "test gambling / talk to camino / talk to camino / e / drop all"
 
 Test ShowLetter with "test gambling / talk to camino / show letter to camino / e / show letter to camino" [Showing the letter a second time should not have any effect.]
 
+The File of Images is called "Images"
+
 When play begins:
 	say "Pataphor (noun):
 
@@ -266,23 +257,22 @@ He scribbles in a small notepad. 'And you are still taking your medication?'
 'Of course.'
 
 It's a lie. You work much better without it.";
-	show Kindle image 2.
+	write "" to the File of Images.
 
-Requesting information is an action out of world. Understand "about", "info" and "intro" as requesting information.
+Requesting help is an action out of world. Understand "help", "hint", "about" and "intro" as requesting help.
 
-Report requesting information:
-	show Kindle image 1;
+Report requesting help:
 	say "PataNoir is a surreal noir game, which differs from an ordinary noir story in ways that should become clear early on. Make sure you try to examine and interact with everything in your surroundings, including things that are not literally there. Especially those. Every time something is 'like' something else, you can try to interact with both things. Once you have some things, try giving them to people or putting them on other things.
 
 If you are stuck, you can talk to your trusty servant. He might be able to provide some hints. If you cannot find him, check the desk drawer.
 
-If you are having trouble with the puzzle system, you can type 'similes', for more detailed instructions. You may find it more rewarding to figure things out yourself, though.
+If you are having trouble with the puzzle system, you can type [bold type]similes[roman type], for more detailed instructions. You may find it more rewarding to figure things out yourself, though.
 
 PataNoir also contains some parser optimizations, to cut down on repetitive typing. You can interact with objects by simply typing the name of the object. The first time you do this, you will examine the object.  If you type the name of an examined object, you will perform a default action associated with that object. The default action for most objects is for you to take them, but other objects have different default actions, tied to their function. You will open doors, talk to people, and so on. 
 
 If you want to apply an object to another, whether this means combining them or giving an object to a person, you can simply type the names of the objects in order. It is still necessary to type verbs if you want to do something out of the ordinary, but the default actions take care of the most common interactions.
 
-If you are still stuck, typing 'walkthru' will print a detailed walkthrough for the game."
+If you are still stuck, typing [bold type]walkthru[roman type] will print a detailed walkthrough for the game."
 
 Requesting similes is an action out of world. Understand "similes", "similies", "simile", "metaphors" and "metaphor" as requesting similes.
 
@@ -297,35 +287,18 @@ If you experiment a bit, this will hopefully begin to make sense.
  
 Have fun!"
 
-Requesting hints is an action out of world. Understand "help", "hint", "hints" as requesting hints.
-
-Report requesting hints:
-	if wesson is visible:
-		if wesson is introduced or wesson is examined:
-			try talking to wesson;
-		otherwise:
-			say "Look at the revolver.";
-	otherwise:
-		say "Check your desk drawer."
-
 Requesting the credits is an action out of world. Understand "credits" and "credit" as requesting the credits.
 
 Report requesting the credits:
-	show Kindle image 1;
 	say "Writing and coding by Simon Christiansen.
 	
-Cover art above by Tom Siddell (gunnerkrigg.com).
+Cover art by Tom Siddell (gunnerkrigg.com).
 
 In-game art by Lauri Ahonen (munportfolio.com).
 	
 Testing and proofreading done by Joel Webster, Utkonos, Dacharya, John P. Murphy, Colin Sandel, Amanda Allen, James Matthew Campbell, George Oliver, Jacek Pudlo, Joey Jones, Marius Müller, Andrew Schultz, Sam Kabo Ashwell and David J. Hastings.
 
 Special thanks to the Goons of the SomethingAwful.com forums for feedback provided during a 'Let's Play' playthrough of the game."
-
-Showing the office is an action out of world. Understand "show office" as showing the office.
-
-Report showing the office:
-	show Kindle image 2.
 
 Requesting the Walkthrough is an action out of world. Understand "Walkthrough" and "Walkthru" as requesting the Walkthrough.
 
@@ -394,7 +367,7 @@ The description of the player is "You are a bit worse for wear, but you are stil
 
 Singing is an action applying to nothing. Understand "sing" as singing.
 
-Instead of singing, say "This is not 'The Singing Detective', although it was a major inspiration. You should definitely watch the original BBC mini-series if you can find it. The Robert Downey Jr. movie is also supposed to be alright, but I haven't seen that one yet. Anyway, where was I? Oh, right, I was writing this game."
+Instead of singing, say "This is not 'The Singing Detective', although it was a major inspiration. You should definitely watch the original BBC mini-series if you can find it. The Robert Downey Jr. movie is also supposed to be all right, but I haven't seen that one yet. Anyway, where was I? Oh, right, I was writing this game."
 
 Understand "xyzzy" as a mistake("Honestly, don't you think it's about time we retired this hoary in-joke?")
 
@@ -637,14 +610,15 @@ After quipping when the current quip is location_office:
 	terminate the conversation.
 	
 After quipping when the current quip is location_gambling for the first time:
-	show Kindle image 6.
+	append "Gambling" to the File of Images;
+	say "[picture unlocked]".
 	
 After quipping when the current quip is location_gambling:
 	enable all locations;
 	disable the location_gambling quip;
 	now the player is in The Butterfly Club;
 	terminate the conversation.
-
+	
 After quipping when the current quip is location_apartment:
 	enable all locations;
 	disable the location_apartment quip;
@@ -678,7 +652,8 @@ After quipping when the current quip is location_police:
 	terminate the conversation.
 	
 After quipping when the current quip is location_vacation for the first time:
-	show Kindle image 7.
+	append "Vacation" to the File of Images;
+	say "[picture unlocked]".
 	
 After quipping when the current quip is location_vacation:
 	enable all locations;
@@ -1057,7 +1032,6 @@ The description of the doctor is "A fine medical professional, no doubt. If only
 The mention of the doctor is "Your doctor is here."
 
 Instead of talking to the doctor:
-	show Kindle image 1;
 	say "He looks around the office. 'It stinks in here.'
 	
 It's the oil. It stinks up the place.
@@ -1126,7 +1100,7 @@ You see no reason not to comply. On the way out, you look at the check. It is su
 			
 'Lisa, I have spoken to the detective, and I think we have reached an understanding.'
 
-Copernik nods. 'It's obvious that your daughter was being framed by Mr. Camino. No one could possibly suspect such an innocent creature. I will see to it that Camino is brought to justice for the murder of Erik McAllister. At the very least, you have no reason to worry, Miss.'
+Copernik nods. 'It is obvious that your daughter was being framed by Mr. Camino. No one could possibly suspect such an innocent creature. I will see to it that Camino is brought to justice for the murder of Erik McAllister. At the very least, you have no reason to worry, Miss.'
 
 She smiles. The kind of smile that wars have been fought over. 'Thank you so much, Detective. You should come visit me some day. We could have lots of fun.'
 
@@ -1246,7 +1220,7 @@ Instead of assimilating the smoldering ember into something that is not describe
 The embers are a pataphor in the office. "A few glowing pieces of coal are left at the camp site." Understand "smoldering", "ember", "dying","piece/pieces of coal" and "coal" as the embers. The embers are scenery.
 
 Instead of taking the embers:
-	say "You carefully pick up one of the embers from the camp fire.";
+	say "You carefully pick up one of the embers from the campfire.";
 	Now the player is carrying the smoldering ember;
 	remove the camp fire from play;
 	remove the embers from play.
@@ -1284,8 +1258,8 @@ Instead of putting the ember on the oil:
 
 'Yes, Doctor.'";
 	end the story saying "You have lost your mind".
-	
-The desk is scenery in the office. Understand "cup", "cups" and "coffee" as the desk. The description of the desk is "Countless coffee stains mar what was once an impeccable wooden surface. It's not pretty, but it serves your purpose. Stacks of old case files cover most of the desk, leaving barely enough space for a lamp and an ashtray. The desk contains a single drawer." The desk is a supporter.
+
+The desk is scenery in the office. Understand "cup", "cups" and "coffee" as the desk. The description of the desk is  "Countless coffee stains mar what was once an impeccable wooden surface. It's not pretty, but it serves your purpose. Stacks of old case files cover most of the desk, leaving barely enough space for a lamp and an ashtray. The desk contains a single drawer." The desk is a supporter.
 
 Instead of searching the desk, try examining the desk.
 
@@ -1518,7 +1492,8 @@ He laughs heartily. 'Please, call me Allan. It's really been a pleasure talking 
 'The pleasure is entirely mine,' you say with a smile. 'Now, shall we go see the Baron?'
 
 'Of course. Follow me.'";
-	show Kindle image 3;
+	append "Mansion" to the File of Images;
+	say "[picture unlocked]";
 	now the player is in Outside the Mansion;
 	now Allan is in Outside the Mansion.
 
@@ -1707,11 +1682,10 @@ After going through the mahogany doors for the first time:
 Section 3 - The Garden
 
 After going through the french doors for the first time:
-	show Kindle image 4;
+	append "Garden" to File of Images;
+	say "[picture unlocked]";
 	continue the action.
 	
-[The Garden is a room. "The grass here has been meticulously groomed. The strands are all exactly alike, like citizens in a socialist utopia. Stone paths wind through the grass[if the snakes are in the garden] like scaly snakes, going nowhere and everywhere[otherwise if the scale is part of the stone paths]; the stones are like scales left behind by a giant snake[end if]. In the middle of the garden is a fountain, containing a statue of an angel. The angel is holding a trumpet, from which a jet of water shoots into the air. The mansion lies behind you, to the south."]
-
 The Garden is a room. "The grass here has been meticulously groomed. The strands are all exactly alike, like citizens in a socialist utopia. Stone paths wind through the grass[if the snakes are in the garden] like scaly snakes, going nowhere and everywhere[otherwise if the scale is part of the stone paths]; the stones are like scales left behind by a giant snake[end if]. A fountain of white stone occupies the center of the garden. In the center of the fountain, an angel blows a silent trumpet, and a jet of water shoots into the air. The mansion lies behind you, to the south."
 
 Instead of going inside in the garden, try going south.
@@ -2365,7 +2339,8 @@ Instead of going through the entrance door:
 The White Door is a door. It is east of The Entrance and west of The Living Room. The description of The  White Door is "A plain white door."
 
 After going through The White Door for the first time:
-	show Kindle image 5;
+	append "Kitchen" to the File of Images;
+	say "[picture unlocked]";
 	continue the action.
 
 Section 2 - Living Room
@@ -3668,54 +3643,30 @@ The mention of Lisa is "[if wesson is on the old couch and camino 2 is in the Li
 
 The smile is part of Lisa. Understand "shy" and "sly" as the smile. The smile is fixed in place. The description of the smile is "[if wesson is on the old couch]She seems the submissive type, like a servant girl[otherwise]She seems like the type who regards everything in life with detached amusement[end if]."
 
-[To consider the request:
+To consider the request:
 	if the player consents:
 		say "[line break]She has a point. It's really none of your business what she does with her life. You should have told that to the Baron right from the start.
 
-'Thanks,' she says. 'You won't regret it, mister. Maybe we will meet again some day.' She kisses you on the cheek before leaving. The warmth of the kiss lingers for a while before dissipating.
+'Thanks,' she says. 'You won't regret it, mister. Maybe we will meet again some day.' She kisses you on the cheek before leaving. The warmth of the kiss lingers for a while.
 
 The Baron is disappointed, but he hired you to find his daughter, and that is exactly what you did. You get your paycheck in the end.";
 		remove lisa from play;
 	otherwise:
 		say "[line break]'Sorry, miss, but that won't do. I have a job to do. You are going back to your father.'
 		
-She laughs again. 'And how are you going to accomplish that? Knock me unconscious and carry me home? I don't think so.'".]
+She laughs again. 'And how are you going to accomplish that? Knock me unconscious and carry me home? I don't think so.'".
 
 Instead of talking to Lisa when Camino 2 is not in the LivingRoom and wesson is not on the old couch for the first time:
 	say "'Good evening, Miss Bülow,' you say. 'I believe it's time for you to go home to your father. He has been missing you.'
 	
-Her laughter is like tiny silver bells. 'I don't think so. I am a big girl and I don't need my father to control my life. Why don't you just let me go? I can take care of myself.'[line break][line break]";
+Her laughter is like tiny silver bells. 'I don't think so. I am a big girl and I don't need my father to control my life. Why don't you just let me go? I can take care of myself.'(Answer Yes or No)>";
 	now the tiny silver bells are in the livingroom;
-	Run a Conversation on the Table of Lisa Options.
+	consider the request.
 	
 Instead of talking to Lisa when Camino 2 is not in the LivingRoom and wesson is not on the old couch at least twice:
-	say "'Just let me go. I can take care of myself.'[line break][line break]";
-	Run a Conversation on the Table of Lisa Options.
+	say "'Just let me go, ok? I can take care of myself.'(Answer Yes or No)>";
+	consider the request.
 	
-Table of Lisa Options
-	prompt					response	enabled
-	"Let her go"				LetHerGo		1
-	"Take her home"			TakeHerHome	1	
-	
-Table of Quip Texts (continued)
-	quip	quiptext
-	LetHerGo		"She has a point. It's really none of your business what she does with her life. You should have told that to the Baron right from the start.
-
-'Thanks,' she says. 'You won't regret it, mister. Maybe we will meet again some day.' She kisses you on the cheek before leaving. The warmth of the kiss lingers for a while.
-
-The Baron is disappointed, but he hired you to find his daughter, and that is exactly what you did. You get your paycheck in the end."
-	TakeHerHome	"'Sorry, miss, but that won't do. I have a job to do. You are going back to your father.'
-		
-She laughs again. 'And how are you going to accomplish that? Knock me unconscious and carry me home? I don't think so.'"
-	
-After quipping when the current quip is LetHerGo:
-	remove lisa from play;
-	terminate the conversation.
-	
-After quipping when the current quip is TakeHerHome:
-	enable the TakeHerHome quip;
-	terminate the conversation.
-
 Instead of talking to Lisa when Camino 2 is not in the LivingRoom and wesson is on the old couch for the first time:
 	say "'Okay, Miss von Bülow, you've had your fun. Time to go home.'
 	
@@ -3727,7 +3678,8 @@ She looks at her feet and chews at a bit of hair. 'I'm sorry I ran away, but I w
 The tiny silver bells are scenery. Instead of doing something to the tiny silver bells, say "They are already gone."
 
 After going up from LivingRoom for the first time:
-	show Kindle image 8;
+	append "Mountain" to the File of Images;
+	say "[picture unlocked]";
 	continue the action.
 
 After going up from LivingRoom:
@@ -3993,48 +3945,29 @@ Instead of interacting with a brandyGlass:
 	try drinking the noun.
 
 To leave wesson behind:
+	say "He has served you well for many years. You can't bear to refuse him.
+
+A smile lights up his face. 'Thank you, sir. You can still visit me any time you want if you need my advice.'";
 	now Wesson is on the old couch;
 	now Wesson is content;
 	now Wesson is unexamined;
 	now the description of Wesson is "Mr. Wesson is lounging on the couch. He looks content."
 
 Instead of drinking a brandyGlass:
-	say "You clink the glasses together and down the brandy. A warm feeling spreads throughout your entire body. Mr. Wesson finishes his glass and sighs. He sits down at the couch and stares longingly at the fireplace. The fire is reflected in his eyes. 'You know, sir, I have always dreamed of having my own cabin in the mountains. If it's okay with you I think I am just going to stay here. Do you think you can handle things without me?'[line break][line break]";
-[	if the player consents:
+	say "You clink the glasses together and down the brandy. A warm feeling spreads throughout your entire body. Mr. Wesson finishes his glass and sighs. He sits down at the couch and stares longingly at the fireplace. The fire is reflected in his eyes. 'You know, sir, I have always dreamed of having my own cabin in the mountains. If it's okay with you I think I am just going to stay here. Do you think you can handle things without me?'(Answer Yes or No)>";
+	if the player consents:
 		leave wesson behind;
 	otherwise:
-		say "'That's ok, sir. I will stay with you a while longer.'";]
+		say "'That's ok, sir. I will stay with you a while longer.'";
 	remove the first glass of brandy from play;
-	remove the second glass of brandy from play;
-	run a conversation on the Table of Wesson Options.
+	remove the second glass of brandy from play.
 	
 To ask the player for permission:
-	say "'Sir,' says Mr. Wesson. 'Can I stay here this time?''[line break][line break]";
-	run a conversation on the Table of Wesson Options.
-[	if the player consents:
+	say "'Sir,' says Mr. Wesson. 'Can I stay here this time?'(Answer Yes or No)>";
+	if the player consents:
 		leave wesson behind;
 	otherwise:
-		say "'That's ok, sir. I will stay with you a while longer.'".]
-		
-Table of Wesson Options
-	prompt					response	enabled
-	"Let him stay"			LetHimStay		1
-	"Refuse"					Refuse			1	
-	
-Table of Quip Texts (continued)
-	quip	quiptext
-	LetHimStay	"He has served you well for many years. You can't bear to refuse him.
-
-A smile lights up his face. 'Thank you, sir. You can still visit me any time you want if you need my advice.'"
-	Refuse	"'That's ok, sir. I will stay with you a while longer.'"
-	
-After quipping when the current quip is LetHimStay:
-	leave wesson behind;
-	terminate the conversation.
-	
-After quipping when the current quip is Refuse:
-	enable the refuse quip;
-	terminate the conversation.
+		say "'That's ok, sir. I will stay with you a while longer.'".	
 		
 Does the player mean drinking the first glass of brandy:
 	it is very likely.
