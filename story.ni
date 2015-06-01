@@ -734,7 +734,7 @@ When Conversation begins:
 	
 Chapter 2 - Assault
 	
-Carlo Alfono is a person. Understand "man", and "killer" as Alfono. The description of Alfono is "[if the businessman is visible]His tailored pinstriped suit makes him seem like a businessman on his way to accept his next promotion[otherwise]He is wearing a pinstriped suit[end if]. Within the suit is an ordinary looking Italian-American man with a moustache resting above his lips like a small black snake. [if the coin is part of Alfono]Blood is trickling from a tiny wound on his neck. His hand covers the wound. The gun in the hand points towards the heavens. Time seem to be standing still; waiting for your next move[otherwise if alfono is distracted]He strokes the moustache pensively[otherwise]He is pointing a gun at you. His face is expressionless[end if]."
+Carlo Alfono is a person. Understand "man", and "killer" as Alfono. The description of Alfono is "[if the businessman is visible]His tailored pinstriped suit makes him seem like a businessman on his way to accept his next promotion[otherwise]He wears a pinstriped suit[end if]. The suit contains an ordinary looking Italian-American man with a moustache resting above his lips, like a small black snake. [if the coin is part of Alfono]Blood trickles from a tiny wound on his neck. His hand covers the wound. The gun in the hand points towards the heavens. Time seem to be standing still; waiting for your next move[otherwise if alfono is distracted]He strokes the moustache pensively[otherwise]He points a gun at you. His face is expressionless[end if]."
 
 The mention of Alfono is "The man in the pinstriped suit is holding you at gunpoint."
 
@@ -819,7 +819,7 @@ Instead of throwing the coin at alfono:
 	if Alfono is distracted:
 		say "He is already distracted.";
 	otherwise:
-		say "You expertly flick the coin at Alfono. It glides through the air, like a tiny flying disc, and [if the knife is part of the coin]the sharp edge embeds itself in his neck[otherwise]bounces harmlessly off his neck. If only it was sharper[end if]. [if the businessman is visible]He doesn't even blink. He executes you with as much emotion as a businessman conducting a deal. If only you could get rid of the businessman, he might be less efficient[otherwise if the knife is not part of the coin]He seems slightly annoyed, but the blunt coin is hardly a distraction. He shoots you before you have a distance to decide what to do next[otherwise]He cries out in pain, and instinctively reaches for the wound. His gun points towards the clear night sky. His moustache gleams in the moonlight[end if].";
+		say "You expertly flick the coin at Alfono. It glides through the air, like a tiny flying disc, and [if the knife is part of the coin]the sharp edge embeds itself in his neck[otherwise]bounces harmlessly off his neck. If only it was sharper[end if]. [if the businessman is visible]He doesn't even blink. He executes you with as much emotion as a businessman conducting a deal. If only you could get rid of the businessman, he might be less efficient[otherwise if the knife is not part of the coin]He seems slightly annoyed, but the blunt coin is hardly a distraction. He shoots you before you have a chance to decide what to do next[otherwise]He cries out in pain, and instinctively reaches for the wound. His gun points towards the clear night sky. His moustache gleams in the moonlight[end if].";
 		if the businessman is visible or the knife is not part of the coin:
 			end the story saying "You have died.";
 		otherwise:
@@ -846,10 +846,6 @@ Instead of attacking the businessman with a weapon which is a pataphor:
 	
 Instead of Wesson attacking the businessman when wesson is not carrying a weapon:
 	say "Mr. Wesson wrestles with the businessman, but neither is able to get the upper hand. Eventually, Mr. Wesson withdraws. 'I am sorry, sir, but I am going to need you to give me some kind of weapon if you want me to take him down.'"; the rule succeeds.
-	
-[Instead of giving the LiteralKnife to Wesson, say "The knife is real. He is not."
-
-Instead of giving the revolver to wesson, say "The revolver is real. Mr. Wesson is not."]
 	
 Does the player mean giving the knife to wesson:
 	it is very likely.
@@ -882,7 +878,7 @@ Instead of asking wesson to try taking something that is enclosed by the player:
 	say "'If you want me to have [the noun], you should give it to me, sir.'".
 	
 Instead of Wesson attacking the businessman when wesson is carrying the knife:
-	say "You both advance on the businessman. Mr. Wesson is brandishing the knife. You follow not far behind him. The businessman looks from one of you to the other, and his professional demeanor evaporates. 'Look, I don't want any trouble. This really isn't any of my business.' With that, he disappears into the shadows.";
+	say "You both advance on the businessman. Mr. Wesson is brandishes the knife. You follow not far behind him. The businessman looks from one of you to the other, and his professional demeanor evaporates. 'Look, I don't want any trouble. This really isn't any of my business.' With that, he disappears into the shadows.";
 	remove the businessman from play;
 	the rule succeeds.
 	
@@ -892,7 +888,7 @@ Instead of pulling Alfono:
 Understand "grab [something]" as pulling.
 	
 Instead of attacking Alfono when Alfono is distracted:
-	say "You rush him while he is distracted. For a moment it seems like you might have the upper hand, but he is tougher than he looks. He pulls you off and throws you to the ground where he unceremoniously executes you. If only there was something you could have grabbed hold off.";
+	say "You rush him while he is distracted. For a moment it seems like you might have the upper hand, but he is tougher than he looks. He pulls you off, throws you to the ground and executes you. If only there was something you could have grabbed hold off.";
 	end the story saying "You have died.".
 	
 The black moustache is part of Alfono. Understand "mustache" as the black moustache. The description of the moustache is "[if the scale is not part of the black snake]A neat black moustache, as smooth as a slimy black snake[otherwise]His scraggly unkempt moustache rests above his lips, like a scaly snake[end if]."
@@ -1066,7 +1062,7 @@ It's the oil. It stinks up the place.
 
 Of course not! You tell him all about the case. The Baron, the missing daughter, the treasure hidden beneath the lake. Everything.
 
-There is sadness in his eyes. 'I spoke to Mr. Jameson. He mentioned that you did not seem well.'
+His eyes are sad. 'I spoke to Mr. Jameson. He mentioned that you did not seem well.'
 
 What an asshole. You solved the case, didn't you?
 
@@ -1089,9 +1085,9 @@ When deciding Lisa's fate begins:
 	now the eastern door is closed;
 	now the eastern door is locked;
 	now the marble is part of Allan Jameson;
-	now the mention of Allan Jameson is "Jameson is standing by the door.";
-	now the mention of Copernik is "Detective Copernik is standing next to the Baron.";
-	now the mention of Lisa Von Bülow is "Lisa von Bülow is standing in front of her father, awaiting her judgement.";
+	now the mention of Allan Jameson is "Jameson stands by the door.";
+	now the mention of Copernik is "Detective Copernik stands next to the Baron.";
+	now the mention of Lisa Von Bülow is "Lisa von Bülow stands in front of her father, awaiting her judgement.";
 	now MountainRoad is mapped up of the Library;
 	now the Library is mapped south of MountainRoad;
 	now the marble describes the baron;
@@ -1112,7 +1108,7 @@ Instead of talking to someone in the library during Deciding Lisa's fate ( this 
 		if the marble is part of the baron:
 			say "Lisa looks pleadingly at her father. His face is like cut out of marble.
 			
-He sighs. 'Lisa, I love you more than anything in life, but it's time you learn to take responsibility for your actions. The detective has assured me that you should only get a few years for manslaughter. Perhaps prison will teach you some self-discipline. God knows, I couldn't.'
+He sighs. 'Lisa, I love you more than anything, but it's time you learn to take responsibility for your actions. The detective has assured me that you should only get a few years for manslaughter. Perhaps prison will teach you some self-discipline. God knows, I couldn't.'
 
 'No, dad.' There are tears in her eyes. 'Please. I won't survive in prison. You can fix this. I know you can.'
 
@@ -1126,7 +1122,7 @@ You see no reason not to comply. On the way out, you look at the check. It is su
 			
 'Lisa, I have spoken to the detective, and I think we have reached an understanding.'
 
-Copernik nods. 'It's obvious that your daughter was being framed by Mr. Camino. No one could possibly suspect such an innocent creature. I will see to it that Camino is brought to justice for the murder of Erik McAllister. At the very least, you have no reason to worry, Miss.'
+Copernik nods. 'It's obvious that your daughter was being framed by Mr. Camino. No one could possibly suspect such an innocent creature. I will see to it that Camino is brought to justice for the murder of Erik McAllister. You have no reason to worry, Miss.'
 
 She smiles. The kind of smile that wars have been fought over. 'Thank you so much, Detective. You should come visit me some day. We could have lots of fun.'
 
@@ -1155,7 +1151,7 @@ Your Office is a room. "Shadows huddle in the corners[if the oil is part of the 
 
 The office door to the north leads to the corridor outside."
 
-In the office is a supporter called the office chair. The player is on the office chair. The office chair is scenery and enterable. The description of the office chair is "[if the marble is not part of the wheels and the oil is not part of the wheels]The rust has long since caused the wheels on the chair to get stuck. It would be much more comfortable if you fixed them[otherwise]A nice office chair[end if]."
+In the office is a supporter called the office chair. The player is on the office chair. The office chair is scenery and enterable. The description of the office chair is "[if the marble is not part of the wheels and the oil is not part of the wheels]The rust has caused the wheels on the chair to get stuck. It would be much more comfortable if you fixed them[otherwise]A nice office chair[end if]."
 
 Does the player mean entering the office chair: it is very likely.
 
@@ -1219,7 +1215,7 @@ Before rubbing the chair:
 Instead of interacting with the wheels:
 	try rubbing the wheels.
 
-The coagulated blood is part of the wheels. The blood is a pataphor. The description of the blood is "The blood has long since turned into a reddish brown substance, almost like rust." The indefinite article is "some".
+The coagulated blood is part of the wheels. The blood is a pataphor. The description of the blood is "The blood has turned into a reddish brown substance, almost like rust." The indefinite article is "some".
 
 Instead of assimilating the coagulated blood into something that is not described by the coagulated blood when the second noun is not figurative:
 	say "Making [the second noun] red like blood would not be helpful."
@@ -1246,7 +1242,7 @@ Instead of assimilating the smoldering ember into something that is not describe
 The embers are a pataphor in the office. "A few glowing pieces of coal are left at the camp site." Understand "smoldering", "ember", "dying","piece/pieces of coal" and "coal" as the embers. The embers are scenery.
 
 Instead of taking the embers:
-	say "You carefully pick up one of the embers from the campfire.";
+	say "You pick up one of the embers from the campfire.";
 	Now the player is carrying the smoldering ember;
 	remove the camp fire from play;
 	remove the embers from play.
@@ -1309,7 +1305,7 @@ Instead of attacking something with the revolver, try shooting the noun.
 
 Instead of talking to the revolver, say "It's an inanimate object. Why don't you talk to your trusty servant instead?"
 
-Mr Smith Wesson is a patason.  The printed name of smith is "Mr. Wesson". Understand "trusty" and "servant" as smith. The description of smith is "Mr. Smith Wesson, your trusty servant, is at your side as always. He is dressed in a gray suit and a tie."
+Mr Smith Wesson is a patason.  The printed name of smith is "Mr. Wesson". Understand "trusty" and "servant" as smith. The description of smith is "Mr. Smith Wesson, your trusty servant, is at your side as always. He wears a gray suit and a tie."
 
 After reading a command: [Understands tell wesson to...]
         let T be indexed text;
@@ -1393,13 +1389,13 @@ Instead of smoking the cigarette, say "You don't feel like smoking right now."
 
 Instead of doing something other than examining,  interacting with or intexamining with the cigarette butt (this is the cigarette default rule), say "What for? It's just an old cigarette butt." The cigarette default rule is listed last in the instead rules.
 
-The lamp is scenery in the office. "The old dirty desk lamp struggles valiantly to light up the office, like an elderly knight fighting to keep the forces of darkness at bay." The lamp is a device. The lamp is switched on. Understand "yellow", "light" and "desk lamp" as the lamp. Instead of taking the lamp, say "Why would you want to carry around a desk lamp?" Instead of switching off the lamp, say "It's the only light source in here. It would be pitch dark without it." The printed name of the lamp is "desk lamp"
+The lamp is scenery in the office. "The old dirty desk lamp struggles valiantly to light up the office, like an elderly knight fighting the forces of darkness." The lamp is a device. The lamp is switched on. Understand "yellow", "light" and "desk lamp" as the lamp. Instead of taking the lamp, say "Why would you want to carry around a desk lamp?" Instead of switching off the lamp, say "It's the only light source in here. It would be pitch dark without it." The printed name of the lamp is "desk lamp"
 
 The holy knight is a patason in your office. Understand "elderly", "armour" and "armor" as the holy knight. The holy knight is undescribed. The description of the holy knight is "The knight seems weary. His armor is old and dirty. How much longer can he keep fighting, you wonder?"
 
 Instead of talking to the knight for the first time, say "The knight stands to attention. 'Don't worry, sir. I've been doing this for years. I am not going to abandon you.'"
 
-Instead of talking to the knight at least twice, say "What are you going to say? A bunch of platitudes about how everything is going to be okay? Better to stay silent for now."
+Instead of talking to the knight at least twice, say "What are you going to say? A bunch of platitudes about how everything is going to be okay? Better to stay silent."
 
 Instead of rubbing something in your office, say "Maybe some other day."
 
@@ -1709,8 +1705,6 @@ Section 3 - The Garden
 After going through the french doors for the first time:
 	show Kindle image 4;
 	continue the action.
-	
-[The Garden is a room. "The grass here has been meticulously groomed. The strands are all exactly alike, like citizens in a socialist utopia. Stone paths wind through the grass[if the snakes are in the garden] like scaly snakes, going nowhere and everywhere[otherwise if the scale is part of the stone paths]; the stones are like scales left behind by a giant snake[end if]. In the middle of the garden is a fountain, containing a statue of an angel. The angel is holding a trumpet, from which a jet of water shoots into the air. The mansion lies behind you, to the south."]
 
 The Garden is a room. "The grass here has been meticulously groomed. The strands are all exactly alike, like citizens in a socialist utopia. Stone paths wind through the grass[if the snakes are in the garden] like scaly snakes, going nowhere and everywhere[otherwise if the scale is part of the stone paths]; the stones are like scales left behind by a giant snake[end if]. A fountain of white stone occupies the center of the garden. In the center of the fountain, an angel blows a silent trumpet, and a jet of water shoots into the air. The mansion lies behind you, to the south."
 
@@ -1786,7 +1780,7 @@ After assimilating the manna into the fountain, say "The droplets gleam in the m
 Instead of eating the manna:
 	say "It looks delicious, but you have a feeling you may need it later."
 
-The angel is part of the fountain. Understand "Trumpet", and "wing/wings" as the angel. the description of the angel is "The angel's eyes are closed; its wings spread behind it, as if preparing to take off once the trumpet has been emptied.[if the manna is part of the fountain] The drops of water glisten in the moonlight, like manna from heaven."
+The angel is part of the fountain. Understand "Trumpet", and "wing/wings" as the angel. the description of the angel is "The angel's eyes are closed, its wings spread behind it, as if preparing to take off once the trumpet has been emptied.[if the manna is part of the fountain] The drops of water glisten in the moonlight, like manna from heaven."
 
 Instead of taking the angel, say "Even if you could somehow remove it from the fountain, it would be way too heavy to carry around."
 
@@ -1832,9 +1826,9 @@ Instead of talking to introduced wesson in the garden when the snakes are not in
 	
 Section 4 - The Balcony
 
-Up from The Hall is The Balcony. The description of the Balcony is "From here you can see the hall beneath you. An iron railing prevents you from falling to the floor far below. Massive oak wood doors block the paths to the east and the west.[if the fluid is part of the western door and the western door is closed][line break][line break]Light seeps from the crack beneath the door to the west, like fluid from a leaky container.[otherwise if the giant is awake and the western door is open][line break][line break]The door to the west is standing wide open."
+Up from The Hall is The Balcony. The description of the Balcony is "From here, you can see the hall beneath you. An iron railing prevents you from falling to the floor far below. Massive oak wood doors block the paths to the east and the west.[if the fluid is part of the western door and the western door is closed][line break][line break]Light seeps from the crack beneath the door to the west, like fluid from a leaky container.[otherwise if the giant is awake and the western door is open][line break][line break]The door to the west is standing wide open."
 
-The balconyfloor is scenery in the balcony. The printed name of the balconyfloor is "floor".  Understand "floor", "frozen", "ice", "grey", "gray", "red", "marble", "fire", "flame" and "lake" as the balconyfloor.  The description of the balconyfloor is "[if the ember is not part of the floor]From up here, you can see frozen lake stretched out beneath you[otherwise]Even up here, you can still feel the heat from the fire[end if]."
+The balconyfloor is scenery in the balcony. The printed name of the balconyfloor is "floor".  Understand "floor", "frozen", "ice", "grey", "gray", "red", "marble", "fire", "flame" and "lake" as the balconyfloor.  The description of the balconyfloor is "[if the ember is not part of the floor]From up here, you can see the frozen lake stretched out beneath you[otherwise]Even up here, you can still feel the heat from the fire[end if]."
 
 Does the player mean doing something to the white marble:
 	it is likely.
@@ -1914,7 +1908,7 @@ Instead of talking to Jameson when the white marble is part of Jameson and Meeti
 	
 Section 5 - The Library
 
-The Library is a room. The description of the library is "Bookshelves line every wall, allowing only a small space for the door to the west and another for the small window in the north wall. The floor is covered in a thick luxurious red carpet. The air smells of dust. ".
+The Library is a room. The description of the library is "Bookshelves line every wall, allowing only a small space for the door to the west and another for the small window in the north wall. A thick luxurious red carpet covers the floor. The air smells of dust. ".
 
 Instead of exiting in the library when the player is not enclosed by anything, try going west.
 
@@ -2148,7 +2142,7 @@ Instead of talking to introduced wesson in beneath the lake when the player is n
 Instead of talking to introduced wesson in beneath the lake when the player is not radiant at least twice:
 	say "'Have you checked out the room west of the balcony yet, sir? You might have to wake the giant to get inside, though.'"
 	
-Near the Surface is a room. "It is dark under the water and you can't see much more than a few yards in any direction. Above you, the sun shines through the surface. Below, the darkness gets thicker."
+Near the Surface is a room. "It is dark under the water, and you can't see much more than a few yards in any direction. Above you, the sun shines through the surface. Below, the darkness thickens."
 
 The Library is up from Near the Surface.
 
@@ -2196,7 +2190,7 @@ He leaves the room, leaving you alone with the Baron once more.";
 Instead of going down from deeper when the player is not radiant at least twice:
 	say "You will need a source of light to avoid getting lost again.".
 
-The Bottom Of the Lake is down from Deeper. "The sun is no longer visible at all. Only the soft glow from the cocoon allows you to see anything. The bottom of the lake is white sand. Close by, you notice an old wooden chest."
+The Bottom Of the Lake is down from Deeper. "The sun is no longer visible at all. Only the soft glow from the cocoon allows you to see anything. Soft white sand covers the bottom of the lake. Close by, you notice an old wooden chest."
 
 The white sand is scenery in the bottom of the lake. The description of the white sand is "Soft white sand covers the bottom of the lake."
 
@@ -2222,7 +2216,7 @@ The pirate is a patason in Bottom of the Lake. Understand "eye patch", "patch", 
 
 Instead of talking to the pirate when the wooden chest is locked, say "'Arrrrr, Matey,' says the pirate. 'Ye'll never get me treasure. It be locked away safely.'."
 
-Instead of talking to the pirate when the  chest is  unlocked, say "'Shiver me timbers! Ye managed to open me treasure chest. The treasure be yours now.'"
+Instead of talking to the pirate when the chest is unlocked, say "'Shiver me timbers! Ye managed to open me treasure chest. The treasure be yours now.'"
 
 Instead of attacking the pirate, say "The pirate deftly avoids your attack. He laughs. 'Silly landlubber. Ye don't know the first thing about underwater fighting.'"
 
@@ -2231,7 +2225,7 @@ Instead of wesson attacking the pirate:
 
 The pirate is undescribed.
 
-The padlock is part of the chest. Understand "metal" and "lock" as the padlock. The description of the padlock is "A big old-fashioned padlock.[if the wooden chest is locked] You are pretty sure you could get it open if you had something that could be used as a lockpick."
+The padlock is part of the chest. Understand "metal" and "lock" as the padlock. The description of the padlock is "A big old-fashioned padlock.[if the wooden chest is locked] If you had something that could be used as a lockpick, you are pretty sure you could defeat it."
 
 Instead of taking the padlock, say "You try to yank the lock off the chest, but it's no good."
 
@@ -2267,7 +2261,7 @@ The treasure describes the Baron.
 
 After assimilating the treasure into the baron, say "His face lights up with a golden glow. He seems much more friendly."
 
-Instead of showing the letter to the baron for the first time, say "He reads the letter, and his face grows red. 'I swear if that damn Scotsman has done anything to hurt my daughter, I will make him pay.' His face grows pale once more. 'Please find her as soon as possible, Mr. Reilly. Make sure that she is okay.'"
+Instead of showing the letter to the baron for the first time, say "He reads the letter, and his face grows red. 'I swear if that damn Scotsman has done anything to hurt my daughter, I will make him pay.' His face pales once more. 'Please find her as soon as possible, Mr. Reilly. Make sure that she is okay.'"
 
 Instead of showing the letter to the baron at least twice, say "He already read it."
 
@@ -2312,7 +2306,7 @@ Chapter 3 - The Apartment
 
 Section 1 - The Entrance
 
-The Entrance  is a room. "A dark narrow hallway. The door behind you to the south leads back outside. To the east, the door to the living room is standing ajar. To the north is the bathroom. An old denim jacket hangs on a hook on the wall[if the rag is part of the jacket], like a dirty rag[end if]."
+The Entrance  is a room. "A dark narrow hallway. The door behind you to the south leads back outside. To the east, the door to the living room is standing ajar. The bathroom lies to the north. An old denim jacket hangs on a hook on the wall[if the rag is part of the jacket], like a dirty rag[end if]."
 
 Instead of exiting in the entrance when the player is not enclosed by anything:
 	try going south.
@@ -2551,7 +2545,7 @@ Instead of talking to introduced wesson in The Top of the Minaret when the crowd
 	say "'They seem to be waiting for someone to do the call to prayer, sir. Maybe you could do that?'"
 	
 Instead of talking to introduced wesson in The Top of the Minaret when the crowd is in the city at least twice:
-	say "'Just type [']call to prayer['], sir.'"
+	say "'Just type [']call['], sir.'"
 	
 Chapter 4 - The Bar
 
@@ -2580,7 +2574,7 @@ Instead of taking the bardesk, say "That hardly seems useful."
 
 The Bartender is a person in the bar. Understand "man", "barman" and "barkeeper" as the bartender. The Bartender is scenery. The description of the bartender is "A middle aged man who looks like he should be sitting at the other side of the bar. He eyes the patrons jealously as they sip their drinks."
 
-The bartender is carrying a glass. The description of the glass is "The glass might have been transparent once, a long time ago, but those days are long gone. The bartenders efforts don't seem to be making much of a difference."
+The bartender is carrying a glass. The description of the glass is "The glass might have been transparent once, but those days are long gone. The bartender's efforts don't seem to be making much difference."
 
 Instead of taking the glass, say "'Keep your hands to yourself, buddy.'"
 
@@ -2593,7 +2587,7 @@ The Bartender can be friendly or unfriendly. The bartender is unfriendly.
 Instead of talking to the bartender when the bartender is unfriendly for the first time:
 	say "'What do you want, buddy?' says the bartender.
 	
-'Actually I need some information. I'm looking for Erik McAllister. I understand that he used to come here a lot?'
+'I need some information. I'm looking for Erik McAllister. I understand that he used to come here a lot?'
 
 The bartender sneers. 'No idea who you are talking about, buddy. Order something or get out.'".
 
@@ -2785,7 +2779,7 @@ Does the player mean applying the literalknife to ronald:
 	it is very likely.
 
 Instead of talking to Ronald when Ronald is impressed and the blood is not part of Ronald for the first time:
-	say "'Look, Ronald, I am not an enemy of Mr. McAllister. I just want to talk to him.'
+	say "'Look, Ronald, I am not an enemy of McAllister. I just want to talk to him.'
 	
 'Yeah, whatever.' He shrugs. 'McAllister's a loser anyway. I know he's in some kind of trouble, but it's none of my business.'
 
@@ -2797,7 +2791,7 @@ Instead of talking to Ronald when Ronald is impressed and the blood is not part 
 	say "'I don't wanna get involved. I am too old for this stuff; my hair is getting gray. Get lost.'"
 	
 Instead of talking to Ronald when Ronald is impressed and the blood is part of Ronald for the first time:
-	say "'Do you know where I can find Mr. McAllister?'
+	say "'Do you know where I can find McAllister?'
 
 He shakes his head. 'Nope, but I figure he's in trouble. I know he'd been arguing with that broad of his lately. Then I start hearing rumors that he got into trouble with Camino, guy who owns the gambling joint down by the harbour, you know. That guy is trouble. I ain't afraid of him though. I've dealt with plenty worse in my time.'";
 	now Conversation is solved.
@@ -2821,7 +2815,7 @@ Chapter 5 - The Butterfly Club
 
 Section 1 - The Gambling Hall
 
-The Butterfly Club is a room. The description of The Butterfly Club is "All sorts of gambling tables dot the floor: roulette, blackjack, poker and games you have never even heard of. No one looks at you. Every ounce of their attention is directed toward the random events that decide their lives. A giant crystal chandelier grows from the ceiling[if the icicle is part of the chandelier], like an intricate icicle formation[end if]. To the west, massive double doors lead outside. At the eastern wall is a small discreet door; the kind of door you are not supposed to notice, much less enter."
+The Butterfly Club is a room. The description of The Butterfly Club is "All sorts of gambling tables dot the floor: roulette, blackjack, poker and other games you have never even heard of. No one looks at you. Every ounce of their attention is directed toward the random events that decide their lives. A giant crystal chandelier grows from the ceiling[if the icicle is part of the chandelier], like an intricate icicle formation[end if]. To the west, massive double doors lead outside. A small discreet door is set into the eastern wall; the kind of door you are not supposed to notice, much less enter."
 
 The massive double doors are a door. Understand "door" as the double doors. It is west of The Butterfly Club and east of Outside the Club. The description of the double doors is "Massive wooden doors that look like a battering ram would shatter against them."
 
@@ -2835,7 +2829,7 @@ Instead of exiting in the butterfly club when the player is not enclosed by anyt
 Instead of going through the double doors when the poker counter is greater than 0 and the TuxedoMan is in The Butterfly Club:
 	say "You can't leave now. You have to see how the poker game ends."
 	
-The gambling tables are scenery in the club. Understand "blackjack", "game/games", "money" and "table" as the gambling tables. The description of the gambling tables is "Countless gambling tables cover almost every square foot of the room. Every imaginable game of chance is represented here. [if the poker game is in the butterfly club]A lot of people seem to be watching the poker game in the corner of the hall[otherwise]A couple of people are playing the roulette table, apparently hoping that the tuxedo man's winning streak will transfer to them[end if]."
+The gambling tables are scenery in the club. Understand "blackjack", "game/games", "money" and "table" as the gambling tables. The description of the gambling tables is "Countless gambling tables cover almost every square foot of the room. Every imaginable game of chance is represented. [if the poker game is in the butterfly club]A lot of people seem to be watching the poker game in the corner of the hall[otherwise]A couple of people are playing the roulette table, apparently hoping that the tuxedo man's winning streak will transfer to them[end if]."
 
 Gambling is an action applying to nothing. Understand "Gamble" as gambling. 
 
@@ -2868,7 +2862,7 @@ Instead of talking to introduced wesson in The Butterfly Club when the TuxedoMan
 	say "'Give the marble to the tuxedo man, sir. Then just wait for the game to end.'"
 	
 To say poker description:
-	say "Four people are playing a high stakes game of poker in the corner of the hall. A small crowd has gathered around the table, attracted by the sight of large amounts of money changing hands. One of the players draw your attention: a pale man wearing a tuxedo, who seems to be [if the marble is part of the TuxedoMan]winning[otherwise]losing[end if] big. ";
+	say "Four people are playing a high stakes game of poker in the corner of the hall. A small crowd has gathered around the table, attracted by the sight of large amounts of money changing hands. One of the players draws your attention: a pale man wearing a tuxedo, who seems to be [if the marble is part of the TuxedoMan]winning[otherwise]losing[end if] big. ";
 	if the tuxedoman is off-stage:
 		now the tuxedoman is in the butterfly club.
 
@@ -2954,7 +2948,7 @@ Instead of opening the discreet door when the discreet door is locked and Alfono
 	say "An Italian-American man wearing a pinstriped suit grabs your arm. 'Sorry, sir. This is a private area.' He merges with the crowd once more.";
 	now the discreet door is attempted.
 
-The crystal chandelier is scenery in The Butterfly Club. The description of the chandelier is "A giant crystal chandelier hangs from the ceiling[if the icicle is part of the chandelier], like a intricate icicle formation[end if]." Instead of taking the chandelier, say "It is too far up."
+The crystal chandelier is scenery in The Butterfly Club. The description of the chandelier is "A giant crystal chandelier hangs from the ceiling[if the icicle is part of the chandelier], like an intricate icicle formation[end if]." Instead of taking the chandelier, say "It is too far up."
 
 The icicle is a pataphor which is part of the chandelier. Understand "intricate", "formation", "ice" and "icicles" as the icicle. The description of the icicle is "[if the icicle is part of the chandelier]Icicles grow from the ceiling in an intricate formation. Why haven't they melted, you wonder?[otherwise if the dirty rag is part of the icicle]The icicle is wrapped in an old rag.[otherwise]A cool beautiful icicle."
 
@@ -3043,7 +3037,7 @@ Instead of talking to Camino when Camino is absent and the tuxedoman is not in t
 	
 He emerges from his reverie. 'Not really. A big winner makes everyone else believe they can do the same. The extra business should make up for the loss.'
 
-His eyes scan you inquisitively. 'I haven't seen you around here before. What can I do for you?'";
+His eyes scan you. 'I haven't seen you around here before. What can I do for you?'";
 	now Camino is approached.
 	
 Instead of talking to Camino when Camino is approached and conversation is not solved for the first time:
@@ -3252,7 +3246,7 @@ Instead of talking to introduced wesson in camino's office when camino is upset 
 	
 Chapter 6 - The Police Station
 
-Copernik's Office is a room. "This small cramped office is just large enough to fit in a desk and two chairs. [if the dying man is hot]The walls are yellow from cigarette smoke[otherwise]The walls are bright white, lighting up the room[end if].  On the desk is an ashtray that looks like it was made by a kindergartener as a gift. Old cigarette butts rest in the tray, like tiny mummified bodies. To the west, a door leads to the rest of the police station."
+Copernik's Office is a room. "This small cramped office is just large enough for a desk and two chairs. [if the dying man is hot]The walls are yellow from cigarette smoke[otherwise]The walls are bright white, lighting up the room[end if].  On the desk is an ashtray that looks like it was made by a kindergartener as a gift. Old cigarette butts rest in the tray, like tiny mummified bodies. To the west, a door leads to the rest of the police station."
 
 Copernik's door is a door. It is west of Copernik's office and east of The Police Station.
 
@@ -3289,7 +3283,7 @@ Instead of doing something other than examining to the mummies, say "They are at
 To say wall description:
 	if the dying man is not part of the walls and the dying man is hot:
 		now the dying man is part of the walls;
-	say "[if the dying man is part of the walls]They might have been white in the distant past, but they have long since turned a sickly yellow color from the cigarette smoke  [unicode em dash] like the skin of a man slowly dying from liver cancer[otherwise]The newly painted white walls really brighten up the room, turning the office into a place where one could almost feel at home[end if]. ".
+	say "[if the dying man is part of the walls]They might have been white in the distant past, but they have long since turned a pallid yellow from the cigarette smoke  [unicode em dash] like the skin of a man slowly dying from liver cancer[otherwise]The newly painted white walls really brighten up the room, turning the office into a place where one could almost feel at home[end if]. ".
 	
 The walls are scenery in Copernik's office. Understand "yellow" and "wall" as the walls. The description of the walls is "[wall description]"
 
@@ -3302,7 +3296,7 @@ Does the player mean doing something to the dying man: it is likely.
 The dying man can be hot. The dying man is hot.
 
 Instead of talking to the dying man when the dying man is hot:
-	say "He is delirious. You can't make sense of anything he is saying."
+	say "He is delirious from fever. You can't make sense of anything he is saying."
 	
 Instead of touching the dying man when the dying man is hot:
 	say "He is burning up. You gotta find a way to cool him down."
@@ -3400,9 +3394,9 @@ Instead of talking to Copernik when Copernik is suspicious at least thrice:
 	say "You are not getting anywhere. The atmosphere in here just isn't made for friendly conversation."
 	
 Instead of talking to Copernik when Copernik is cooperative:
-	say "'Detective, I really have told you everything. I think we're both going to solve this case much faster if you just let me go.'
+	say "'Detective, I really have told you everything. I think we're going to solve this case a lot faster if you just let me go.'
 	
-He smiles. 'I suppose you are right. Whatthehell, I'm in a good mood today. You can go, Mr. Reilly, as long as you promise to keep me up to date if you manage to dig up some more information.'
+He smiles. 'I suppose you are right. Whatthehell, I'm in a good mood today. You can go, Mr. Reilly, as long as you promise to keep me up to date on anything you find.'
 
 You stand up and shake his hand. 'Of course, Detective.'";
 	now the player is in Copernik's office;
@@ -3538,18 +3532,18 @@ Instead of talking to introduced wesson in OutsideVacation for the first time:
 
 Section 2 - The Living Room
 
-The LivingRoom is a room. The printed name of LivingRoom is "The Living Room". The description of the livingroom is "So this is where she's been hiding all this time. The living room is littered with expensive furniture  [unicode em dash] the kind that exists solely to show that the resident can afford it. You pay no attention to the decorations. The people are all that matters. The door to the south leads back out."
+The LivingRoom is a room. The printed name of LivingRoom is "The Living Room". The description of the livingroom is "So this is where she's been hiding all this time. Expensive furniture litters the living room [unicode em dash] the kind that exists solely to show that the resident can afford it. You pay no attention to the decorations. The people are all that matters. The door to the south leads back out."
 
 Instead of exiting in the livingroom when the player is not enclosed by anything:
 	try going south.
 
-The leather couch is scenery in the livingroom. The description of the leather couch is "The couch is covered is covered in smooth black leather.".
+The leather couch is scenery in the livingroom. The description of the leather couch is "Smooth black leather covers the couch.".
 
 The expensive furniture is scenery in the LivingRoom. Understand "decoration/decorations" as the furniture. The description of the furniture is "Mr. Camino certainly knows how to furnish a house. Too bad that won't help him."
 
 Anton Camino 2 is a person in the livingroom. Understand "tall", "thin" and "man" as Camino 2. The printed name of Camino 2 is "Camino"
 
-The mention of Camino 2 is "Camino is looking straight at you. His face is contorted in a mixture of anger and surprise.".
+The mention of Camino 2 is "Camino looks straight at you. His face is contorted in a mixture of anger and surprise.".
 
 The description of Camino 2 is "[Camino Description]"
 
@@ -3570,7 +3564,7 @@ Instead of attacking Camino 2 with something:
 	try attacking Camino 2.
 	
 Instead of attacking Camino 2 with the gun:
-	say "You are not a murderer. There has to be a better way. Besides, you're pretty sure he's armed as well, and he might be a quicker draw than you."
+	say "You are not a murderer. There has to be a better way. Besides, you are pretty sure he is armed as well, and he might be a quicker draw than you."
 	
 Instead of shooting Camino 2:
 	say "You are not a murderer. There has to be a better way. Besides, you are pretty sure he is armed as well, and he might be a quicker draw than you."
@@ -3587,9 +3581,9 @@ Instead of pulling Camino's scar:
 Instead of taking Camino's scar when the oil is part of the river:
 	say "Before he has a chance to react, you reach out and rip some of the gangrenous flesh off his face. He should be thankful, really, but as he drops screaming to his knees with blood flowing from his cheek, you are sure that gratitude is the last thing on his mind. Lisa looks at him with contempt. 'Is that really the best you can do?'
 	
-He turns towards towards her, his face a mask of rage. 'YOU STUPID BITCH! I help cover up the murder of your pathetic boyfriend, and I have got nothing but misery to show for it. I am not going to risk my life for your sake anymore.'
+He turns towards towards her, his face a mask of rage. 'YOU STUPID BITCH! I help cover up the murder of your pathetic boyfriend, and I have nothing but misery to show for it. I am not going to risk my life for your sake anymore.'
 
-He gets up, covering the wound with one hand, adjusting his hat with the other. 'She is all yours, mister detective. Just keep her out of my sight.' With that, he disappears out the door.";
+He rises, covering the wound with one hand, adjusting his hat with the other. 'She is all yours, mister detective. Just keep her out of my sight.' With that, he disappears out the door.";
 	remove Camino 2 from play.
 
 The river is scenery. The river is part of the canyon. Understand "water", "stream" and "creek" as the river. The description of the river is "[if the oil is part of the river]The river has been polluted with oil. Nothing could possibly survive in the black viscous fluid that once was water[otherwise]Even from all the way up here, you can tell that the river is crystal clear. No pollution is going to reach it in this pristine landscape[end if]."
@@ -3604,7 +3598,7 @@ Instead of assimilating the oil into the river:
 	now the oil is part of the shadows.
 	
 Instead of assimilating the brick into the river when the oil is not part of the brick:
-	say "There doesn't seem to be much point to throwing a clean brick into the river."
+	say "There doesn't seem to be much point in throwing a clean brick into the river."
 	
 Instead of assimilating the brick into the river when the oil is part of the brick:
 	say "You throw the oily brick down the canyon, and can just barely make it out hitting the river far, far below. The effect is immediate: The oil spreads quickly, and within moments the previously pristine profluence is black with pollution. You say a quick prayer for the poor fish who might have lived there. They never saw it coming.";
@@ -3664,25 +3658,12 @@ Instead of talking to Lisa when Camino 2 is visible, say "She nods towards Camin
 	
 The mountain road is a pataphor. Understand "curve/curves" as the mountain road. The mountain road is fixed in place. The description of the mountain road is "The road goes up, twisting around the mountain. There is no telling where it ends. Maybe you should check it out?"
 
-The mention of Lisa is "[if wesson is on the old couch and camino 2 is in the LivingRoom]Lisa is smiling nervously and looking at Camino, like a servant girl waiting for her master to handle matters[otherwise if wesson is on the old couch and camino 2 is not in the LivingRoom]Lisa is smiling nervously, like a servant girl waiting for someone else to take charge[otherwise]Lisa von Bülow is smiling, and looking at you as if you were a new plaything[end if]."
+The mention of Lisa is "[if wesson is on the old couch and camino 2 is in the LivingRoom]Lisa is smiling nervously and looking at Camino, like a servant girl waiting for her master to handle matters[otherwise if wesson is on the old couch and camino 2 is not in the LivingRoom]Lisa is smiling nervously, like a servant girl waiting for someone else to take charge[otherwise]Lisa von Bülow smiles and looks at you as if you were a new plaything[end if]."
 
-The smile is part of Lisa. Understand "shy" and "sly" as the smile. The smile is fixed in place. The description of the smile is "[if wesson is on the old couch]She seems the submissive type, like a servant girl[otherwise]She seems like the type who regards everything in life with detached amusement[end if]."
-
-[To consider the request:
-	if the player consents:
-		say "[line break]She has a point. It's really none of your business what she does with her life. You should have told that to the Baron right from the start.
-
-'Thanks,' she says. 'You won't regret it, mister. Maybe we will meet again some day.' She kisses you on the cheek before leaving. The warmth of the kiss lingers for a while before dissipating.
-
-The Baron is disappointed, but he hired you to find his daughter, and that is exactly what you did. You get your paycheck in the end.";
-		remove lisa from play;
-	otherwise:
-		say "[line break]'Sorry, miss, but that won't do. I have a job to do. You are going back to your father.'
-		
-She laughs again. 'And how are you going to accomplish that? Knock me unconscious and carry me home? I don't think so.'".]
+The smile is part of Lisa. Understand "shy" and "sly" as the smile. The smile is fixed in place. The description of the smile is "[if wesson is on the old couch]She seems like the submissive type, like a servant girl[otherwise]She seems like the type who regards everything in life with detached amusement[end if]."
 
 Instead of talking to Lisa when Camino 2 is not in the LivingRoom and wesson is not on the old couch for the first time:
-	say "'Good evening, Miss Bülow,' you say. 'I believe it's time for you to go home to your father. He has been missing you.'
+	say "'Good evening, Miss Bülow,' you say. 'It's time for you to go home to your father. He has been missing you.'
 	
 Her laughter is like tiny silver bells. 'I don't think so. I am a big girl and I don't need my father to control my life. Why don't you just let me go? I can take care of myself.'[line break][line break]";
 	now the tiny silver bells are in the livingroom;
@@ -3699,12 +3680,12 @@ Table of Lisa Options
 	
 Table of Quip Texts (continued)
 	quip	quiptext
-	LetHerGo		"She has a point. It's really none of your business what she does with her life. You should have told that to the Baron right from the start.
+	LetHerGo	"She has a point. It's really none of your business what she does with her life. You should have told that to the Baron from the start.
 
 'Thanks,' she says. 'You won't regret it, mister. Maybe we will meet again some day.' She kisses you on the cheek before leaving. The warmth of the kiss lingers for a while.
 
-The Baron is disappointed, but he hired you to find his daughter, and that is exactly what you did. You get your paycheck in the end."
-	TakeHerHome	"'Sorry, miss, but that won't do. I have a job to do. You are going back to your father.'
+The Baron is disappointed, but he hired you to find his daughter, and that is what you did. You get your paycheck."
+	TakeHerHome	"'Sorry, miss, but that won't suffice. You are going back to your father.'
 		
 She laughs again. 'And how are you going to accomplish that? Knock me unconscious and carry me home? I don't think so.'"
 	
@@ -3853,7 +3834,7 @@ The police cruiser is scenery in MountainRoad2. Understand "emergency" and "ligh
 
 Instead of entering the police cruiser, say "'What do you think you are doing, Buddy?' says the officer."
 
-The road block is scenery in MountainRoad2. Understand "roadblock" as the road block. The description of the road block is "'Road Block,' says the sign. That's a road block, all right."
+The road block is scenery in MountainRoad2. Understand "roadblock" as the road block. The description of the road block is "'Roadblock,' says the sign. That's a roadblock, all right."
 
 Instead of going west from MountainRoad2 when the road block is in MountainRoad2:
 	say "The road is blocked."
@@ -3862,7 +3843,7 @@ Instead of doing something other than examining to the road block, say "'What do
 
 The police officer is a patason in MountainRoad2. Understand "cop" and "man" as the police officer. The description of the police officer is "A tall fit man in a police uniform. He looks like he has dealt with far worse than you."
 
-The mention of the police officer  is "A police officer is leaning against the cruiser."
+The mention of the police officer is "A police officer is leaning against the cruiser."
 
 Instead of attacking the police officer, say "You are pretty sure he could take you."
 
@@ -3888,7 +3869,7 @@ Instead of talking to the police officer at least thrice:
 	say "'If you want me to risk my job, you gonna have to give me something in return, Mister.'"
 	
 Instead of giving the silver to the police officer:
-	say "His eyes light up with greed as you show him the silver. 'Wow, that'll certainly do the job, Mister. Thanks a lot.' He pours the silver into a canteen, and secures the lid. 'I can't wait to find out how much that will be worth. Enjoy your mountain trip, Mister.' He removes the road block, gets into the cruiser, and drives down the road, disapearing around the corner.";
+	say "His eyes light up with greed as you show him the silver. 'Wow, that'll certainly do the job, Mister. Thanks a lot.' He pours the silver into a canteen, and secures the lid. 'I can't wait to find out how much that's worth. Enjoy your mountain trip, Mister.' He removes the road block, enters the cruiser, and drives down the road, disappearing around the corner.";
 	remove the police officer from play;
 	remove the road block from play;
 	remove the liquid silver from play;
