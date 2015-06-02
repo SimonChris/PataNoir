@@ -34,7 +34,7 @@ When play begins:
 	now the Tutor-introduction is "Welcome to PataNoir! This is the tutorial. I will be with you for just a little while, to familiarize you a bit with interacting with the story. If you grow tired of me at any time, type [only bold]tutorial off[tutor type] at any prompt and I'll go away. You should probably complete this tutorial at least once, to learn how to interact with the game. Experienced interactive fiction players can skip the tutorial, and instead read the 'Introduction to PataNoir' section in the [only bold]help[tutor type] menu."
 	
 To say desk instruction:
-	say "Notice the cursor following the > prompt at the bottom of the window? (If you can't see it, just tap the spacebar to scroll the window.) This is where you will interact with the story. Above the cursor you can see a see a description of your current location, in this case your office. You can interact with everything mentioned in the room description. To examine an object closer, simply type its name, and press enter.
+	say "Notice the cursor following the > prompt at the bottom of the window? (If you can't see it, just tap the spacebar to scroll the window.) This is where you will interact with the story. Above the cursor you can see a description of your current location, in this case your office. You can interact with everything mentioned in the room description. To examine an object closer, simply type its name, and press enter.
 	
 Let's start by taking a closer look at some of the things in the office. Type [only bold]desk[tutor type] and press enter. "
 
