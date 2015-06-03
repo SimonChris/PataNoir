@@ -361,7 +361,10 @@ Rule for writing a paragraph about a person:
 	say "[line break]".
 	
 Rule for printing a parser error when the latest parser error is the can't see any such thing error:
-	say "That is either not here, or doesn't need to be referred to at the moment."
+	say "That is either not here or doesn't need to be referred to at the moment."
+	
+Rule for printing a parser error when the latest parser error is the not a verb I recognise error :
+	say "That command did not match either a visible object or a known verb."
 	
 The description of the player is "You are a bit worse for wear, but you are still the best detective in town."
 
