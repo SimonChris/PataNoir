@@ -1,12 +1,10 @@
 "PataNoir" by Simon Christiansen
 
-The story genre is "Mystery". The release number is 6. The story creation year is 2011.
+The story genre is "Mystery". The release number is 7. The story creation year is 2011.
 
 Release along with cover art.
 
 Use full-length room descriptions, American dialect, no scoring, and the serial comma.
-
-Include Basic Help Menu by Emily Short.
 
 Include Numbered Disambiguation Choices by Aaron Reed.
 
@@ -16,62 +14,70 @@ Include Punctuation Removal by Emily Short.
 
 Include Unicode Full Character Names by Graham Nelson.
 
-[Include Kindleizer by Jimmy Maher.]
+Include Kindleizer by Jimmy Maher.
 
 Include Interactive Tutorial by Jimmy Maher.
 
+[Just need to set the background image number. The Kindleizer extension will then handle painting it. --JM]
+The background image is 50.
+
 [To say tutor type: say "[roman type][italic type][bold type]".]
 
-To say only bold: say "[bold type]".
+[To say only bold: say "[bold type]".]
 
 [To do:
-	Make it clear that the fountain and the angel are separate objects, or mention the manna in the description of both.
 	Change the standard assimilation failure messages into check rules, so they can be more easily overridden by instead rules.]
 
 Part 1 - Rules
 
 When play begins:
-	now the Tutor-introduction is "Welcome to PataNoir! This is the tutorial. I will be with you for just a little while, to familiarize you a bit with interacting with the story. If you grow tired of me at any time, type [only bold]tutorial off[tutor type] at any prompt and I'll go away. You should probably complete this tutorial at least once, to learn how to interact with the game. Experienced interactive fiction players can skip the tutorial, and instead read the 'Introduction to PataNoir' section in the [only bold]help[tutor type] menu."
+	now the Tutor-introduction is "Welcome to PataNoir! This is the tutorial. I will be with you for just a little while, to familiarize you a bit with interacting with the story. If you grow tired of me at any time, type 'tutorial off' at any prompt and I'll go away. You should probably complete this tutorial at least once, to learn how to interact with the game. Experienced interactive fiction players can skip the tutorial and instead type 'about' for a description of the important game mechanics. Type 'credits' if you want to see the credits for the game."
 	
 To say desk instruction:
-	say "Notice the cursor following the > prompt at the bottom of the window? (If you can't see it, just tap the spacebar to scroll the window.) This is where you will interact with the story. Above the cursor you can see a description of your current location, in this case your office. You can interact with everything mentioned in the room description. To examine an object closer, simply type its name, and press enter.
+	say "When you make it to the end of this introductory text, a virtual keyboard and input box will appear. This is where you will interact with the story. Above the keyboard you can see a description of your current location, in this case your office. You can interact with everything mentioned in the room description. To examine an object closer, simply enter its name.
 	
-Let's start by taking a closer look at some of the things in the office. Type [only bold]desk[tutor type] and press enter. "
+Let's start by taking a closer look at some of the things in the office. Type 'desk' into the input box. "
 
 To say drawer instruction:
-	say "That drawer might contain something useful. Type [only bold]drawer[tutor type] to check it out. "
+	say "The story unfolds up here on the main body of the screen, where you are reading this. Just like when reading a non-interactive book, you can page through this text by tapping or swiping in the main text area; tap once at the left end of the screen to move backward, once in the center or right edge of the screen to move forward, or simply make a leftward or rightward swiping motion to go backward or forward respectively. The font size can be changed by using two fingers to pinch the screen. The small arrows at the bottom of the text area appear when there is more to be read before or after your current position.
+
+No time passes in the storyworld between your commands, so feel free to take your time and savor the story. When you finish it, you will have your own unique detective story stored on your device to reread and enjoy, as you will.
+
+I try my best to judge when it would be best to show the keyboard and input area and when you might rather have the full screen to view text. If you disagree with my judgment, however, you can manually show or hide the keyboard by simply swiping up or down.
+
+That drawer might contain something useful. Type 'drawer' to check it out. "
 	
 To say drawer open instruction:
-	say "Typing the name of the drawer resulted in a description, but you probably wanted to know what's inside. Once you have examined an object, typing its name again will make you interact with it. Interacting with something will perform a default action tied to that object. In the case of the drawer this means opening it. Type [only bold]drawer[tutor type] again to open the drawer. "
+	say "Typing the name of the drawer resulted in a description, but you probably wanted to know what's inside. Once you have examined an object, typing its name again will make you interact with it. Interacting with something will perform a default action tied to that object. In the case of the drawer this means opening it. Type 'drawer' again to open the drawer. "
 	
 To say revolver instruction:
-	say "A weapon might certainly come in handy! Type [only bold]revolver[tutor type] twice to examine the revolver, and then pick it up. "
+	say "A weapon might certainly come in handy! Type 'revolver' twice to examine the revolver, and then pick it up. "
 	
 To say drawer close instruction:
-	say "The default action for most objects is to pick them up, but other objects, like the drawer, have different actions associated with them. Interacting with the drawer caused us to open it, but maybe now we can try to take it? Type [only bold]drawer[tutor type] again, and see what happens. "
+	say "The default action for most objects is to pick them up, but other objects, like the drawer, have different actions associated with them. Interacting with the drawer caused us to open it, but maybe now we can try to take it? Type 'drawer' again, and see what happens. "
 	
 To say drawer take instruction:
-	say "Well, that didn't work. The default action associated with the drawer is to open or close it. I'll do my best to predict what you want to do with an object, but sometimes you may need to try something more unusual than the default action. To do this, you can specify the exact action you want to perform by adding a verb in front of the noun. For example, you can try to take the drawer by typing [only bold]take drawer[tutor type]. Try that now. "
+	say "Well, that didn't work. The default action associated with the drawer is to open or close it. I'll do my best to predict what you want to do with an object, but sometimes you may need to try something more unusual than the default action. To do this, you can specify the exact action you want to perform by adding a verb in front of the noun. For example, you can try to take the drawer by typing 'take drawer'. Try that now. "
 	
 To say looking instruction:
-	say "It would be silly to carry around a desk drawer anyway. The game understands a wide variety of verbs, but the most common ones are [only bold]take[tutor type] and [only bold]examine[tutor type].  The latter can be shortened to just [only bold]x[tutor type], so you can reexamine objects by typing [only bold]x object[tutor type].  Feel free to experiment with other verbs. You never know what might happen.
+	say "It would be silly to carry around a desk drawer anyway. The game understands a wide variety of verbs, but the most common ones are 'take' and 'examine'.  The latter can be shortened to just 'x', so you can reexamine objects by typing 'x object'.  Feel free to experiment with other verbs. You never know what might happen.
 	
-Some verbs don't require an object. For example, you can always repeat the description of your surroundings by typing [only bold]look[tutor type], or just [only bold]l[tutor type], for short. Try typing [only bold]l[tutor type] now. "
+Some verbs don't require an object. For example, you can always repeat the description of your surroundings by typing 'look', or just 'l', for short. Try typing 'l' now. "
 
 To say cigarette instruction:
-	say "Let's take a closer look at some of the other objects in the office. There is a cigarette smoldering in the ashtray. Try interacting with it, by typing [only bold]cigarette[tutor type] twice, or just [only bold]take cigarette[tutor type], if you can't be bothered to examine it closely. If you get bored with typing the same commands twice, you can always repeat the previous command, by typing [only bold]g[tutor type]."
+	say "Let's take a closer look at some of the other objects in the office. There is a cigarette smoldering in the ashtray. Try interacting with it, by typing 'cigarette' twice, or just 'take cigarette', if you can't be bothered to examine it closely. If you get bored with typing the same commands twice, you can always repeat the previous command, by typing 'g'."
 	
 To say embers instruction:
-	say "The cigarette doesn't seem to be useful. Remember when I said that you can interact with anything mentioned in the room description? The cigarette is described as being like 'the last embers from a dying camp fire', but that's just a simile. Surely, that doesn't count as an object. Why not give it a try, for the hell of it? Try interacting with the camp fire, and the embers. "
+	say "The cigarette doesn't seem to be useful. Remember when I said that you can interact with anything mentioned in the room description? The cigarette is described as being like 'the last embers from a dying campfire', but that's just a simile. Surely, that doesn't count as an object. Why not give it a try, for the hell of it? Try interacting with the campfire, and the embers. "
 	
 To say simile instruction:
-	say "What the hell just happened? Type [bold type]look[tutor type] to inspect the room again. "
+	say "What the hell just happened? Type 'look' to inspect the room again. "
 	
 To say inventory instruction:
-	say "The cigarette is now just a cigarette. What happened to the simile? You can always inspect what you are carrying by typing [only bold]inventory[tutor type], or just [only bold]i[tutor type] for short. Try doing that now. "
+	say "The cigarette is now just a cigarette. What happened to the simile? You can always inspect what you are carrying by typing 'inventory', or just 'i' for short. Try doing that now. "
 	
 To say door instruction:
-	say "You are now carrying the simile of the smoldering ember! You will soon learn how that can be useful. First, let's check out who is at the door. You can open the door by either typing [only bold]door[tutor type] twice, or just [only bold]open door[tutor type]. "
+	say "You are now carrying the simile of the smoldering ember! You will soon learn how that can be useful. First, let's check out who is at the door. You can open the door by either typing 'door' twice, or just 'open door'. "
 	
 To say talking instruction:
 	say "Looks like a case might be forthcoming! Try to interact with the visitor, in the usual way. "
@@ -82,7 +88,7 @@ To say allan instruction:
 	now the Done entry is false.
 
 To say revolver examination instruction:
-	say "Conversation doesn't seem to be working in this case, anyway. You can try talking to him some more, but it probably won't help. Let's try something different. Remember that revolver you picked up earlier? Let's check it out again, by typing [only bold]revolver[tutor type]. Since you are already carrying the revolver, typing its name will examine it. "
+	say "Conversation doesn't seem to be working in this case, anyway. You can try talking to him some more, but it probably won't help. Let's try something different. Remember that revolver you picked up earlier? Let's check it out again, by typing 'revolver'. Since you are already carrying the revolver, typing its name will examine it. "
 	
 To say wesson instruction:
 	say "Apparently, you think of your revolver as a trusty servant. Remember what happened with the smoldering ember earlier? Try interacting with the servant. "
@@ -100,16 +106,16 @@ For now, let's follow his current advice. Try interacting with the marble. ";
 	now the Done entry is false.
 
 To say jameson examination instruction:
-	say "That seemed to do something, but it's hard to tell if anything changed. Perhaps we should take another look at Mr. Jameson? Since you have already examined him, typing his name will continue the conversation, so you will have to use a verb. You can examine him again by typing [only bold]examine Jameson[tutor type], or just [only bold]x Jameson[tutor type] for short. "
+	say "That seemed to do something, but it's hard to tell if anything changed. Perhaps we should take another look at Mr. Jameson? Since you have already examined him, typing his name will continue the conversation, so you will have to use a verb. You can examine him again by typing 'examine Jameson', or just 'x Jameson' for short. "
 	
 To say second talking instruction:
 	say "He no longer seems as cold! Try talking to him some more. "
 	
 To say second inventory instruction:
-	say "He still seems a bit too reserved, even without the marble. Maybe there is a way to make him warm up to you? Try checking your inventory, by typing [only bold]inventory[tutor type], or just [only bold]i[tutor type], for short. "
+	say "He still seems a bit too reserved, even without the marble. Maybe there is a way to make him warm up to you? Try checking your inventory, by typing 'inventory', or just 'i', for short. "
 	
 To say application instruction:
-	say "If the marble made him cold, perhaps the ember can make him warm? To use an object on another, you can simply type out the names of the objects in order. Type [bold type]ember allan[tutor type] to use the ember on Mr. Jameson. "
+	say "If the marble made him cold, perhaps the ember can make him warm? To use an object on another, you can simply type out the names of the objects in order. Type ember allan to use the ember on Mr. Jameson. "
 	
 Tutorial read is a truth state variable. Tutorial read is false.
 	
@@ -118,11 +124,11 @@ To say persuasion instruction:
 	now tutorial read is true.
 	
 To say tutor conclusion:
-	say "That worked wonders! You now have a case, and a larger game world to explore. Movement in the game is handled by typing in the direction you want to go. The directions understood by the game are [only bold]north, south, east, west, up, down, in[tutor type] and [only bold] out[tutor type]. For convenience, you only need to type the first letter of the direction word, except in the case of [only bold]in/out[tutor type], where the full word is needed. Sometimes, choosing a direction will result in a list of possible locations. Just type in the number corresponding to the location you would like to visit.
+	say "That worked wonders! You now have a case, and a larger game world to explore. Movement in the game is handled by typing in the direction you want to go. The directions understood by the game are 'north', 'south', 'east', 'west', 'up', 'down', 'in' and  'out'. For convenience, you only need to type the first letter of the direction word, except in the case of 'in/out', where the full word is needed. Sometimes, choosing a direction will result in a list of possible locations. Just type in the number corresponding to the location you would like to visit.
 	
-That's all I have for now! Typing [only bold]n[tutor type] will take you inside the mansion of the baron who wants to hire you. You can also return to your office by typing [only bold]s[tutor type]. There is plenty of other stuff in the office. You should probably fix that old chair at some point, for example. 
+That's all I have for now! Typing 'n' will take you inside the mansion of the baron who wants to hire you. You can also return to your office by typing 's'. There is plenty of other stuff in the office. You should probably fix that old chair at some point, for example. 
 
-If you need more help, typing [only bold]help[tutor type] will take you to a menu with more information about the game, as well as a walkthrough, in case you get completely stuck. Don't forget to talk to Mr. Wesson first, though. He will usually be able to help you.
+If you need more help, typing 'about' will provide you with more information about the game. If you get completely stuck, typing 'walkthru' will print a walkthrough. Don't forget to talk to Mr. Wesson first, though. He will usually be able to help you.
 
 Good luck with the case! "
 
@@ -161,7 +167,7 @@ Your Office	1	23
 
 Chapter 1 - Game Rules
 
-Test Introduction with "open drawer / take gun / talk to wesson / talk to wesson / take blood / take ember / open door"
+Test Introduction with "desk / open drawer / gun / servant / take gun / talk to wesson / talk to wesson / take blood / take ember / open door"
 
 Test Visitation with "test introduction / x man / talk to man / talk to wesson / take marble / put marble on wheels / move chair / get coin / get knife / get marble / x man / talk to man / talk to wesson / give coal to man / x man / talk to man"
 
@@ -181,13 +187,13 @@ Test Assault1 with "Test camino / w / 1 / talk to wesson / talk to wesson / x al
 
 Test Copernik with "test assault1 / talk to copernik / talk to copernik / talk to copernik / talk to wesson / talk to wesson / x man / x walls / x man / wrap icicle in rag / touch man with icicle / x walls / talk to copernik / talk to copernik / talk to wesson / talk to wesson / give toupee to copernik / talk to copernik / talk to copernik "
 
-Test Climax with "Test Copernik / w / 6 / talk to wesson / take silver / n / x lisa / u / n / w / talk to wesson / talk to wesson / show cocoon to officer / w / exit / enter cabin / talk to wesson / talk to wesson / drink brandy / yes / w / enter car / n / e / s / throw oil in river / grab wound / talk to lisa"
+Test Climax with "Test Copernik / w / 6 / talk to wesson / take silver / n / x lisa / u / n / w / talk to wesson / talk to wesson / show cocoon to officer / w / exit / enter cabin / talk to wesson / talk to wesson / drink brandy / 1 / w / enter car / n / e / s / throw oil in river / grab wound / talk to lisa"
 
 Test thruline with "Test Climax  / x baron / x lisa / u / n / w / exit / e / talk to wesson / w / enter car / n / e / s / take marble / give marble to baron / x baron / talk to baron / open door / talk to doctor"
 
 Test AlternateA with "Test Climax / talk to baron / open door / talk to doctor"
 
-Test FreeLisa with "Test copernik / w / 6 / n / throw brick in river / grab wound / talk to lisa / yes / open door / talk to doctor"
+Test FreeLisa with "Test copernik / w / 6 / n / throw brick in river / grab wound / talk to lisa / 1 / open door / talk to doctor"
 
 Test oiling with "test meeting / w / d / s / s / 1 / drop fluid / get oil / put oil on wheels"
 
@@ -221,7 +227,7 @@ Test letterbug with "test gambling / talk to camino / show letter to camino / x 
 
 Test heldknife with "test meeting / w / d / s / s / 4 / give knife to wesson / cut fog / tell wesson to give me the sharp knife / cut fog"
 
-Test MarbleBug with "test copernik / w / 1 / n / u / get marble / d / s / s / 6 / take silver / n / x lisa / u / n / w / talk to wesson / talk to wesson / show cocoon to officer / w / exit / enter cabin / talk to wesson / talk to wesson / drink brandy / yes / w / enter car / n / e / s / throw brick in river / grab wound / talk to lisa / take marble"
+Test MarbleBug with "test copernik / w / 1 / n / u / get marble / d / s / s / 6 / take silver / n / x lisa / u / n / w / talk to wesson / talk to wesson / show cocoon to officer / w / exit / enter cabin / talk to wesson / talk to wesson / drink brandy / 1 / w / enter car / n / e / s / throw brick in river / grab wound / talk to lisa / take marble"
 
 Test Businessman with "test camino / w / 1 / l" [The businessman should not be mentioned in the room description]
 
@@ -259,26 +265,29 @@ He scribbles in a small notepad. 'And you are still taking your medication?'
 
 'Of course.'
 
-It's a lie. You work much better without it.".
+It's a lie. You work much better without it.";
+	show Kindle image 2.
 
-When play begins:
-	choose row 1 in Table of Basic Help Options;
-	now the title entry is "Introduction to PataNoir";
-	now description entry is "PataNoir is a surreal noir game, which differs from an ordinary noir story in ways that should become clear early on. Make sure you try to examine and interact with everything in your surroundings, including things that are not literally there. Especially those. Every time something is 'like' something else, you can try to interact with both things. Once you have some things, try giving them to people or putting them on other things.
+Requesting information is an action out of world. Understand "about", "info" and "intro" as requesting information.
+
+Report requesting information:
+	show Kindle image 1;
+	say "PataNoir is a surreal noir game, which differs from an ordinary noir story in ways that should become clear early on. Make sure you try to examine and interact with everything in your surroundings, including things that are not literally there. Especially those. Every time something is 'like' something else, you can try to interact with both things. Once you have some things, try giving them to people or putting them on other things.
 
 If you are stuck, you can talk to your trusty servant. He might be able to provide some hints. If you cannot find him, check the desk drawer.
 
-If you are having trouble with the puzzle system, you can read the 'Similes and You' chapter in this hint menu, for more detailed instructions. You may find it more rewarding to figure things out yourself, though.
+If you are having trouble with the puzzle system, you can type 'similes', for more detailed instructions. You may find it more rewarding to figure things out yourself, though.
 
 PataNoir also contains some parser optimizations, to cut down on repetitive typing. You can interact with objects by simply typing the name of the object. The first time you do this, you will examine the object.  If you type the name of an examined object, you will perform a default action associated with that object. The default action for most objects is for you to take them, but other objects have different default actions, tied to their function. You will open doors, talk to people, and so on. 
 
 If you want to apply an object to another, whether this means combining them or giving an object to a person, you can simply type the names of the objects in order. It is still necessary to type verbs if you want to do something out of the ordinary, but the default actions take care of the most common interactions.
 
-If you are still stuck, the final chapter contains a detailed walkthrough, divided into sections corresponding to scenes in the game. Some scenes expect you to be carrying things from earlier scenes, so a walkthrough section may not always work out of context. For convenience, typing 'WALKTHRU' in the command prompt will print the entire walkthrough on the screen.";
-	choose row 2 in Table of Basic Help Options;
-	now the title entry is "Similes and You";
-	blank out the subtable entry;
-	now description entry is "The puzzles in PataNoir involve manipulating similes and metaphors to achieve effects. Whenever something is described as being 'like' something else, you will be able to interact with the figurative object, as well as the literal. For example, if someone's eyes are described as 'sparkling like diamonds', you will be able to take the diamonds like any other object. This will cause the eyes to stop sparkling, which may change the personality of the person in question. The diamonds can then be given to other persons, or put on other things, which will cause them to sparkle like diamonds instead. In this way, figurative objects can be used to change the properties of real objects and persons.
+If you are still stuck, typing 'walkthru' will print a detailed walkthrough for the game."
+
+Requesting similes is an action out of world. Understand "similes", "similies", "simile", "metaphors" and "metaphor" as requesting similes.
+
+Report requesting similes:
+	say "The puzzles in PataNoir involve manipulating similes and metaphors to achieve effects. Whenever something is described as being 'like' something else, you will be able to interact with the figurative object, as well as the literal. For example, if someone's eyes are described as 'sparkling like diamonds', you will be able to take the diamonds like any other object. This will cause the eyes to stop sparkling, which may change the personality of the person in question. The diamonds can then be given to other persons, or put on other things, which will cause them to sparkle like diamonds instead. In this way, figurative objects can be used to change the properties of real objects and persons.
  
 Real and figurative objects cannot affect each other directly, but figurative objects can affect each other, just like real objects. For example, a figurative knife cannot cut a real watermelon, but it could cut a figurative watermelon. This might provide you with a figurative slice of watermelon, which could be used to change the properties of a real object.
 
@@ -286,38 +295,42 @@ If you are stuck, look at your revolver. Did you notice how it is like a trusty 
  
 If you experiment a bit, this will hopefully begin to make sense.
  
-Have fun!".
+Have fun!"
 
-Table of Walkthrough
-	title		description
-	"Introduction"	"Optional verbs are included in paranthesis, to make it more clear what's going on. If you are following the walkthrough from start to end, it's not necessary to type in those verbs:[line break](examine) drawer, (open) drawer, revolver, (take) revolver, (examine) servant, (talk to) servant, (examine) wheels, (examine) blood, (take) blood, (examine) camp fire, (examine) ember, (take) ember, (examine) door, (open) door, (examine) man, (talk to) man, (examine) marble, (take) marble, marble wheels, x wheels, move chair, (examine) coin, (take) coin, (examine) knife, (take) knife, (take) marble, x allan, coal allan, x allan, (talk to) allan."
-	"Meeting the Baron"	"n, u, e, (examine) baron, (examine) strand, (take) strand, (talk to) baron, (examine) record, (take) record, w, (take) coal, d, coal floor, n, strand snakes, (examine) fountain, (examine) manna, (take) manna, (examine) scale, (take) scale, s, (take) strand, s, strand giant, l, n, u, w, (examine) cocoon, (take) cocoon, e, close western door, (examine) light, (take) light, e, (examine) lakes, (enter) lakes, d, d, strand lock, (examine) chest, (open) chest, (examine) treasure, (take) treasure, u, u, u, treasure baron, (talk to) baron."
-	"The Apartment"	"First, we take a short trip back to the office, to pick up something we couldn't get earlier:[line break]w, d, s, s, 1, (take) fluid, (examine) oil, (take) oil, n, 3, (examine) rag, (take) rag, (examine) jacket, (examine) letter, (take) letter, e, (examine) cabinet, (open) cabinet, (examine) literal knife, (take) literal knife, (examine) city, (enter) city, u, call, d, manna beggar, out, needle bowie knife, x bowie knife."
-	"The Bar"	"w ,s, 4, letter bartender, figurative knife fog, l, (examine) man, (talk to) man, bowie knife man, (talk to) ronald, (examine) toupee, (take) toupee, blood ronald, (talk to) ronald."
-	"The Gambling Joint"	"s, 3, (examine) icicle, Wesson, take the icicle, (examine) poker game, (examine) man, (examine) putty, (take) putty, marble man, wait, g, g, g, g, (examine) camino, (talk to) camino, letter camino, e, (examine) brick , (take) brick, (talk to) camino, (talk to) camino, e, record camino, (talk to) camino.[line break]Note: If you give the record to Camino right away, you do not need to re-enter the office. The failed attempt is included to demonstrate the effects of the record."
-	"The Assault"	"To trigger this scene you must be carrying: The icicle, the dirty rag, the coin, the revolver, and the scale. Also, Alfono must have kicked you out of Camino's office. The scene starts in front of the Baron's Mansion:[line break]w, 1, (examine) man, (examine) businessman, knife wesson, wesson, attack businessman, x alfono, (talk to) alfono, putty scale, scale snake, (examine) moustache, (take) moustache."
-	"Copernik's office"	"(examine) copernik, (talk to) copernik, (examine) walls, (examine) dying man, rag icicle, icicle man, (talk to) copernik, toupee copernik, (talk to) copernik."
-	"Climax"	"w, 6, rag brick, oil brick, (examine) silver, (take) silver, n, (examine) lisa, (examine) mountain road, u, n, w, silver officer, w, out, e, (examine) brandy, (take) brandy, yes, w, (examine) car, (enter) car, n, e, s, (examine) camino, (examine) canyon, (examine) river, (examine) brick, brick canyon, (examine) camino, (examine) wound, (take) wound, (talk to) lisa."
-	"Ending"	"(take) marble, marble baron, (talk to) baron, (open) door, (examine) doctor, (talk to) doctor."
+Requesting hints is an action out of world. Understand "help", "hint", "hints" as requesting hints.
 
-Table of Basic Help Options (continued)
-	title		subtable		description
-	"Contacting the author"	--	"Feedback can be sent to simon@sichris.com."
-	"Walkthrough"	Table of Walkthrough		--
-	"Credits"	--	"Writing and coding by Simon Christiansen.
+Report requesting hints:
+	if wesson is visible:
+		if wesson is introduced or wesson is examined:
+			try talking to wesson;
+		otherwise:
+			say "Look at the revolver.";
+	otherwise:
+		say "Check your desk drawer."
+
+Requesting the credits is an action out of world. Understand "credits" and "credit" as requesting the credits.
+
+Report requesting the credits:
+	show Kindle image 1;
+	say "Writing and coding by Simon Christiansen.
 	
-Cover art by Tom Siddell.
+Cover art above by Tom Siddell (gunnerkrigg.com).
+
+In-game art by Lauri Ahonen (munportfolio.com).
 	
 Testing and proofreading done by Joel Webster, Utkonos, Dacharya, John P. Murphy, Colin Sandel, Amanda Allen, James Matthew Campbell, George Oliver, Jacek Pudlo, Joey Jones, Marius Müller, Andrew Schultz, Sam Kabo Ashwell and David J. Hastings.
 
 Special thanks to the Goons of the SomethingAwful.com forums for feedback provided during a 'Let's Play' playthrough of the game."
 
-Commenting is an action applying to one topic. Understand "comment [text]", "c [text]", "* [text]", "** [text]" and "*** [text]" as commenting.
+Showing the office is an action out of world. Understand "show office" as showing the office.
+
+Report showing the office:
+	show Kindle image 2.
 
 Requesting the Walkthrough is an action out of world. Understand "Walkthrough" and "Walkthru" as requesting the Walkthrough.
 
 Report requesting the Walkthrough:
-	say 	"Introduction (Optional verbs are included in paranthesis, to make it more clear what's going on. If you are following the walkthrough from start to end, it's not necessary to type in those verbs):[line break](examine) drawer, (open) drawer, revolver, (take) revolver, (examine) servant, (talk to) servant, (examine) wheels, (examine) blood, (take) blood, (examine) camp fire, (examine) ember, (take) ember, (examine) door, (open) door, (examine) man, (talk to) man, (examine) marble, (take) marble, marble wheels, x wheels, move chair, (examine) coin, (take) coin, (examine) knife, (take) knife, (take) marble, x allan, coal allan, x allan, (talk to) allan.
+	say 	"Introduction (Optional verbs are included in paranthesis, to make it more clear what's going on. If you are following the walkthrough from start to end, it's not necessary to type in those verbs):[line break](examine) drawer, (open) drawer, revolver, (take) revolver, (examine) servant, (talk to) servant, (examine) wheels, (examine) blood, (take) blood, (examine) campfire, (examine) ember, (take) ember, (examine) door, (open) door, (examine) man, (talk to) man, (examine) marble, (take) marble, marble wheels, x wheels, move chair, (examine) coin, (take) coin, (examine) knife, (take) knife, (take) marble, x allan, coal allan, x allan, (talk to) allan.
 	
 Meeting the Baron:[line break]n, u, e, (examine) baron, (examine) strand, (take) strand, (talk to) baron, (examine) record, (take) record, w, (take) coal, d, coal floor, n, strand snakes, (examine) fountain, (examine) manna, (take) manna, (examine) scale, (take) scale, s, (take) strand, s, strand giant, l, n, u, w, (examine) cocoon, (take) cocoon, e, close western door, (examine) light, (take) light, e, (examine) lakes, (enter) lakes, d, d, strand lock, (examine) chest, (open) chest, (examine) treasure, (take) treasure, u, u, u, treasure baron, (talk to) baron.
 
@@ -375,13 +388,16 @@ Rule for writing a paragraph about a person:
 	say "[line break]".
 	
 Rule for printing a parser error when the latest parser error is the can't see any such thing error:
-	say "That is either not here, or doesn't need to be referred to at the moment."
+	say "That is either not here or doesn't need to be referred to at the moment."
+	
+Rule for printing a parser error when the latest parser error is the not a verb I recognise error :
+	say "That command did not match either a visible object or a known verb."
 	
 The description of the player is "You are a bit worse for wear, but you are still the best detective in town."
 
 Singing is an action applying to nothing. Understand "sing" as singing.
 
-Instead of singing, say "This is not 'The Singing Detective', although it was a major inspiration. You should definitely watch the original BBC mini-series if you can find it. The Robert Downey Jr. movie is also supposed to be all right, but I haven't seen that one yet. Anyway, where was I? Oh, right, I was writing this game."
+Instead of singing, say "This is not 'The Singing Detective', although it was a major inspiration. You should definitely watch the original BBC mini-series if you can find it. The Robert Downey Jr. movie is also supposed to be alright, but I haven't seen that one yet. Anyway, where was I? Oh, right, I was writing this game."
 
 Understand "xyzzy" as a mistake("Honestly, don't you think it's about time we retired this hoary in-joke?")
 
@@ -623,12 +639,15 @@ After quipping when the current quip is location_office:
 	now the player is in your office;
 	terminate the conversation.
 	
+After quipping when the current quip is location_gambling for the first time:
+	show Kindle image 6.
+	
 After quipping when the current quip is location_gambling:
 	enable all locations;
 	disable the location_gambling quip;
 	now the player is in The Butterfly Club;
 	terminate the conversation.
-	
+
 After quipping when the current quip is location_apartment:
 	enable all locations;
 	disable the location_apartment quip;
@@ -660,6 +679,9 @@ After quipping when the current quip is location_police:
 	disable the location_police quip;
 	now the player is in Copernik's office;
 	terminate the conversation.
+	
+After quipping when the current quip is location_vacation for the first time:
+	show Kindle image 7.
 	
 After quipping when the current quip is location_vacation:
 	enable all locations;
@@ -715,7 +737,7 @@ When Conversation begins:
 	
 Chapter 2 - Assault
 	
-Carlo Alfono is a person. Understand "man", and "killer" as Alfono. The description of Alfono is "[if the businessman is visible]His tailored pinstriped suit makes him seem like a businessman on his way to accept his next promotion[otherwise]He is wearing a pinstriped suit[end if]. Within the suit is an ordinary looking Italian-American man with a moustache resting above his lips like a small black snake. [if the coin is part of Alfono]Blood is trickling from a tiny wound on his neck. His hand covers the wound. The gun in the hand points towards the heavens. Time seem to be standing still; waiting for your next move[otherwise if alfono is distracted]He strokes the moustache pensively[otherwise]He is pointing a gun at you. His face is expressionless[end if]."
+Carlo Alfono is a person. Understand "man", and "killer" as Alfono. The description of Alfono is "[if the businessman is visible]His tailored pinstriped suit makes him seem like a businessman on his way to accept his next promotion[otherwise]He wears a pinstriped suit[end if]. The suit contains an ordinary looking Italian-American man with a moustache resting above his lips, like a small black snake. [if the coin is part of Alfono]Blood trickles from a tiny wound on his neck. His hand covers the wound. The gun in the hand points towards the heavens. Time seem to be standing still; waiting for your next move[otherwise if alfono is distracted]He strokes the moustache pensively[otherwise]He points a gun at you. His face is expressionless[end if]."
 
 The mention of Alfono is "The man in the pinstriped suit is holding you at gunpoint."
 
@@ -800,7 +822,7 @@ Instead of throwing the coin at alfono:
 	if Alfono is distracted:
 		say "He is already distracted.";
 	otherwise:
-		say "You expertly flick the coin at Alfono. It glides through the air, like a tiny flying disc, and [if the knife is part of the coin]the sharp edge embeds itself in his neck[otherwise]bounces harmlessly off his neck. If only it was sharper[end if]. [if the businessman is visible]He doesn't even blink. He executes you with as much emotion as a businessman conducting a deal. If only you could get rid of the businessman, he might be less efficient[otherwise if the knife is not part of the coin]He seems slightly annoyed, but the blunt coin is hardly a distraction. He shoots you before you have a distance to decide what to do next[otherwise]He cries out in pain, and instinctively reaches for the wound. His gun points towards the clear night sky. His moustache gleams in the moonlight[end if].";
+		say "You expertly flick the coin at Alfono. It glides through the air, like a tiny flying disc, and [if the knife is part of the coin]the sharp edge embeds itself in his neck[otherwise]bounces harmlessly off his neck. If only it was sharper[end if]. [if the businessman is visible]He doesn't even blink. He executes you with as much emotion as a businessman conducting a deal. If only you could get rid of the businessman, he might be less efficient[otherwise if the knife is not part of the coin]He seems slightly annoyed, but the blunt coin is hardly a distraction. He shoots you before you have a chance to decide what to do next[otherwise]He cries out in pain, and instinctively reaches for the wound. His gun points towards the clear night sky. His moustache gleams in the moonlight[end if].";
 		if the businessman is visible or the knife is not part of the coin:
 			end the story saying "You have died.";
 		otherwise:
@@ -827,10 +849,6 @@ Instead of attacking the businessman with a weapon which is a pataphor:
 	
 Instead of Wesson attacking the businessman when wesson is not carrying a weapon:
 	say "Mr. Wesson wrestles with the businessman, but neither is able to get the upper hand. Eventually, Mr. Wesson withdraws. 'I am sorry, sir, but I am going to need you to give me some kind of weapon if you want me to take him down.'"; the rule succeeds.
-	
-[Instead of giving the LiteralKnife to Wesson, say "The knife is real. He is not."
-
-Instead of giving the revolver to wesson, say "The revolver is real. Mr. Wesson is not."]
 	
 Does the player mean giving the knife to wesson:
 	it is very likely.
@@ -863,7 +881,7 @@ Instead of asking wesson to try taking something that is enclosed by the player:
 	say "'If you want me to have [the noun], you should give it to me, sir.'".
 	
 Instead of Wesson attacking the businessman when wesson is carrying the knife:
-	say "You both advance on the businessman. Mr. Wesson is brandishing the knife. You follow not far behind him. The businessman looks from one of you to the other, and his professional demeanor evaporates. 'Look, I don't want any trouble. This really isn't any of my business.' With that, he disappears into the shadows.";
+	say "You both advance on the businessman. Mr. Wesson is brandishes the knife. You follow not far behind him. The businessman looks from one of you to the other, and his professional demeanor evaporates. 'Look, I don't want any trouble. This really isn't any of my business.' With that, he disappears into the shadows.";
 	remove the businessman from play;
 	the rule succeeds.
 	
@@ -873,7 +891,7 @@ Instead of pulling Alfono:
 Understand "grab [something]" as pulling.
 	
 Instead of attacking Alfono when Alfono is distracted:
-	say "You rush him while he is distracted. For a moment it seems like you might have the upper hand, but he is tougher than he looks. He pulls you off and throws you to the ground where he unceremoniously executes you. If only there was something you could have grabbed hold off.";
+	say "You rush him while he is distracted. For a moment it seems like you might have the upper hand, but he is tougher than he looks. He pulls you off, throws you to the ground and executes you. If only there was something you could have grabbed hold off.";
 	end the story saying "You have died.".
 	
 The black moustache is part of Alfono. Understand "mustache" as the black moustache. The description of the moustache is "[if the scale is not part of the black snake]A neat black moustache, as smooth as a slimy black snake[otherwise]His scraggly unkempt moustache rests above his lips, like a scaly snake[end if]."
@@ -1038,6 +1056,7 @@ The description of the doctor is "A fine medical professional, no doubt. If only
 The mention of the doctor is "Your doctor is here."
 
 Instead of talking to the doctor:
+	show Kindle image 1;
 	say "He looks around the office. 'It stinks in here.'
 	
 It's the oil. It stinks up the place.
@@ -1046,7 +1065,7 @@ It's the oil. It stinks up the place.
 
 Of course not! You tell him all about the case. The Baron, the missing daughter, the treasure hidden beneath the lake. Everything.
 
-There is sadness in his eyes. 'I spoke to Mr. Jameson. He mentioned that you did not seem well.'
+His eyes are sad. 'I spoke to Mr. Jameson. He mentioned that you did not seem well.'
 
 What an asshole. You solved the case, didn't you?
 
@@ -1069,9 +1088,9 @@ When deciding Lisa's fate begins:
 	now the eastern door is closed;
 	now the eastern door is locked;
 	now the marble is part of Allan Jameson;
-	now the mention of Allan Jameson is "Jameson is standing by the door.";
-	now the mention of Copernik is "Detective Copernik is standing next to the Baron.";
-	now the mention of Lisa Von Bülow is "Lisa von Bülow is standing in front of her father, awaiting her judgement.";
+	now the mention of Allan Jameson is "Jameson stands by the door.";
+	now the mention of Copernik is "Detective Copernik stands next to the Baron.";
+	now the mention of Lisa Von Bülow is "Lisa von Bülow stands in front of her father, awaiting her judgement.";
 	now MountainRoad is mapped up of the Library;
 	now the Library is mapped south of MountainRoad;
 	now the marble describes the baron;
@@ -1092,7 +1111,7 @@ Instead of talking to someone in the library during Deciding Lisa's fate ( this 
 		if the marble is part of the baron:
 			say "Lisa looks pleadingly at her father. His face is like cut out of marble.
 			
-He sighs. 'Lisa, I love you more than anything in life, but it's time you learn to take responsibility for your actions. The detective has assured me that you should only get a few years for manslaughter. Perhaps prison will teach you some self-discipline. God knows, I couldn't.'
+He sighs. 'Lisa, I love you more than anything, but it's time you learn to take responsibility for your actions. The detective has assured me that you should only get a few years for manslaughter. Perhaps prison will teach you some self-discipline. God knows, I couldn't.'
 
 'No, dad.' There are tears in her eyes. 'Please. I won't survive in prison. You can fix this. I know you can.'
 
@@ -1106,7 +1125,7 @@ You see no reason not to comply. On the way out, you look at the check. It is su
 			
 'Lisa, I have spoken to the detective, and I think we have reached an understanding.'
 
-Copernik nods. 'It is obvious that your daughter was being framed by Mr. Camino. No one could possibly suspect such an innocent creature. I will see to it that Camino is brought to justice for the murder of Erik McAllister. At the very least, you have no reason to worry, Miss.'
+Copernik nods. 'It's obvious that your daughter was being framed by Mr. Camino. No one could possibly suspect such an innocent creature. I will see to it that Camino is brought to justice for the murder of Erik McAllister. You have no reason to worry, Miss.'
 
 She smiles. The kind of smile that wars have been fought over. 'Thank you so much, Detective. You should come visit me some day. We could have lots of fun.'
 
@@ -1131,11 +1150,11 @@ StorageArea is a room.
 
 Chapter 1 - The Office
 
-Your Office is a room. "Shadows huddle in the corners[if the oil is part of the shadows], like dark pools of oil[end if]; the sickly yellow light from the desk lamp does little to dispel the darkness. [if the embers are in the office]A cigarette butt smolders in the ashtray, like the last embers from a dying camp fire[else]An old cigarette butt lies in the ashtray[end if]. Your desk is covered with old case files  [unicode em dash] reminders of past glories. Apart from the desk, the only other furniture is an old office chair.
+Your Office is a room. "Shadows huddle in the corners[if the oil is part of the shadows], like dark pools of oil[end if]; the yellow light from the desk lamp does little to dispel the darkness. [if the embers are in the office]A cigarette butt smolders in the ashtray, like the last embers from a dying campfire. A faint scent of smoke fills the room[else]An old cigarette butt huddles in the ashtray[end if]. Old case files cover the desk  [unicode em dash] reminders of past glories. The only other furniture is an old office chair.
 
 The office door to the north leads to the corridor outside."
 
-In the office is a supporter called the office chair. The player is on the office chair. The office chair is scenery and enterable. The description of the office chair is "[if the marble is not part of the wheels and the oil is not part of the wheels]The rust has long since caused the wheels on the chair to get stuck. It would be much more comfortable if you fixed them[otherwise]A nice office chair[end if]."
+In the office is a supporter called the office chair. The player is on the office chair. The office chair is scenery and enterable. The description of the office chair is "[if the marble is not part of the wheels and the oil is not part of the wheels]The rust has caused the wheels on the chair to get stuck. It would be much more comfortable if you fixed them[otherwise]A nice office chair[end if]."
 
 Does the player mean entering the office chair: it is very likely.
 
@@ -1199,7 +1218,7 @@ Before rubbing the chair:
 Instead of interacting with the wheels:
 	try rubbing the wheels.
 
-The coagulated blood is part of the wheels. The blood is a pataphor. The description of the blood is "The blood has long since turned into a reddish brown substance, almost like rust." The indefinite article is "some".
+The coagulated blood is part of the wheels. The blood is a pataphor. The description of the blood is "The blood has turned into a reddish brown substance, almost like rust." The indefinite article is "some".
 
 Instead of assimilating the coagulated blood into something that is not described by the coagulated blood when the second noun is not figurative:
 	say "Making [the second noun] red like blood would not be helpful."
@@ -1226,7 +1245,7 @@ Instead of assimilating the smoldering ember into something that is not describe
 The embers are a pataphor in the office. "A few glowing pieces of coal are left at the camp site." Understand "smoldering", "ember", "dying","piece/pieces of coal" and "coal" as the embers. The embers are scenery.
 
 Instead of taking the embers:
-	say "You carefully pick up one of the embers from the camp fire.";
+	say "You pick up one of the embers from the campfire.";
 	Now the player is carrying the smoldering ember;
 	remove the camp fire from play;
 	remove the embers from play.
@@ -1265,7 +1284,7 @@ Instead of putting the ember on the oil:
 'Yes, Doctor.'";
 	end the story saying "You have lost your mind".
 	
-The desk is scenery in the office. Understand "cup", "cups" and "coffee" as the desk. The description of the desk is "Countless coffee stains mar what was once an impeccable wooden surface. It's not pretty, but it serves your purpose. Stacks of old case files cover most of the desk, leaving barely enough space for a lamp and an ashtray. The desk contains a single drawer."The desk is a supporter.
+The desk is scenery in the office. Understand "cup", "cups" and "coffee" as the desk. The description of the desk is "Countless coffee stains mar what was once an impeccable wooden surface. It's not pretty, but it serves your purpose. Stacks of old case files cover most of the desk, leaving barely enough space for a lamp and an ashtray. The desk contains a single drawer." The desk is a supporter.
 
 Instead of searching the desk, try examining the desk.
 
@@ -1289,7 +1308,7 @@ Instead of attacking something with the revolver, try shooting the noun.
 
 Instead of talking to the revolver, say "It's an inanimate object. Why don't you talk to your trusty servant instead?"
 
-Mr Smith Wesson is a patason.  The printed name of smith is "Mr. Wesson". Understand "trusty" and "servant" as smith. The description of smith is "Mr. Smith Wesson, your trusty servant, is at your side as always. He is dressed in a gray suit and a tie."
+Mr Smith Wesson is a patason.  The printed name of smith is "Mr. Wesson". Understand "trusty" and "servant" as smith. The description of smith is "Mr. Smith Wesson, your trusty servant, is at your side as always. He wears a gray suit and a tie."
 
 After reading a command: [Understands tell wesson to...]
         let T be indexed text;
@@ -1325,7 +1344,7 @@ Instead of talking to not introduced wesson:
 	now wesson is introduced.
 
 Instead of talking to introduced wesson when introduction is happening and the player is not carrying the smoldering ember:
-	say "'Have you considered picking up the ember from the camp fire, sir? It might come in handy later.'"
+	say "'Have you considered picking up the ember from the campfire, sir? It might come in handy later.'"
 	
 Persuasion rule for asking Smith to try attacking: persuasion succeeds. 
 
@@ -1373,13 +1392,13 @@ Instead of smoking the cigarette, say "You don't feel like smoking right now."
 
 Instead of doing something other than examining,  interacting with or intexamining with the cigarette butt (this is the cigarette default rule), say "What for? It's just an old cigarette butt." The cigarette default rule is listed last in the instead rules.
 
-The lamp is scenery in the office. "The old dirty desk lamp struggles valiantly to light up the office, like an elderly knight fighting to keep the forces of darkness at bay." The lamp is a device. The lamp is switched on. Understand "yellow", "light" and "desk lamp" as the lamp. Instead of taking the lamp, say "Why would you want to carry around a desk lamp?" Instead of switching off the lamp, say "It's the only light source in here. It would be pitch dark without it." The printed name of the lamp is "desk lamp"
+The lamp is scenery in the office. "The old dirty desk lamp struggles valiantly to light up the office, like an elderly knight fighting the forces of darkness." The lamp is a device. The lamp is switched on. Understand "yellow", "light" and "desk lamp" as the lamp. Instead of taking the lamp, say "Why would you want to carry around a desk lamp?" Instead of switching off the lamp, say "It's the only light source in here. It would be pitch dark without it." The printed name of the lamp is "desk lamp"
 
 The holy knight is a patason in your office. Understand "elderly", "armour" and "armor" as the holy knight. The holy knight is undescribed. The description of the holy knight is "The knight seems weary. His armor is old and dirty. How much longer can he keep fighting, you wonder?"
 
 Instead of talking to the knight for the first time, say "The knight stands to attention. 'Don't worry, sir. I've been doing this for years. I am not going to abandon you.'"
 
-Instead of talking to the knight at least twice, say "What are you going to say? A bunch of platitudes about how everything is going to be okay? Better to stay silent for now."
+Instead of talking to the knight at least twice, say "What are you going to say? A bunch of platitudes about how everything is going to be okay? Better to stay silent."
 
 Instead of rubbing something in your office, say "Maybe some other day."
 
@@ -1486,7 +1505,7 @@ Instead of talking to introduced wesson when the marble is not part of Allan and
 	say "'He still seems a bit too cold, sir. Perhaps you can find something to warm him?'"
 	
 Instead of talking to  introduced wesson when the marble is not part of Allan and the ember is not part of allan at least twice during visitation:
-	say "'I have an idea, sir. How about that ember from the camp fire? That should do the trick. Try giving it to him.'"
+	say "'I have an idea, sir. How about that ember from the campfire? That should do the trick. Try giving it to him.'"
 	
 Instead of talking to Allan when the smoldering ember is part of Allan during visitation:
 	if tutorial read is false:
@@ -1498,6 +1517,7 @@ He laughs heartily. 'Please, call me Allan. It's really been a pleasure talking 
 'The pleasure is entirely mine,' you say with a smile. 'Now, shall we go see the Baron?'
 
 'Of course. Follow me.'";
+	show Kindle image 3;
 	now the player is in Outside the Mansion;
 	now Allan is in Outside the Mansion.
 
@@ -1581,7 +1601,7 @@ Instead of attacking the giant with the steel strand when the giant is asleep:
 	if the steel strand is cool:
 		say "You poke the giant with the sharp steel strand. The giant absentmindedly swats in your general direction, but it doesn't wake up. Maybe you could find a way to make the strand hurt more?";
 	otherwise:
-		say "The red hot steel strand sizzles as it penetrates the skin. The giant roars, and scrambles to its feet, its eyes ablaze with rage. It looks around for its attacker, but luckily it seems to be looking for someone of the same size. It doesn't notice you huddling at its feet.";
+		say "The red hot steel strand sizzles as it penetrates the skin. The giant roars and scrambles to its feet, its eyes ablaze with rage. It looks around for its attacker, but luckily it seems to be looking for someone of the same size. It doesn't notice you huddling at its feet.";
 		wake the giant.
 		
 Instead of attacking the giant with something when the giant is awake:
@@ -1609,7 +1629,7 @@ The mahogany doors is a door. Understand "door" as the mahogany doors. The mahog
 
 Section 2 - The Hall
 
-The Hall is a room. "It almost seems like a waste for such a massive entrance hall to be used to welcome a single person. [if the ember is not part of the floor]The floor is a frozen lake of gray marble[otherwise]The floor is a conflagration of red marble[end if]. Two sets of stairs lead up to a balcony above. French doors in the north side of the room lead to the back garden. To the south, the mahogany doors lead back out."
+The Hall is a room. "It almost seems like a waste for such a massive entrance hall to be used to welcome a single person. [if the ember is not part of the floor]The floor is a frozen lake of gray marble, cool beneath your feet[otherwise]The floor is a conflagration of red marble[end if]. Two sets of stairs lead to a balcony above you. Through the french doors in the northern wall, the back garden is visible in the moonlight. To the south, the dark mahogany doors."
 
 Instead of exiting in The Hall:
 	try going south.
@@ -1684,15 +1704,19 @@ After going through the mahogany doors for the first time:
 	now Jameson is in The Balcony.
 	
 Section 3 - The Garden
-	
-The Garden is a room. "The grass here has been meticulously groomed. The strands are all exactly alike, like citizens in a socialist utopia. Stone paths wind through the grass[if the snakes are in the garden] like scaly snakes, going nowhere and everywhere[otherwise if the scale is part of the stone paths]; the stones are like scales left behind by a giant snake[end if]. In the middle of the garden is a fountain, containing a statue of an angel. The angel is holding a trumpet, from which a jet of water shoots into the air. The mansion lies behind you, to the south."
+
+After going through the french doors for the first time:
+	show Kindle image 4;
+	continue the action.
+
+The Garden is a room. "The grass here has been meticulously groomed. The strands are all exactly alike, like citizens in a socialist utopia. Stone paths wind through the grass[if the snakes are in the garden] like scaly snakes, going nowhere and everywhere[otherwise if the scale is part of the stone paths]; the stones are like scales left behind by a giant snake[end if]. A fountain of white stone occupies the center of the garden. In the center of the fountain, an angel blows a silent trumpet, and a jet of water shoots into the air. The mansion lies behind you, to the south."
 
 Instead of going inside in the garden, try going south.
 
 The justice is a pataphor in the garden. The description of the justice is "You can't find it."
 
 Rule for writing a paragraph about Justice:
-	say "The air is cold and clear, like the justice we all seek, but never find."
+	say "The air is cold and clear, like the justice we all seek but never find."
 
 Instead of taking the justice:
 	say "You try, but it slips away between your fingers, as always.";
@@ -1740,7 +1764,7 @@ Instead of entering the stone paths when the snakes are in the garden, say "Ther
 
 Instead of entering the stone paths when the snakes are not in the garden, say "You see no reason to walk around aimlessly.".
 
-The fountain is scenery in the Garden. Understand "jet", "water" and "droplet/droplets" as the fountain. The description of the fountain is "The water pours from the trumpet into the air. The droplets rain down from above[if the manna is part of the fountain], glistening in the moonlight, like manna from heaven[end if]."
+The fountain is scenery in the Garden. Understand "jet", "water", "white", "stone" and "droplet/droplets" as the fountain. The description of the fountain is "The water pours from the trumpet into the air. The droplets rain down from above[if the manna is part of the fountain], glistening in the moonlight, like manna from heaven[end if]."
 
 Instead of taking the fountain, say "You gotta be kidding me."
 
@@ -1759,7 +1783,7 @@ After assimilating the manna into the fountain, say "The droplets gleam in the m
 Instead of eating the manna:
 	say "It looks delicious, but you have a feeling you may need it later."
 
-The angel is part of the fountain. Understand "Trumpet", and "wing/wings" as the angel. the description of the angel is "The angel's eyes are closed; its wings spread behind it, as if it is preparing to take off once the trumpet has been emptied. Too bad it never will be."
+The angel is part of the fountain. Understand "Trumpet", and "wing/wings" as the angel. the description of the angel is "The angel's eyes are closed, its wings spread behind it, as if preparing to take off once the trumpet has been emptied.[if the manna is part of the fountain] The drops of water glisten in the moonlight, like manna from heaven."
 
 Instead of taking the angel, say "Even if you could somehow remove it from the fountain, it would be way too heavy to carry around."
 
@@ -1805,9 +1829,9 @@ Instead of talking to introduced wesson in the garden when the snakes are not in
 	
 Section 4 - The Balcony
 
-Up from The Hall is The Balcony. The description of the Balcony is "From here you can see the hall beneath you. An iron railing prevents you from falling to the floor far below. Massive oak wood doors block the paths to the east and the west.[if the fluid is part of the western door and the western door is closed][line break][line break]Light seeps from the crack beneath the door to the west, like fluid from a leaky container.[otherwise if the giant is awake and the western door is open][line break][line break]The door to the west is standing wide open."
+Up from The Hall is The Balcony. The description of the Balcony is "From here, you can see the hall beneath you. An iron railing prevents you from falling to the floor far below. Massive oak wood doors block the paths to the east and the west.[if the fluid is part of the western door and the western door is closed][line break][line break]Light seeps from the crack beneath the door to the west, like fluid from a leaky container.[otherwise if the giant is awake and the western door is open][line break][line break]The door to the west is standing wide open."
 
-The balconyfloor is scenery in the balcony. The printed name of the balconyfloor is "floor".  Understand "floor", "frozen", "ice", "grey", "gray", "red", "marble", "fire", "flame" and "lake" as the balconyfloor.  The description of the balconyfloor is "[if the ember is not part of the floor]From up here, you can see frozen lake stretched out beneath you[otherwise]Even up here, you can still feel the heat from the fire[end if]."
+The balconyfloor is scenery in the balcony. The printed name of the balconyfloor is "floor".  Understand "floor", "frozen", "ice", "grey", "gray", "red", "marble", "fire", "flame" and "lake" as the balconyfloor.  The description of the balconyfloor is "[if the ember is not part of the floor]From up here, you can see the frozen lake stretched out beneath you[otherwise]Even up here, you can still feel the heat from the fire[end if]."
 
 Does the player mean doing something to the white marble:
 	it is likely.
@@ -1887,7 +1911,7 @@ Instead of talking to Jameson when the white marble is part of Jameson and Meeti
 	
 Section 5 - The Library
 
-The Library is a room. The description of the library is "Bookshelves line every wall, allowing only a small space for the door to the west and another one for the small window in the north wall. The floor is covered in a thick luxurious red carpet. The air smells of dust. ".
+The Library is a room. The description of the library is "Bookshelves line every wall, allowing only a small space for the door to the west and another for the small window in the north wall. A thick luxurious red carpet covers the floor. The air smells of dust. ".
 
 Instead of exiting in the library when the player is not enclosed by anything, try going west.
 
@@ -2121,7 +2145,7 @@ Instead of talking to introduced wesson in beneath the lake when the player is n
 Instead of talking to introduced wesson in beneath the lake when the player is not radiant at least twice:
 	say "'Have you checked out the room west of the balcony yet, sir? You might have to wake the giant to get inside, though.'"
 	
-Near the Surface is a room. "It is dark under the water and you can't see much more than a few yards in any direction. Above you, the sun shines through the surface. Below, the darkness gets thicker."
+Near the Surface is a room. "It is dark under the water, and you can't see much more than a few yards in any direction. Above you, the sun shines through the surface. Below, the darkness thickens."
 
 The Library is up from Near the Surface.
 
@@ -2169,7 +2193,7 @@ He leaves the room, leaving you alone with the Baron once more.";
 Instead of going down from deeper when the player is not radiant at least twice:
 	say "You will need a source of light to avoid getting lost again.".
 
-The Bottom Of the Lake is down from Deeper. "The sun is no longer visible at all. Only the soft glow from the cocoon allows you to see anything. The bottom of the lake is white sand. Close by, you notice an old wooden chest."
+The Bottom Of the Lake is down from Deeper. "The sun is no longer visible at all. Only the soft glow from the cocoon allows you to see anything. Soft white sand covers the bottom of the lake. Close by, you notice an old wooden chest."
 
 The white sand is scenery in the bottom of the lake. The description of the white sand is "Soft white sand covers the bottom of the lake."
 
@@ -2195,7 +2219,7 @@ The pirate is a patason in Bottom of the Lake. Understand "eye patch", "patch", 
 
 Instead of talking to the pirate when the wooden chest is locked, say "'Arrrrr, Matey,' says the pirate. 'Ye'll never get me treasure. It be locked away safely.'."
 
-Instead of talking to the pirate when the  chest is  unlocked, say "'Shiver me timbers! Ye managed to open me treasure chest. The treasure be yours now.'"
+Instead of talking to the pirate when the chest is unlocked, say "'Shiver me timbers! Ye managed to open me treasure chest. The treasure be yours now.'"
 
 Instead of attacking the pirate, say "The pirate deftly avoids your attack. He laughs. 'Silly landlubber. Ye don't know the first thing about underwater fighting.'"
 
@@ -2204,7 +2228,7 @@ Instead of wesson attacking the pirate:
 
 The pirate is undescribed.
 
-The padlock is part of the chest. Understand "metal" and "lock" as the padlock. The description of the padlock is "A big old-fashioned padlock.[if the wooden chest is locked] You are pretty sure you could get it open if you had something that could be used as a lockpick."
+The padlock is part of the chest. Understand "metal" and "lock" as the padlock. The description of the padlock is "A big old-fashioned padlock.[if the wooden chest is locked] If you had something that could be used as a lockpick, you are pretty sure you could defeat it."
 
 Instead of taking the padlock, say "You try to yank the lock off the chest, but it's no good."
 
@@ -2240,15 +2264,15 @@ The treasure describes the Baron.
 
 After assimilating the treasure into the baron, say "His face lights up with a golden glow. He seems much more friendly."
 
-Instead of showing the letter to the baron for the first time, say "He reads the letter, and his face grows red. 'I swear if that damn Scotsman has done anything to hurt my daughter, I will make him pay.' His face grows pale once more. 'Please find her as soon as possible, Mr. Reilly. Make sure that she is okay.'"
+Instead of showing the letter to the baron for the first time, say "He reads the letter, and his face grows red. 'I swear if that damn Scotsman has done anything to hurt my daughter, I will make him pay.' His face pales once more. 'Please find her as soon as possible, Mr. Reilly. Make sure that she is okay.'"
 
 Instead of showing the letter to the baron at least twice, say "He already read it."
 
 Section 6 - The Bedroom
 
-The Bedroom is a room. "A large luxurious bed completely dominates the room. Next to the bed is a small dresser. On the dresser is a lamp. Apart from these things, the room is entirely empty. The window to the south provides a view of the front garden."
+The Bedroom is a room. "A large luxurious bed completely dominates the room. A small dresser with a white lamp is crammed into a corner next to the bed. Apart from these things, the room is entirely empty. The window to the south provides a view of the front garden."
 
-The bed is scenery in The Bedroom. "It's the kind of bed that looks like it could swallow a man whole. You get the feeling that if you went to sleep in it, you might disappear entirely, never to be seen again."
+The bed is scenery in The Bedroom. "It's the kind of bed that looks like it could swallow a man whole. You get the feeling that if you went to sleep in it, you might disappear entirely."
 
 Instead of sleeping in the bedroom, say "No way. That bed would eat you alive."
 
@@ -2262,7 +2286,7 @@ Instead of opening the bedroom window, say "It's stuck."
 
 Instead of doing something other than examining, searching or opening to the bedroom window, say "You see no reason to mess around with the window."
 
-The bedroom lamp is scenery in The Bedroom. Understand "light" as the bedroom lamp. The bedroom lamp is a device. The bedroom lamp is switched on. "A large table lamp, which somehow manages to light up the entire room. [if the cocoon is part of the lampshade]A paper lampshade shields your eyes from the light, like a white cocoon[otherwise]The lamp has a paper lampshade[end if]." 
+The bedroom lamp is scenery in The Bedroom. Understand "white" and "light" as the bedroom lamp. The bedroom lamp is a device. The bedroom lamp is switched on. "A large table lamp, which somehow manages to light up the entire room. [if the cocoon is part of the lampshade]A paper lampshade shields your eyes from the light, like a white cocoon[otherwise]The lamp has a paper lampshade[end if]." 
 
 Instead of switching off the bedroom lamp, say "It would be pitch dark in here without the light from the lamp."
 
@@ -2285,7 +2309,7 @@ Chapter 3 - The Apartment
 
 Section 1 - The Entrance
 
-The Entrance  is a room. "The entrance to the apartment is a dark narrow hallway. The door behind you to the south leads back outside. To the east, the door to the living room is standing ajar. To the north is the bathroom. An old denim jacket hangs on a hook on the wall[if the rag is part of the jacket], like a dirty rag[end if]."
+The Entrance  is a room. "A dark narrow hallway. The door behind you to the south leads back outside. To the east, the door to the living room is standing ajar. The bathroom lies to the north. An old denim jacket hangs on a hook on the wall[if the rag is part of the jacket], like a dirty rag[end if]."
 
 Instead of exiting in the entrance when the player is not enclosed by anything:
 	try going south.
@@ -2337,9 +2361,13 @@ Instead of going through the entrance door:
 	
 The White Door is a door. It is east of The Entrance and west of The Living Room. The description of The  White Door is "A plain white door."
 
+After going through The White Door for the first time:
+	show Kindle image 5;
+	continue the action.
+
 Section 2 - Living Room
 
-The Living Room is a room. "What a mess! A large couch stands against the southern wall, with a table in front of it. The table is covered with a diverse variety of empty liquor bottles, rising from the surface like minarets in a dilapidated middle eastern city. In the northern part of the room is a kitchen counter with two stove plates built into it. Above it is a kitchen cabinet. To the west is the door to the entrance hall."
+The Living Room is a room. "What a mess! A large couch stands against the southern wall, with a table in front of it. The table is covered with a diverse variety of empty liquor bottles, rising from the surface like minarets in a dilapidated middle eastern city. A lonely kitchen counter with two built-in stove plates stands by the northern wall. A brown cabinet adorns the wall above. To the west is the door to the entrance hall."
 
 Instead of exiting in the living room when the player is not enclosed by anything: try going west.
 
@@ -2393,7 +2421,7 @@ Instead of taking the pencil, say "That would be pointless."
 
 The pencil describes the bottles.
 
-The ModelCity is scenery in The Living Room. The printed name of the ModelCity is "City". Understand "middle", "eastern", "model" and "city" as the ModelCity. The description of the ModelCity is "A dilapidated middle eastern city. It might be nice to enter it and take a look around." Instead of taking the city, say "An entire city? Maybe use you enter it and take a walk instead." 
+The ModelCity is scenery in The Living Room. The printed name of the ModelCity is "City". Understand "middle", "eastern", "model" and "city" as the ModelCity. The description of the ModelCity is "A dilapidated middle eastern city. It might be nice to enter it and take a look around." Instead of taking the city, say "An entire city? Maybe you should enter it and take a walk instead." 
 
 Instead of entering the ModelCity:
 	now the player is in The City.
@@ -2520,11 +2548,11 @@ Instead of talking to introduced wesson in The Top of the Minaret when the crowd
 	say "'They seem to be waiting for someone to do the call to prayer, sir. Maybe you could do that?'"
 	
 Instead of talking to introduced wesson in The Top of the Minaret when the crowd is in the city at least twice:
-	say "'Just type [']call to prayer['], sir.'"
+	say "'Just type [']call['], sir.'"
 	
 Chapter 4 - The Bar
 
-The Bar is a room. "[if the fog is part of the smoke]The thick cigarette smoke makes it almost impossible to see more than a few feet ahead. It's like being trapped in a thick London fog[otherwise]Cigarette smoke winds through every part of the bar[end if]. Various people are sitting at the tables or standing by the bar. Behind the bar, the bartender is cleaning a whiskey glass with an old rag. The door to the south leads outside." The printed name of the bar is "The Bar".
+The Bar is a room. "[if the fog is part of the smoke]The thick cigarette smoke makes it almost impossible to see more than a few feet ahead. It's like being trapped in a thick London fog[otherwise]Cigarette smoke winds through every part of the bar[end if]. Various people are sitting at the tables or standing by the bar. Behind the bar, the bartender cleans a whiskey glass with an old rag. The door to the south leads outside." The printed name of the bar is "The Bar".
 
 The bardoor is a door. It is south of The Bar and north of the barstreets. Understand "door" and "exit" as the bardoor. The description of the bardoor is "Which is more dangerous, you wonder: walking the streets alone or staying in the bar with the other patrons?" The printed name of the bardoor is "door".
 
@@ -2549,7 +2577,7 @@ Instead of taking the bardesk, say "That hardly seems useful."
 
 The Bartender is a person in the bar. Understand "man", "barman" and "barkeeper" as the bartender. The Bartender is scenery. The description of the bartender is "A middle aged man who looks like he should be sitting at the other side of the bar. He eyes the patrons jealously as they sip their drinks."
 
-The bartender is carrying a glass. The description of the glass is "The glass might have been transparent once, a long time ago, but those days are long gone. The bartenders efforts don't seem to be making much of a difference."
+The bartender is carrying a glass. The description of the glass is "The glass might have been transparent once, but those days are long gone. The bartender's efforts don't seem to be making much difference."
 
 Instead of taking the glass, say "'Keep your hands to yourself, buddy.'"
 
@@ -2562,7 +2590,7 @@ The Bartender can be friendly or unfriendly. The bartender is unfriendly.
 Instead of talking to the bartender when the bartender is unfriendly for the first time:
 	say "'What do you want, buddy?' says the bartender.
 	
-'Actually I need some information. I'm looking for Erik McAllister. I understand that he used to come here a lot?'
+'I need some information. I'm looking for Erik McAllister. I understand that he used to come here a lot?'
 
 The bartender sneers. 'No idea who you are talking about, buddy. Order something or get out.'".
 
@@ -2754,7 +2782,7 @@ Does the player mean applying the literalknife to ronald:
 	it is very likely.
 
 Instead of talking to Ronald when Ronald is impressed and the blood is not part of Ronald for the first time:
-	say "'Look, Ronald, I am not an enemy of Mr. McAllister. I just want to talk to him.'
+	say "'Look, Ronald, I am not an enemy of McAllister. I just want to talk to him.'
 	
 'Yeah, whatever.' He shrugs. 'McAllister's a loser anyway. I know he's in some kind of trouble, but it's none of my business.'
 
@@ -2766,7 +2794,7 @@ Instead of talking to Ronald when Ronald is impressed and the blood is not part 
 	say "'I don't wanna get involved. I am too old for this stuff; my hair is getting gray. Get lost.'"
 	
 Instead of talking to Ronald when Ronald is impressed and the blood is part of Ronald for the first time:
-	say "'Do you know where I can find Mr. McAllister?'
+	say "'Do you know where I can find McAllister?'
 
 He shakes his head. 'Nope, but I figure he's in trouble. I know he'd been arguing with that broad of his lately. Then I start hearing rumors that he got into trouble with Camino, guy who owns the gambling joint down by the harbour, you know. That guy is trouble. I ain't afraid of him though. I've dealt with plenty worse in my time.'";
 	now Conversation is solved.
@@ -2790,7 +2818,7 @@ Chapter 5 - The Butterfly Club
 
 Section 1 - The Gambling Hall
 
-The Butterfly Club is a room. The description of The Butterfly Club is "All sorts of gambling tables dot the floor. There are roulette, blackjack, poker and more games you have never even heard of. No one looks at you. Every ounce of their attention is directed toward the random events that decide their lives. A giant crystal chandelier hangs from the ceiling[if the icicle is part of the chandelier], like an intricate icicle formation[end if]. To the west, massive double doors lead outside. At the eastern wall is a small discreet door; the kind of door you are not supposed to notice, much less enter."
+The Butterfly Club is a room. The description of The Butterfly Club is "All sorts of gambling tables dot the floor: roulette, blackjack, poker and other games you have never even heard of. No one looks at you. Every ounce of their attention is directed toward the random events that decide their lives. A giant crystal chandelier grows from the ceiling[if the icicle is part of the chandelier], like an intricate icicle formation[end if]. To the west, massive double doors lead outside. A small discreet door is set into the eastern wall; the kind of door you are not supposed to notice, much less enter."
 
 The massive double doors are a door. Understand "door" as the double doors. It is west of The Butterfly Club and east of Outside the Club. The description of the double doors is "Massive wooden doors that look like a battering ram would shatter against them."
 
@@ -2804,7 +2832,7 @@ Instead of exiting in the butterfly club when the player is not enclosed by anyt
 Instead of going through the double doors when the poker counter is greater than 0 and the TuxedoMan is in The Butterfly Club:
 	say "You can't leave now. You have to see how the poker game ends."
 	
-The gambling tables are scenery in the club. Understand "blackjack", "game/games", "money" and "table" as the gambling tables. The description of the gambling tables is "Countless gambling tables cover almost every square foot of the room. Every imaginable game of chance is represented here. [if the poker game is in the butterfly club]A lot of people seem to be watching the poker game in the corner of the hall[otherwise]A couple of people are playing the roulette table, apparently hoping that the tuxedo man's winning streak will transfer to them[end if]."
+The gambling tables are scenery in the club. Understand "blackjack", "game/games", "money" and "table" as the gambling tables. The description of the gambling tables is "Countless gambling tables cover almost every square foot of the room. Every imaginable game of chance is represented. [if the poker game is in the butterfly club]A lot of people seem to be watching the poker game in the corner of the hall[otherwise]A couple of people are playing the roulette table, apparently hoping that the tuxedo man's winning streak will transfer to them[end if]."
 
 Gambling is an action applying to nothing. Understand "Gamble" as gambling. 
 
@@ -2837,7 +2865,7 @@ Instead of talking to introduced wesson in The Butterfly Club when the TuxedoMan
 	say "'Give the marble to the tuxedo man, sir. Then just wait for the game to end.'"
 	
 To say poker description:
-	say "Four people are playing a high stakes game of poker in the corner of the hall. A small crowd has gathered around the table, attracted by the sight of large amounts of money changing hands. One of the players draw your attention: a pale man wearing a tuxedo, who seems to be [if the marble is part of the TuxedoMan]winning[otherwise]losing[end if] big. ";
+	say "Four people are playing a high stakes game of poker in the corner of the hall. A small crowd has gathered around the table, attracted by the sight of large amounts of money changing hands. One of the players draws your attention: a pale man wearing a tuxedo, who seems to be [if the marble is part of the TuxedoMan]winning[otherwise]losing[end if] big. ";
 	if the tuxedoman is off-stage:
 		now the tuxedoman is in the butterfly club.
 
@@ -2911,7 +2939,7 @@ The man in the beige suit  [unicode em dash] whose name must be Camino  [unicode
 
 The wheel spins. The entire club seems to be holding its breath. The wheel slows down; the ball jumps a few times, and finally comes to rest [unicode em dash] on red.
 
-The club erupts in applause. Everyone looks at the tuxedo man as if he'd just single-handedly defeated Hitler in single combat. The tuxedo man picks up his winnings and leaves the club, followed by an entourage of admirers. Camino does nothing, except look pensively at the wheel.";
+The club erupts in applause. Everyone looks at the tuxedo man as if he'd just single-handedly defeated Hitler. The tuxedo man picks up his winnings and leaves the club, followed by an entourage of admirers. Camino does nothing, except look pensively at the wheel.";
 		now the TuxedoMan is in StorageArea;
 	increase the poker counter by 1.
 
@@ -2923,7 +2951,7 @@ Instead of opening the discreet door when the discreet door is locked and Alfono
 	say "An Italian-American man wearing a pinstriped suit grabs your arm. 'Sorry, sir. This is a private area.' He merges with the crowd once more.";
 	now the discreet door is attempted.
 
-The crystal chandelier is scenery in The Butterfly Club. The description of the chandelier is "A giant crystal chandelier hangs from the ceiling[if the icicle is part of the chandelier], like a intricate icicle formation[end if]." Instead of taking the chandelier, say "It is too far up."
+The crystal chandelier is scenery in The Butterfly Club. The description of the chandelier is "A giant crystal chandelier hangs from the ceiling[if the icicle is part of the chandelier], like an intricate icicle formation[end if]." Instead of taking the chandelier, say "It is too far up."
 
 The icicle is a pataphor which is part of the chandelier. Understand "intricate", "formation", "ice" and "icicles" as the icicle. The description of the icicle is "[if the icicle is part of the chandelier]Icicles grow from the ceiling in an intricate formation. Why haven't they melted, you wonder?[otherwise if the dirty rag is part of the icicle]The icicle is wrapped in an old rag.[otherwise]A cool beautiful icicle."
 
@@ -3012,7 +3040,7 @@ Instead of talking to Camino when Camino is absent and the tuxedoman is not in t
 	
 He emerges from his reverie. 'Not really. A big winner makes everyone else believe they can do the same. The extra business should make up for the loss.'
 
-His eyes scan you inquisitively. 'I haven't seen you around here before. What can I do for you?'";
+His eyes scan you. 'I haven't seen you around here before. What can I do for you?'";
 	now Camino is approached.
 	
 Instead of talking to Camino when Camino is approached and conversation is not solved for the first time:
@@ -3068,7 +3096,7 @@ Instead of talking to introduced wesson in the butterfly club when the tuxedoman
 
 Section 2 - Camino's Office
 
-Camino's Office is a room. The description of Camino's office is "Neat. Everything here is neat. [if the white brick is part of the stack]The stack of papers on the desk is so perfect that it looks more like a big white brick rather than the disorderly piles you see in most offices[otherwise]The papers on the desk are neatly stacked[end if]. There is not a speck of dust on the mahogany desk. It makes you uncomfortable. You never trust people who always need to be in control. That desire hardly ever stops with themselves."
+Camino's Office is a room. The description of Camino's office is "Neat. Everything here is neat. [if the white brick is part of the stack]The stack of papers on the desk is so perfect that it looks more like a big white brick[otherwise]The papers on the desk are neatly stacked[end if]. There is not a speck of dust on the mahogany desk. It makes you uncomfortable. You never trust people who always need to be in control. That desire hardly ever stops with themselves."
 
 Instead of exiting in camino's office when the player is not enclosed by anything:
 	try going west.
@@ -3221,7 +3249,7 @@ Instead of talking to introduced wesson in camino's office when camino is upset 
 	
 Chapter 6 - The Police Station
 
-Copernik's Office is a room. "This small cramped office is just large enough to fit in a desk and two chairs. [if the dying man is hot]The walls are yellow from cigarette smoke[otherwise]The walls are bright white, lighting up the room[end if].  On the desk is an ashtray that looks like it was made by a kindergartener as a gift. It is filled with old cigarette butts, like tiny mummified bodies. To the west, a door leads to the rest of the police station."
+Copernik's Office is a room. "This small cramped office is just large enough for a desk and two chairs. [if the dying man is hot]The walls are yellow from cigarette smoke[otherwise]The walls are bright white, lighting up the room[end if].  On the desk is an ashtray that looks like it was made by a kindergartener as a gift. Old cigarette butts rest in the tray, like tiny mummified bodies. To the west, a door leads to the rest of the police station."
 
 Copernik's door is a door. It is west of Copernik's office and east of The Police Station.
 
@@ -3258,7 +3286,7 @@ Instead of doing something other than examining to the mummies, say "They are at
 To say wall description:
 	if the dying man is not part of the walls and the dying man is hot:
 		now the dying man is part of the walls;
-	say "[if the dying man is part of the walls]They might have been white in the distant past, but they have long since turned a sickly yellow color from the cigarette smoke  [unicode em dash] like the skin of a man slowly dying from liver cancer[otherwise]The newly painted white walls really brighten up the room, turning the office into a place where one could almost feel at home[end if]. ".
+	say "[if the dying man is part of the walls]They might have been white in the distant past, but they have long since turned a pallid yellow from the cigarette smoke  [unicode em dash] like the skin of a man slowly dying from liver cancer[otherwise]The newly painted white walls really brighten up the room, turning the office into a place where one could almost feel at home[end if]. ".
 	
 The walls are scenery in Copernik's office. Understand "yellow" and "wall" as the walls. The description of the walls is "[wall description]"
 
@@ -3271,7 +3299,7 @@ Does the player mean doing something to the dying man: it is likely.
 The dying man can be hot. The dying man is hot.
 
 Instead of talking to the dying man when the dying man is hot:
-	say "He is delirious. You can't make sense of anything he is saying."
+	say "He is delirious from fever. You can't make sense of anything he is saying."
 	
 Instead of touching the dying man when the dying man is hot:
 	say "He is burning up. You gotta find a way to cool him down."
@@ -3369,9 +3397,9 @@ Instead of talking to Copernik when Copernik is suspicious at least thrice:
 	say "You are not getting anywhere. The atmosphere in here just isn't made for friendly conversation."
 	
 Instead of talking to Copernik when Copernik is cooperative:
-	say "'Detective, I really have told you everything. I think we're both going to solve this case much faster if you just let me go.'
+	say "'Detective, I really have told you everything. I think we're going to solve this case a lot faster if you just let me go.'
 	
-He smiles. 'I suppose you are right. Whatthehell, I'm in a good mood today. You can go, Mr. Reilly, as long as you promise to keep me up to date if you manage to dig up some more information.'
+He smiles. 'I suppose you are right. Whatthehell, I'm in a good mood today. You can go, Mr. Reilly, as long as you promise to keep me up to date on anything you find.'
 
 You stand up and shake his hand. 'Of course, Detective.'";
 	now the player is in Copernik's office;
@@ -3444,7 +3472,7 @@ Chapter 7 - The Vacation House
 
 Section 1 - Outside the Vacation House
 
-OutsideVacation is a room. The printed name of OutsideVacation is "Outside the Vacation House". The description of OutsideVacation is "The moonlight [if the liquid silver is part of the moonlight]filters through the trees like silvern waterfalls[otherwise]shines through the treetops[end if]. In front of you, to the north, is the house. There is light coming from both windows. To the south, the forest path leads back towards the city."
+OutsideVacation is a room. The printed name of OutsideVacation is "Outside the Vacation House". The description of OutsideVacation is "Moonlight [if the liquid silver is part of the moonlight]filters through the trees like silvern waterfalls, imbuing the surroundings with a phosphorescent sheen[otherwise]shines through the treetops[end if]. The house sits in a clearing to the north. Light emerges from both windows. To the south, the forest path leads back towards the city."
 
 Instead of going inside in OutsideVacation, try going north.
 
@@ -3456,7 +3484,7 @@ The moonlight is scenery in OutsideVacation. Understand "moon" and "light" as th
 
 Instead of doing something other than examining to the moonlight, say "That's hardly tangible."
 
-The liquid silver is a pataphor which is part of the moonlight. Understand "glittering", "silvern", "waterfalls/waterfall", "water" and "falls/fall" as the liquid silver. The description of the liquid silver is "The liquid shines with a light that seems to come from within." The liquid silver is liquid. The indefinite article of the liquid silver is "some".
+The liquid silver is a pataphor which is part of the moonlight. Understand "glittering", "phosphorescent", "sheen", "silvern", "waterfalls/waterfall", "water" and "falls/fall" as the liquid silver. The description of the liquid silver is "The liquid shines with a light that seems to come from within." The liquid silver is liquid. The indefinite article of the liquid silver is "some".
 
 Before taking the liquid silver when the liquid silver is in a container:
 	the silver disappears in one turn from now.
@@ -3470,9 +3498,9 @@ The liquid silver describes the moonlight.
 
 After assimilating the liquid silver into the moonlight, say "The moonlight is like liquid silver flowing from the treetops."
 
-The trees are scenery in OutsideVacation. Understand "tree", "treetops" and "forest" as the trees. The description of the trees is "Trees surround the house on all sides, like soldiers in a besieging army."
+The trees are scenery in OutsideVacation. Understand "tree", "treetops", "clearing" and "forest" as the trees. The description of the trees is "Trees surround the house on all sides, like soldiers in a besieging army."
 
-The army is a person which is part of the trees. Understand "soldier/soldiers" as the army. The description of army is "They have the house surrounded. They are waiting for your move."
+The army is a person which is part of the trees. Understand "soldier/soldiers" and "officer" as the army. The description of army is "They have the house surrounded. They await your move."
 
 Instead of talking to the army for the first time:
 	say "The commanding officer salutes you. 'It's good you are here, sir. We have the house surrounded, but he has a hostage in there. We'll move in as soon as you have dealt with the situation.'
@@ -3507,18 +3535,18 @@ Instead of talking to introduced wesson in OutsideVacation for the first time:
 
 Section 2 - The Living Room
 
-The LivingRoom is a room. The printed name of LivingRoom is "The Living Room". The description of the livingroom is "So this is where she's been hiding all this time. The living room is littered with expensive furniture  [unicode em dash] the kind that exists solely to show that the resident can afford it. You pay no attention to the decorations. The people are all that matters. The door to the south leads back out."
+The LivingRoom is a room. The printed name of LivingRoom is "The Living Room". The description of the livingroom is "So this is where she's been hiding all this time. Expensive furniture litters the living room [unicode em dash] the kind that exists solely to show that the resident can afford it. You pay no attention to the decorations. The people are all that matters. The door to the south leads back out."
 
 Instead of exiting in the livingroom when the player is not enclosed by anything:
 	try going south.
 
-The leather couch is scenery in the livingroom. The description of the leather couch is "The couch is covered is covered in smooth black leather.".
+The leather couch is scenery in the livingroom. The description of the leather couch is "Smooth black leather covers the couch.".
 
 The expensive furniture is scenery in the LivingRoom. Understand "decoration/decorations" as the furniture. The description of the furniture is "Mr. Camino certainly knows how to furnish a house. Too bad that won't help him."
 
 Anton Camino 2 is a person in the livingroom. Understand "tall", "thin" and "man" as Camino 2. The printed name of Camino 2 is "Camino"
 
-The mention of Camino 2 is "Camino is looking straight at you. His face is contorted in a mixture of anger and surprise.".
+The mention of Camino 2 is "Camino looks straight at you. His face is contorted in a mixture of anger and surprise.".
 
 The description of Camino 2 is "[Camino Description]"
 
@@ -3539,7 +3567,7 @@ Instead of attacking Camino 2 with something:
 	try attacking Camino 2.
 	
 Instead of attacking Camino 2 with the gun:
-	say "You are not a murderer. There has to be a better way. Besides, you're pretty sure he's armed as well, and he might be a quicker draw than you."
+	say "You are not a murderer. There has to be a better way. Besides, you are pretty sure he is armed as well, and he might be a quicker draw than you."
 	
 Instead of shooting Camino 2:
 	say "You are not a murderer. There has to be a better way. Besides, you are pretty sure he is armed as well, and he might be a quicker draw than you."
@@ -3556,9 +3584,9 @@ Instead of pulling Camino's scar:
 Instead of taking Camino's scar when the oil is part of the river:
 	say "Before he has a chance to react, you reach out and rip some of the gangrenous flesh off his face. He should be thankful, really, but as he drops screaming to his knees with blood flowing from his cheek, you are sure that gratitude is the last thing on his mind. Lisa looks at him with contempt. 'Is that really the best you can do?'
 	
-He turns towards towards her, his face a mask of rage. 'YOU STUPID BITCH! I help cover up the murder of your pathetic boyfriend, and I have got nothing but misery to show for it. I am not going to risk my life for your sake anymore.'
+He turns towards towards her, his face a mask of rage. 'YOU STUPID BITCH! I help cover up the murder of your pathetic boyfriend, and I have nothing but misery to show for it. I am not going to risk my life for your sake anymore.'
 
-He gets up, covering the wound with one hand, adjusting his hat with the other. 'She is all yours, mister detective. Just keep her out of my sight.' With that, he disappears out the door.";
+He rises, covering the wound with one hand, adjusting his hat with the other. 'She is all yours, mister detective. Just keep her out of my sight.' With that, he disappears out the door.";
 	remove Camino 2 from play.
 
 The river is scenery. The river is part of the canyon. Understand "water", "stream" and "creek" as the river. The description of the river is "[if the oil is part of the river]The river has been polluted with oil. Nothing could possibly survive in the black viscous fluid that once was water[otherwise]Even from all the way up here, you can tell that the river is crystal clear. No pollution is going to reach it in this pristine landscape[end if]."
@@ -3573,7 +3601,7 @@ Instead of assimilating the oil into the river:
 	now the oil is part of the shadows.
 	
 Instead of assimilating the brick into the river when the oil is not part of the brick:
-	say "There doesn't seem to be much point to throwing a clean brick into the river."
+	say "There doesn't seem to be much point in throwing a clean brick into the river."
 	
 Instead of assimilating the brick into the river when the oil is part of the brick:
 	say "You throw the oily brick down the canyon, and can just barely make it out hitting the river far, far below. The effect is immediate: The oil spreads quickly, and within moments the previously pristine profluence is black with pollution. You say a quick prayer for the poor fish who might have lived there. They never saw it coming.";
@@ -3633,34 +3661,45 @@ Instead of talking to Lisa when Camino 2 is visible, say "She nods towards Camin
 	
 The mountain road is a pataphor. Understand "curve/curves" as the mountain road. The mountain road is fixed in place. The description of the mountain road is "The road goes up, twisting around the mountain. There is no telling where it ends. Maybe you should check it out?"
 
-The mention of Lisa is "[if wesson is on the old couch and camino 2 is in the LivingRoom]Lisa is smiling nervously and looking at Camino, like a servant girl waiting for her master to handle matters[otherwise if wesson is on the old couch and camino 2 is not in the LivingRoom]Lisa is smiling nervously, like a servant girl waiting for someone else to take charge[otherwise]Lisa von Bülow is smiling, and looking at you as if you were a new plaything[end if]."
+The mention of Lisa is "[if wesson is on the old couch and camino 2 is in the LivingRoom]Lisa is smiling nervously and looking at Camino, like a servant girl waiting for her master to handle matters[otherwise if wesson is on the old couch and camino 2 is not in the LivingRoom]Lisa is smiling nervously, like a servant girl waiting for someone else to take charge[otherwise]Lisa von Bülow smiles and looks at you as if you were a new plaything[end if]."
 
-The smile is part of Lisa. Understand "shy" and "sly" as the smile. The smile is fixed in place. The description of the smile is "[if wesson is on the old couch]She seems the submissive type, like a servant girl[otherwise]She seems like the type who regards everything in life with detached amusement[end if]."
+The smile is part of Lisa. Understand "shy" and "sly" as the smile. The smile is fixed in place. The description of the smile is "[if wesson is on the old couch]She seems like the submissive type, like a servant girl[otherwise]She seems like the type who regards everything in life with detached amusement[end if]."
 
-To consider the request:
-	if the player consents:
-		say "[line break]She has a point. It's really none of your business what she does with her life. You should have told that to the Baron right from the start.
+Instead of talking to Lisa when Camino 2 is not in the LivingRoom and wesson is not on the old couch for the first time:
+	say "'Good evening, Miss Bülow,' you say. 'It's time for you to go home to your father. He has been missing you.'
+	
+Her laughter is like tiny silver bells. 'I don't think so. I am a big girl and I don't need my father to control my life. Why don't you just let me go? I can take care of myself.'[line break][line break]";
+	now the tiny silver bells are in the livingroom;
+	Run a Conversation on the Table of Lisa Options.
+	
+Instead of talking to Lisa when Camino 2 is not in the LivingRoom and wesson is not on the old couch at least twice:
+	say "'Just let me go. I can take care of myself.'[line break][line break]";
+	Run a Conversation on the Table of Lisa Options.
+	
+Table of Lisa Options
+	prompt					response	enabled
+	"Let her go"				LetHerGo		1
+	"Take her home"			TakeHerHome	1	
+	
+Table of Quip Texts (continued)
+	quip	quiptext
+	LetHerGo	"She has a point. It's really none of your business what she does with her life. You should have told that to the Baron from the start.
 
 'Thanks,' she says. 'You won't regret it, mister. Maybe we will meet again some day.' She kisses you on the cheek before leaving. The warmth of the kiss lingers for a while.
 
-The Baron is disappointed, but he hired you to find his daughter, and that is exactly what you did. You get your paycheck in the end.";
-		remove lisa from play;
-	otherwise:
-		say "[line break]'Sorry, miss, but that won't do. I have a job to do. You are going back to your father.'
+The Baron is disappointed, but he hired you to find his daughter, and that is what you did. You get your paycheck."
+	TakeHerHome	"'Sorry, miss, but that won't suffice. You are going back to your father.'
 		
-She laughs again. 'And how are you going to accomplish that? Knock me unconscious and carry me home? I don't think so.'".
+She laughs again. 'And how are you going to accomplish that? Knock me unconscious and carry me home? I don't think so.'"
+	
+After quipping when the current quip is LetHerGo:
+	remove lisa from play;
+	terminate the conversation.
+	
+After quipping when the current quip is TakeHerHome:
+	enable the TakeHerHome quip;
+	terminate the conversation.
 
-Instead of talking to Lisa when Camino 2 is not in the LivingRoom and wesson is not on the old couch for the first time:
-	say "'Good evening, Miss Bülow,' you say. 'I believe it's time for you to go home to your father. He has been missing you.'
-	
-Her laughter is like tiny silver bells. 'I don't think so. I am a big girl and I don't need my father to control my life. Why don't you just let me go? I can take care of myself.'(Answer Yes or No)>";
-	now the tiny silver bells are in the livingroom;
-	consider the request.
-	
-Instead of talking to Lisa when Camino 2 is not in the LivingRoom and wesson is not on the old couch at least twice:
-	say "'Just let me go, ok? I can take care of myself.'(Answer Yes or No)>";
-	consider the request.
-	
 Instead of talking to Lisa when Camino 2 is not in the LivingRoom and wesson is on the old couch for the first time:
 	say "'Okay, Miss von Bülow, you've had your fun. Time to go home.'
 	
@@ -3670,6 +3709,10 @@ She looks at her feet and chews at a bit of hair. 'I'm sorry I ran away, but I w
 	now Lisa Von Bülow is in The Library.
 	
 The tiny silver bells are scenery. Instead of doing something to the tiny silver bells, say "They are already gone."
+
+After going up from LivingRoom for the first time:
+	show Kindle image 8;
+	continue the action.
 
 After going up from LivingRoom:
 	now the player is in the car.
@@ -3794,7 +3837,7 @@ The police cruiser is scenery in MountainRoad2. Understand "emergency" and "ligh
 
 Instead of entering the police cruiser, say "'What do you think you are doing, Buddy?' says the officer."
 
-The road block is scenery in MountainRoad2. Understand "roadblock" as the road block. The description of the road block is "'Road Block,' says the sign. That's a road block, all right."
+The road block is scenery in MountainRoad2. Understand "roadblock" as the road block. The description of the road block is "'Roadblock,' says the sign. That's a roadblock, all right."
 
 Instead of going west from MountainRoad2 when the road block is in MountainRoad2:
 	say "The road is blocked."
@@ -3803,7 +3846,7 @@ Instead of doing something other than examining to the road block, say "'What do
 
 The police officer is a patason in MountainRoad2. Understand "cop" and "man" as the police officer. The description of the police officer is "A tall fit man in a police uniform. He looks like he has dealt with far worse than you."
 
-The mention of the police officer  is "A police officer is leaning against the cruiser."
+The mention of the police officer is "A police officer is leaning against the cruiser."
 
 Instead of attacking the police officer, say "You are pretty sure he could take you."
 
@@ -3829,7 +3872,7 @@ Instead of talking to the police officer at least thrice:
 	say "'If you want me to risk my job, you gonna have to give me something in return, Mister.'"
 	
 Instead of giving the silver to the police officer:
-	say "His eyes light up with greed as you show him the silver. 'Wow, that'll certainly do the job, Mister. Thanks a lot.' He pours the silver into a canteen, and secures the lid. 'I can't wait to find out how much that will be worth. Enjoy your mountain trip, Mister.' He removes the road block, gets into the cruiser, and drives down the road, disapearing around the corner.";
+	say "His eyes light up with greed as you show him the silver. 'Wow, that'll certainly do the job, Mister. Thanks a lot.' He pours the silver into a canteen, and secures the lid. 'I can't wait to find out how much that's worth. Enjoy your mountain trip, Mister.' He removes the road block, enters the cruiser, and drives down the road, disappearing around the corner.";
 	remove the police officer from play;
 	remove the road block from play;
 	remove the liquid silver from play;
@@ -3886,9 +3929,9 @@ Does the player mean doing something to the log cabin: it is likely.
 
 The cabin door is a door. It is east of MountainRoad3 and west of InsideCabin. It is closed.
 
-Instead of going through the cabin door by the car, say "The car won't fit through the door."
+Instead of going through the cabin door by the car, say "The car won't fit through the door (type 'exit' to leave the car)."
 
-InsideCabin is a room. The printed name of InsideCabin is "Inside the Log Cabin". The description of InsideCabin is "The warm air in the cabin caresses your face. The heat comes from a cozy fireplace fire that fills the cabin with a soft warm light. [if wesson is on the old couch]Mr. Wesson is lounging on the couch in front of the fireplace[otherwise]An old couch stands by one of the walls[end if].[if the first glass of brandy is on the couch table] On the couch table are two glasses of brandy.[end if]"
+InsideCabin is a room. The printed name of InsideCabin is "Inside the Log Cabin". The description of InsideCabin is "The warm air in the cabin caresses your face. The heat emanates from a cozy fireplace that fills the cabin with a soft warm light. [if wesson is on the old couch]Mr. Wesson is lounging on the couch in front of the fireplace[otherwise]An old couch stands by one of the walls[end if].[if the first glass of brandy is on the couch table] On the couch table are two glasses of brandy.[end if]"
 
 Instead of exiting in InsideCabin when the player is not enclosed by anything, try going west.
 
@@ -3934,29 +3977,48 @@ Instead of interacting with a brandyGlass:
 	try drinking the noun.
 
 To leave wesson behind:
-	say "He has served you well for many years. You can't bear to refuse him.
-
-A smile lights up his face. 'Thank you, sir. You can still visit me any time you want if you need my advice.'";
 	now Wesson is on the old couch;
 	now Wesson is content;
 	now Wesson is unexamined;
 	now the description of Wesson is "Mr. Wesson is lounging on the couch. He looks content."
 
 Instead of drinking a brandyGlass:
-	say "You clink the glasses together and down the brandy. A warm feeling spreads throughout your entire body. Mr. Wesson finishes his glass and sighs contentedly. He sits down at the couch and stares longingly at the fireplace. The fire is reflected in his eyes. 'You know, sir, I have always dreamed of having my own cabin in the mountains. If it's okay with you I think I am just going to stay here. Do you think you can handle things without me?'(Answer Yes or No)>";
-	if the player consents:
+	say "You clink the glasses together and down the brandy. A warm feeling spreads throughout your entire body. Mr. Wesson finishes his glass and sighs. He sits down at the couch and stares longingly at the fireplace. The fire is reflected in his eyes. 'You know, sir, I have always dreamed of having my own cabin in the mountains. If it's okay with you I think I am just going to stay here. Do you think you can handle things without me?'[line break][line break]";
+[	if the player consents:
 		leave wesson behind;
 	otherwise:
-		say "'That's ok, sir. I will stay with you a while longer.'";
+		say "'That's ok, sir. I will stay with you a while longer.'";]
 	remove the first glass of brandy from play;
-	remove the second glass of brandy from play.
+	remove the second glass of brandy from play;
+	run a conversation on the Table of Wesson Options.
 	
 To ask the player for permission:
-	say "'Sir,' says Mr. Wesson. 'Can I stay here this time?'(Answer Yes or No)>";
-	if the player consents:
+	say "'Sir,' says Mr. Wesson. 'Can I stay here this time?''[line break][line break]";
+	run a conversation on the Table of Wesson Options.
+[	if the player consents:
 		leave wesson behind;
 	otherwise:
-		say "'That's ok, sir. I will stay with you a while longer.'".	
+		say "'That's ok, sir. I will stay with you a while longer.'".]
+		
+Table of Wesson Options
+	prompt					response	enabled
+	"Let him stay"			LetHimStay		1
+	"Refuse"					Refuse			1	
+	
+Table of Quip Texts (continued)
+	quip	quiptext
+	LetHimStay	"He has served you well for many years. You can't bear to refuse him.
+
+A smile lights up his face. 'Thank you, sir. You can still visit me any time you want if you need my advice.'"
+	Refuse	"'That's ok, sir. I will stay with you a while longer.'"
+	
+After quipping when the current quip is LetHimStay:
+	leave wesson behind;
+	terminate the conversation.
+	
+After quipping when the current quip is Refuse:
+	enable the refuse quip;
+	terminate the conversation.
 		
 Does the player mean drinking the first glass of brandy:
 	it is very likely.
