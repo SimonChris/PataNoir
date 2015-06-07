@@ -23,8 +23,6 @@ The background image is 50.
 
 [To say tutor type: say "[roman type][italic type][bold type]".]
 
-[To say only bold: say "[bold type]".]
-
 [To do:
 	Change the standard assimilation failure messages into check rules, so they can be more easily overridden by instead rules.]
 
@@ -115,7 +113,7 @@ To say second inventory instruction:
 	say "He still seems a bit too reserved, even without the marble. Maybe there is a way to make him warm up to you? Try checking your inventory, by typing 'inventory', or just 'i', for short. "
 	
 To say application instruction:
-	say "If the marble made him cold, perhaps the ember can make him warm? To use an object on another, you can simply type out the names of the objects in order. Type ember allan to use the ember on Mr. Jameson. "
+	say "If the marble made him cold, perhaps the ember can make him warm? To use an object on another, you can simply type out the names of the objects in order. Type 'ember allan' to use the ember on Mr. Jameson. "
 	
 Tutorial read is a truth state variable. Tutorial read is false.
 	
@@ -287,7 +285,7 @@ If you are still stuck, typing 'walkthru' will print a detailed walkthrough for 
 Requesting similes is an action out of world. Understand "similes", "similies", "simile", "metaphors" and "metaphor" as requesting similes.
 
 Report requesting similes:
-	say "The puzzles in PataNoir involve manipulating similes and metaphors to achieve effects. Whenever something is described as being 'like' something else, you will be able to interact with the figurative object, as well as the literal. For example, if someone's eyes are described as 'sparkling like diamonds', you will be able to take the diamonds like any other object. This will cause the eyes to stop sparkling, which may change the personality of the person in question. The diamonds can then be given to other persons, or put on other things, which will cause them to sparkle like diamonds instead. In this way, figurative objects can be used to change the properties of real objects and persons.
+	say "The puzzles in PataNoir involve manipulating similes and metaphors to achieve effects. Whenever something is described as being 'like' something else, you will be able to interact with the figurative object, as well as the literal. For example, if someone's eyes are described as 'sparkling like diamonds', you will be able to take the diamonds, like any other object. This will cause the eyes to stop sparkling, which may change the personality of the person in question. The diamonds can then be given to other persons, or put on other things, which will cause them to sparkle like diamonds instead. In this way, figurative objects can be used to change the properties of real objects and persons.
  
 Real and figurative objects cannot affect each other directly, but figurative objects can affect each other, just like real objects. For example, a figurative knife cannot cut a real watermelon, but it could cut a figurative watermelon. This might provide you with a figurative slice of watermelon, which could be used to change the properties of a real object.
 
@@ -305,8 +303,12 @@ Report requesting hints:
 			try talking to wesson;
 		otherwise:
 			say "Look at the revolver.";
+	otherwise if the revolver is in the drawer:
+		say "Check your desk drawer.";
+	otherwise if wesson is content:
+		say "Check the mountain cabin.";
 	otherwise:
-		say "Check your desk drawer."
+		say "Find your revolver."
 
 Requesting the credits is an action out of world. Understand "credits" and "credit" as requesting the credits.
 
@@ -343,7 +345,7 @@ The Gambling Joint:[line break]s, 3, (examine) icicle, Wesson, take the icicle, 
 
 Copernik's office:[line break](examine) copernik, (talk to) copernik, (examine) walls, (examine) dying man, rag icicle, icicle man, (talk to) copernik, toupee copernik, (talk to) copernik.
 
-Climax:[line break]w, 6, rag brick, oil brick, (examine) silver, (take) silver, n, (examine) lisa, (examine) mountain road, u, n, w, silver officer, w, out, e, (examine) brandy, (take) brandy, yes, w, (examine) car, (enter) car, n, e, s, (examine) camino, (examine) canyon, (examine) river, (examine) brick, brick canyon, (examine) camino, (examine) wound, (take) wound, (talk to) lisa.
+Climax:[line break]w, 6, rag brick, oil brick, (examine) silver, (take) silver, n, (examine) lisa, (examine) mountain road, u, n, w, silver officer, w, out, e, (examine) brandy, (take) brandy, 1, w, (examine) car, (enter) car, n, e, s, (examine) camino, (examine) canyon, (examine) river, (examine) brick, brick canyon, (examine) camino, (examine) wound, (take) wound, (talk to) lisa.
 
 Ending:[line break](take) marble, marble baron, (talk to) baron, (open) door, (examine) doctor, (talk to) doctor."
 
@@ -391,7 +393,7 @@ Rule for printing a parser error when the latest parser error is the can't see a
 	say "That is either not here or doesn't need to be referred to at the moment."
 	
 Rule for printing a parser error when the latest parser error is the not a verb I recognise error :
-	say "That command did not match either a visible object or a known verb."
+	say "That command did not match a visible object or a known verb."
 	
 The description of the player is "You are a bit worse for wear, but you are still the best detective in town."
 
@@ -588,7 +590,7 @@ Carry out applying it to:
 
 Table of Quip Texts (continued)
 	quip  	quiptext  
-  	selftalk  	"You are not [italic type]that[roman type] unstable."
+  	selftalk  	"You are not that unstable."
 	location_office	"You head back to your office."
 	location_house	"You decide to visit the Baron again."
 	location_gambling 	"You head towards the gambling joint."
@@ -737,9 +739,9 @@ When Conversation begins:
 	
 Chapter 2 - Assault
 	
-Carlo Alfono is a person. Understand "man", and "killer" as Alfono. The description of Alfono is "[if the businessman is visible]His tailored pinstriped suit makes him seem like a businessman on his way to accept his next promotion[otherwise]He wears a pinstriped suit[end if]. The suit contains an ordinary looking Italian-American man with a moustache resting above his lips, like a small black snake. [if the coin is part of Alfono]Blood trickles from a tiny wound on his neck. His hand covers the wound. The gun in the hand points towards the heavens. Time seem to be standing still; waiting for your next move[otherwise if alfono is distracted]He strokes the moustache pensively[otherwise]He points a gun at you. His face is expressionless[end if]."
+Carlo Alfono is a person. Understand "man", and "killer" as Alfono. The description of Alfono is "[if the businessman is visible]His tailored pinstripe suit makes him seem like a businessman on his way to accept his next promotion[otherwise]He wears a pinstripe suit[end if]. The suit contains an ordinary looking Italian-American man with a moustache resting above his lips, like a small black snake. [if the coin is part of Alfono]Blood trickles from a tiny wound on his neck. His hand covers the wound. The gun in the hand points towards the heavens. Time seem to be standing still; waiting for your next move[otherwise if alfono is distracted]He strokes the moustache pensively[otherwise]He points a gun at you. His face is expressionless[end if]."
 
-The mention of Alfono is "The man in the pinstriped suit is holding you at gunpoint."
+The mention of Alfono is "The man in the pinstripe suit is holding you at gunpoint."
 
 Carlo Alfono is wearing a pinstriped suit. The description of the pinstriped suit is "It fits him perfectly."
 
@@ -766,7 +768,7 @@ Definition: A person (called the protagonist) is well equipped if the protagonis
 Assault is a scene. Assault begins when Alfono is activated and the player is in Outside The Mansion and the player is well equipped.
 
 When Assault begins:
-	say "The shadows part and the man in the pinstriped suit steps forward. He is holding a gun.";
+	say "The shadows part and the man in the pinstripe suit steps forward. He is holding a gun.";
 	now Alfono is in the location;
 	now the businessman is in the location.
 	
@@ -1075,7 +1077,7 @@ Absolutely. You will make sure to remember it from now on.
 
 'Very well.' He sighs. 'I will stop by and see how you are doing next week.' He leaves, closing the door behind him.
 
-He is okay, though, just way too pedantic. You don't need to take it [italic type]every[roman type] day. You work much better without it.";
+He is okay, though, just way too pedantic. You don't need to take it every day. You work much better without it.";
 	end the story saying "Another case solved by Douglas Reilly, PI".
 	
 Chapter 4 - Deciding Lisa's fate
@@ -2014,7 +2016,7 @@ Instead of talking to the Baron when the baron is conversant for the fourth time
 
 You shrug. 'Of course. Do you have any idea where they might have gone?'
 
-He laughs. [if the record is part of the baron]His laughter erupts in hard bursts, like a record getting stuck[otherwise]A smooth decadent laugh[end if]. 'I have some ideas  [unicode em dash] I know where they used to spend time together, anyway  [unicode em dash] but I expect you to be able to figure these things out by yourself. You [italic type]are[roman type] a detective, right?'"
+He laughs. [if the record is part of the baron]His laughter erupts in hard bursts, like a record getting stuck[otherwise]A smooth decadent laugh[end if]. 'I have some ideas  [unicode em dash] I know where they used to spend time together, anyway  [unicode em dash] but I expect you to be able to figure these things out by yourself. You are a detective, right?'"
 
 Instead of talking to the Baron when the baron is conversant for the fifth time:
 	say "'Mr. von Bülow, I may be a detective, but I still need something to work with. If you won't give me any information, I am not sure how much I can do.'
@@ -2935,7 +2937,7 @@ He picks up the huge pile of chips, walks to the roulette table and drops the pi
 	if the poker counter is 5:
 		say "The tuxedo man looks at the newcomer and smiles even more broadly. 'What'll it be Camino? Are you afraid I'm going to bankrupt you tonight?'
 		
-The man in the beige suit  [unicode em dash] whose name must be Camino  [unicode em dash] pays no attention the tuxedo man. He looks straight at the croupier. 'It's alright. Let him play.' His voice is soft and smooth.
+The man in the beige suit  [unicode em dash] whose name must be Camino  [unicode em dash] pays no attention to the tuxedo man. He looks straight at the croupier. 'It's alright. Let him play.' His voice is soft and smooth.
 
 The wheel spins. The entire club seems to be holding its breath. The wheel slows down; the ball jumps a few times, and finally comes to rest [unicode em dash] on red.
 
@@ -2948,7 +2950,7 @@ The discreet door is a door. Understand "eastern", "east" and "small" as the dis
 The discreet door can be attempted. The discreet door is not attempted.
 
 Instead of opening the discreet door when the discreet door is locked and Alfono is not activated:
-	say "An Italian-American man wearing a pinstriped suit grabs your arm. 'Sorry, sir. This is a private area.' He merges with the crowd once more.";
+	say "An Italian-American man wearing a pinstripe suit grabs your arm. 'Sorry, sir. This is a private area.' He merges with the crowd once more.";
 	now the discreet door is attempted.
 
 The crystal chandelier is scenery in The Butterfly Club. The description of the chandelier is "A giant crystal chandelier hangs from the ceiling[if the icicle is part of the chandelier], like an intricate icicle formation[end if]." Instead of taking the chandelier, say "It is too far up."
@@ -3228,7 +3230,7 @@ Instead of talking to Camino when Camino is upset and the record is part of Cami
 
 His voice is almost a growl. 'Oh, you won't bother me again. I am not worried about that at all. ALFONO!'
 
-The door opens and [if the discreet door is attempted]the man in the pinstriped suit[otherwise]an Italian-American man wearing a pinstriped suit[end if] enters the room. Without a word, he grabs your arm and escorts you out of the office.";
+The door opens and [if the discreet door is attempted]the man in the pinstripe suit[otherwise]an Italian-American man wearing a pinstripe suit[end if] enters the room. Without a word, he grabs your arm and escorts you out of the office.";
 	if the player is not carrying the white brick and the white brick is on-stage:
 		say "[line break]On the way out, you manage to snatch the white brick from the stack of papers.";
 		now the player is carrying the white brick;
@@ -3476,7 +3478,7 @@ OutsideVacation is a room. The printed name of OutsideVacation is "Outside the V
 
 Instead of going inside in OutsideVacation, try going north.
 
-The vacation house is scenery in OutsideVacation. The description of the vacation house is "A big expensive looking vacation house. The kind of house you own [italic type]because[roman type] it is expensive, and not because you actually enjoy living in it.".
+The vacation house is scenery in OutsideVacation. The description of the vacation house is "A big expensive looking vacation house. The kind of house you own because it is expensive, and not because you actually enjoy living in it.".
 
 Instead of entering the vacation house, try going north.
 
@@ -3584,7 +3586,7 @@ Instead of pulling Camino's scar:
 Instead of taking Camino's scar when the oil is part of the river:
 	say "Before he has a chance to react, you reach out and rip some of the gangrenous flesh off his face. He should be thankful, really, but as he drops screaming to his knees with blood flowing from his cheek, you are sure that gratitude is the last thing on his mind. Lisa looks at him with contempt. 'Is that really the best you can do?'
 	
-He turns towards towards her, his face a mask of rage. 'YOU STUPID BITCH! I help cover up the murder of your pathetic boyfriend, and I have nothing but misery to show for it. I am not going to risk my life for your sake anymore.'
+He turns towards her, his face a mask of rage. 'YOU STUPID BITCH! I help cover up the murder of your pathetic boyfriend, and I have nothing but misery to show for it. I am not going to risk my life for your sake anymore.'
 
 He rises, covering the wound with one hand, adjusting his hat with the other. 'She is all yours, mister detective. Just keep her out of my sight.' With that, he disappears out the door.";
 	remove Camino 2 from play.
