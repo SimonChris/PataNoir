@@ -277,7 +277,7 @@ If you are still stuck, typing [bold type]walkthru[roman type] will print a deta
 Requesting similes is an action out of world. Understand "similes", "similies", "simile", "metaphors" and "metaphor" as requesting similes.
 
 Report requesting similes:
-	say "The puzzles in PataNoir involve manipulating similes and metaphors to achieve effects. Whenever something is described as being 'like' something else, you will be able to interact with the figurative object, as well as the literal. For example, if someone's eyes are described as 'sparkling like diamonds', you will be able to take the diamonds like any other object. This will cause the eyes to stop sparkling, which may change the personality of the person in question. The diamonds can then be given to other persons, or put on other things, which will cause them to sparkle like diamonds instead. In this way, figurative objects can be used to change the properties of real objects and persons.
+	say "The puzzles in PataNoir involve manipulating similes and metaphors to achieve effects. Whenever something is described as being 'like' something else, you will be able to interact with the figurative object, as well as the literal. For example, if someone's eyes are described as 'sparkling like diamonds', you will be able to take the diamonds, like any other object. This will cause the eyes to stop sparkling, which may change the personality of the person in question. The diamonds can then be given to other persons, or put on other things, which will cause them to sparkle like diamonds instead. In this way, figurative objects can be used to change the properties of real objects and persons.
  
 Real and figurative objects cannot affect each other directly, but figurative objects can affect each other, just like real objects. For example, a figurative knife cannot cut a real watermelon, but it could cut a figurative watermelon. This might provide you with a figurative slice of watermelon, which could be used to change the properties of a real object.
 
@@ -364,7 +364,7 @@ Rule for printing a parser error when the latest parser error is the can't see a
 	say "That is either not here or doesn't need to be referred to at the moment."
 	
 Rule for printing a parser error when the latest parser error is the not a verb I recognise error :
-	say "That command did not match either a visible object or a known verb."
+	say "That command did not match a visible object or a known verb."
 	
 The description of the player is "You are a bit worse for wear, but you are still the best detective in town."
 
@@ -712,9 +712,9 @@ When Conversation begins:
 	
 Chapter 2 - Assault
 	
-Carlo Alfono is a person. Understand "man", and "killer" as Alfono. The description of Alfono is "[if the businessman is visible]His tailored pinstriped suit makes him seem like a businessman on his way to accept his next promotion[otherwise]He wears a pinstriped suit[end if]. The suit contains an ordinary looking Italian-American man with a moustache resting above his lips, like a small black snake. [if the coin is part of Alfono]Blood trickles from a tiny wound on his neck. His hand covers the wound. The gun in the hand points towards the heavens. Time seem to be standing still; waiting for your next move[otherwise if alfono is distracted]He strokes the moustache pensively[otherwise]He points a gun at you. His face is expressionless[end if]."
+Carlo Alfono is a person. Understand "man", and "killer" as Alfono. The description of Alfono is "[if the businessman is visible]His tailored pinstripe suit makes him seem like a businessman on his way to accept his next promotion[otherwise]He wears a pinstripe suit[end if]. The suit contains an ordinary looking Italian-American man with a moustache resting above his lips, like a small black snake. [if the coin is part of Alfono]Blood trickles from a tiny wound on his neck. His hand covers the wound. The gun in the hand points towards the heavens. Time seem to be standing still; waiting for your next move[otherwise if alfono is distracted]He strokes the moustache pensively[otherwise]He points a gun at you. His face is expressionless[end if]."
 
-The mention of Alfono is "The man in the pinstriped suit is holding you at gunpoint."
+The mention of Alfono is "The man in the pinstripe suit is holding you at gunpoint."
 
 Carlo Alfono is wearing a pinstriped suit. The description of the pinstriped suit is "It fits him perfectly."
 
@@ -741,7 +741,7 @@ Definition: A person (called the protagonist) is well equipped if the protagonis
 Assault is a scene. Assault begins when Alfono is activated and the player is in Outside The Mansion and the player is well equipped.
 
 When Assault begins:
-	say "The shadows part and the man in the pinstriped suit steps forward. He is holding a gun.";
+	say "The shadows part and the man in the pinstripe suit steps forward. He is holding a gun.";
 	now Alfono is in the location;
 	now the businessman is in the location.
 	
@@ -2912,7 +2912,7 @@ He picks up the huge pile of chips, walks to the roulette table and drops the pi
 	if the poker counter is 5:
 		say "The tuxedo man looks at the newcomer and smiles even more broadly. 'What'll it be Camino? Are you afraid I'm going to bankrupt you tonight?'
 		
-The man in the beige suit  [unicode em dash] whose name must be Camino  [unicode em dash] pays no attention the tuxedo man. He looks straight at the croupier. 'It's alright. Let him play.' His voice is soft and smooth.
+The man in the beige suit  [unicode em dash] whose name must be Camino  [unicode em dash] pays no attention to the tuxedo man. He looks straight at the croupier. 'It's alright. Let him play.' His voice is soft and smooth.
 
 The wheel spins. The entire club seems to be holding its breath. The wheel slows down; the ball jumps a few times, and finally comes to rest [unicode em dash] on red.
 
@@ -2925,7 +2925,7 @@ The discreet door is a door. Understand "eastern", "east" and "small" as the dis
 The discreet door can be attempted. The discreet door is not attempted.
 
 Instead of opening the discreet door when the discreet door is locked and Alfono is not activated:
-	say "An Italian-American man wearing a pinstriped suit grabs your arm. 'Sorry, sir. This is a private area.' He merges with the crowd once more.";
+	say "An Italian-American man wearing a pinstripe suit grabs your arm. 'Sorry, sir. This is a private area.' He merges with the crowd once more.";
 	now the discreet door is attempted.
 
 The crystal chandelier is scenery in The Butterfly Club. The description of the chandelier is "A giant crystal chandelier hangs from the ceiling[if the icicle is part of the chandelier], like an intricate icicle formation[end if]." Instead of taking the chandelier, say "It is too far up."
@@ -3205,7 +3205,7 @@ Instead of talking to Camino when Camino is upset and the record is part of Cami
 
 His voice is almost a growl. 'Oh, you won't bother me again. I am not worried about that at all. ALFONO!'
 
-The door opens and [if the discreet door is attempted]the man in the pinstriped suit[otherwise]an Italian-American man wearing a pinstriped suit[end if] enters the room. Without a word, he grabs your arm and escorts you out of the office.";
+The door opens and [if the discreet door is attempted]the man in the pinstripe suit[otherwise]an Italian-American man wearing a pinstripe suit[end if] enters the room. Without a word, he grabs your arm and escorts you out of the office.";
 	if the player is not carrying the white brick and the white brick is on-stage:
 		say "[line break]On the way out, you manage to snatch the white brick from the stack of papers.";
 		now the player is carrying the white brick;
@@ -3561,7 +3561,7 @@ Instead of pulling Camino's scar:
 Instead of taking Camino's scar when the oil is part of the river:
 	say "Before he has a chance to react, you reach out and rip some of the gangrenous flesh off his face. He should be thankful, really, but as he drops screaming to his knees with blood flowing from his cheek, you are sure that gratitude is the last thing on his mind. Lisa looks at him with contempt. 'Is that really the best you can do?'
 	
-He turns towards towards her, his face a mask of rage. 'YOU STUPID BITCH! I help cover up the murder of your pathetic boyfriend, and I have nothing but misery to show for it. I am not going to risk my life for your sake anymore.'
+He turns towards her, his face a mask of rage. 'YOU STUPID BITCH! I help cover up the murder of your pathetic boyfriend, and I have nothing but misery to show for it. I am not going to risk my life for your sake anymore.'
 
 He rises, covering the wound with one hand, adjusting his hat with the other. 'She is all yours, mister detective. Just keep her out of my sight.' With that, he disappears out the door.";
 	remove Camino 2 from play.
