@@ -63,7 +63,7 @@ To say looking instruction:
 Some verbs don't require an object. For example, you can always repeat the description of your surroundings by typing 'look', or just 'l', for short. Try typing 'l' now. "
 
 To say cigarette instruction:
-	say "Let's take a closer look at some of the other objects in the office. There is a cigarette smoldering in the ashtray. Try interacting with it, by typing 'cigarette' twice, or just 'take cigarette', if you can't be bothered to examine it closely. If you get bored with typing the same commands twice, you can always repeat the previous command, by typing 'g'."
+	say "Let's take a closer look at some of the other objects in the office. There is a cigarette smoldering in the ashtray. Try interacting with it, by typing 'cigarette' twice, or just 'take cigarette', if you can't be bothered to examine it closely. If you get bored with typing the same commands twice, you can always repeat the previous command, by typing 'g'. "
 	
 To say embers instruction:
 	say "The cigarette doesn't seem to be useful. Remember when I said that you can interact with anything mentioned in the room description? The cigarette is described as being like 'the last embers from a dying campfire', but that's just a simile. Surely, that doesn't count as an object. Why not give it a try, for the hell of it? Try interacting with the campfire, and the embers. "
@@ -1111,7 +1111,7 @@ Instead of talking to someone in the library during Deciding Lisa's fate ( this 
 		say "You should probably talk to the Baron. He seems to be in charge.";
 	otherwise:
 		if the marble is part of the baron:
-			say "Lisa looks pleadingly at her father. His face is like cut out of marble.
+			say "Lisa looks pleadingly at her father. His face is like cut marble.
 			
 He sighs. 'Lisa, I love you more than anything, but it's time you learn to take responsibility for your actions. The detective has assured me that you should only get a few years for manslaughter. Perhaps prison will teach you some self-discipline. God knows, I couldn't.'
 
@@ -1835,9 +1835,6 @@ Up from The Hall is The Balcony. The description of the Balcony is "From here, y
 
 The balconyfloor is scenery in the balcony. The printed name of the balconyfloor is "floor".  Understand "floor", "frozen", "ice", "grey", "gray", "red", "marble", "fire", "flame" and "lake" as the balconyfloor.  The description of the balconyfloor is "[if the ember is not part of the floor]From up here, you can see the frozen lake stretched out beneath you[otherwise]Even up here, you can still feel the heat from the fire[end if]."
 
-Does the player mean doing something to the white marble:
-	it is likely.
-
 Instead of assimilating something into the balconyfloor, say "You can't reach it from here, and you don't feel like throwing things off the balcony."
 
 Instead of doing something other than examining to the balconyfloor, say "You can't reach it from here."
@@ -2229,6 +2226,8 @@ Instead of wesson attacking the pirate:
 	say "Mr. Wesson makes a valiant attempt at fighting the pirate, but he is unused to moving underwater. 'I am sorry, sir. I am not a very good swimmer.' The pirate laughs."; the rule succeeds.
 
 The pirate is undescribed.
+
+Understand the command "lock" as something new.
 
 The padlock is part of the chest. Understand "metal" and "lock" as the padlock. The description of the padlock is "A big old-fashioned padlock.[if the wooden chest is locked] If you had something that could be used as a lockpick, you are pretty sure you could defeat it."
 
