@@ -128,6 +128,8 @@ That's all I have for now! Typing 'n' will take you inside the mansion of the ba
 
 If you need more help, typing 'about' will provide you with more information about the game. If you get completely stuck, typing 'walkthru' will print a walkthrough. Don't forget to talk to Mr. Wesson first, though. He will usually be able to help you.
 
+If you haven't done so yet, you can play the theme song for the game from the game menu. Type 'lyrics' to read the lyrics.
+
 Good luck with the case! "
 
 When play begins:
@@ -319,10 +321,34 @@ Report requesting the credits:
 Cover art above by Tom Siddell (gunnerkrigg.com).
 
 In-game art by Lauri Ahonen (munportfolio.com).
+
+Theme song is 'PataNoir' by William Steffey (type 'lyrics' for lyrics).
 	
-Testing and proofreading done by Joel Webster, Utkonos, Dacharya, John P. Murphy, Colin Sandel, Amanda Allen, James Matthew Campbell, George Oliver, Jacek Pudlo, Joey Jones, Marius Müller, Andrew Schultz, Sam Kabo Ashwell and David J. Hastings.
+Testing and proofreading done by Joel Webster, Utkonos, Dacharya, John P. Murphy, Colin Sandel, Amanda Allen, James Matthew Campbell, George Oliver, Jacek Pudlo, Joey Jones, Marius Müller, Andrew Schultz, Sam Kabo Ashwell, David J. Hastings, Morten Larsen and Hanon Ondricek.
 
 Special thanks to the Goons of the SomethingAwful.com forums for feedback provided during a 'Let's Play' playthrough of the game."
+
+Requesting the lyrics is an action out of world. Understand "lyric" and "lyrics" as requesting the lyrics.
+
+Report requesting the lyrics:
+	say "[bold type]Recognize the darkened swirl[line break]With a finger track it[line break]Veteran of the metaworlds[line break]It's time again to crack it
+
+Here you are[line break]PataNoir...
+
+Grab the wheel and hunker down[line break]Hear the scream within a scream[line break]Find the drop and dive on down[line break]Through the dream within a dream
+
+Roads lead to a different route[line break]Rocks may fall and knock you out[line break]Have a clue- give a shout[line break]Of Lisa's last known whereabouts
+
+Here you are
+PataNoir...
+
+Grab the wheel and hunker down...
+
+And learn how to work your cocoon[line break]And soon[line break]The butterfly club welcomes you
+
+Grab the wheel and hunker down...
+
+Grab the wheel and hunker down[line break]Hear the scream within a scream[line break]Find the drop and dive on down[line break]And you finally found your dream."
 
 Showing the office is an action out of world. Understand "show office" as showing the office.
 
@@ -2740,7 +2766,7 @@ Ronald can be impressed or unimpressed. Ronald is unimpressed.
 Instead of talking to Ronald when ronald is unimpressed for the first time:
 	say "You approach the man with the scar. 'Excuse me. I'm looking for a man named Erik McAllister. I was told you might know something.'
 	
-He looks at you like you'd look at a cockroach that had just slithered out from beneath the kitchen table. 'I don't know nothin[']. And even if I did, I ain't no snitch.'
+He looks at you, like one looks at a cockroach that has just emerged from the beneath the kitchen table. 'I don't know nothin[']. And even if I did, I ain't no snitch.'
 
 'I am looking for him for his own sake. I must insist that you tell me what you know.'
 
