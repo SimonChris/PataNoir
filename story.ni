@@ -27,7 +27,9 @@ When play begins:
 	now the Tutor-introduction is "Welcome to PataNoir! This is the tutorial. I will be with you for just a little while, to familiarize you a bit with interacting with the story. If you grow tired of me at any time, type [only bold]tutorial off[tutor type] at any prompt and I'll go away. You should probably complete this tutorial at least once, to learn how to interact with the game. Experienced interactive fiction players can skip the tutorial and instead type [only bold]help[tutor type], for a description of the important game mechanics. Type [only bold]credits[tutor type] if you want to see the credits for the game."
 	
 To say desk instruction:
-	say "When you make it to the end of this introductory text, you will see a > prompt at the bottom of the screen. This is where you will interact with the story.  Above the cursor you can see a description of your current location, in this case your office. You can interact with everything mentioned in the room description. To examine an object closer, simply type its name, and press enter.
+	say "Above this tutorial text, you can read a description of your office. If you switch to the [only bold]Info[tutor type] tab, you will be able to see a picture of the office, along with the cover art for the game. New illustrations will be unlocked as you play.
+	
+When you make it to the end of this introductory text, you will see a > prompt at the bottom of the screen. This is where you will interact with the story.  Above the cursor you can see a description of your current location, in this case your office. You can interact with everything mentioned in the room description. To examine an object closer, simply type its name, and press enter.
 	
 Let's start by taking a closer look at some of the things in the office. Type [only bold]desk[tutor type] and press enter. "
 
@@ -116,6 +118,8 @@ To say tutor conclusion:
 That's all I have for now! Typing [only bold]n[tutor type] will take you inside the mansion of the baron who wants to hire you. You can also return to your office by typing [only bold]s[tutor type]. There is plenty of other stuff in the office. You should probably fix that old chair at some point, for example. 
 
 If you need more help, the [only bold]Info[tutor type] tab contains some more information about the game. If you get completely stuck, typing [only bold]walkthru[tutor type] will print a walkthrough. Don't forget to talk to Mr. Wesson first, though. He will usually be able to help you.
+
+If you haven't done so yet, you can play the theme song for the game from the [only bold]Info[tutor type] tab.
 
 Good luck with the case! "
 
@@ -295,8 +299,10 @@ Report requesting the credits:
 Cover art by Tom Siddell (gunnerkrigg.com).
 
 In-game art by Lauri Ahonen (munportfolio.com).
+
+Theme song is 'PataNoir' by William Steffey.
 	
-Testing and proofreading done by Joel Webster, Utkonos, Dacharya, John P. Murphy, Colin Sandel, Amanda Allen, James Matthew Campbell, George Oliver, Jacek Pudlo, Joey Jones, Marius Müller, Andrew Schultz, Sam Kabo Ashwell and David J. Hastings.
+Testing and proofreading done by Joel Webster, Utkonos, Dacharya, John P. Murphy, Colin Sandel, Amanda Allen, James Matthew Campbell, George Oliver, Jacek Pudlo, Joey Jones, Marius Müller, Andrew Schultz, Sam Kabo Ashwell, David J. Hastings, Morten Larsen and Hanon Ondricek.
 
 Special thanks to the Goons of the SomethingAwful.com forums for feedback provided during a 'Let's Play' playthrough of the game."
 
@@ -2715,7 +2721,7 @@ Ronald can be impressed or unimpressed. Ronald is unimpressed.
 Instead of talking to Ronald when ronald is unimpressed for the first time:
 	say "You approach the man with the scar. 'Excuse me. I'm looking for a man named Erik McAllister. I was told you might know something.'
 	
-He looks at you like you'd look at a cockroach that had just slithered out from beneath the kitchen table. 'I don't know nothin[']. And even if I did, I ain't no snitch.'
+He looks at you, like one looks at a cockroach that has just emerged from the beneath the kitchen table. 'I don't know nothin[']. And even if I did, I ain't no snitch.'
 
 'I am looking for him for his own sake. I must insist that you tell me what you know.'
 
