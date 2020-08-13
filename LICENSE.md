@@ -16,4 +16,4 @@ This work is published from:
   Danmark</span>.
 </p>
 
-This only applies to the Inform code, available here. Art, music and user interfaces for Mobile and PC are still proprietary.
+This only applies to the Inform code, available here. Art, music, and user interfaces for Mobile and PC are still proprietary.
