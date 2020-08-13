@@ -15,3 +15,5 @@ This work is published from:
       content="DK" about="www.sichris.com/PataNoir">
   Danmark</span>.
 </p>
+
+This only applies to the Inform code, available here. Art, music and user interfaces for Mobil and PC are still proprietary.
