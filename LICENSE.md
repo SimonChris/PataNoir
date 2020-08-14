@@ -17,3 +17,5 @@ This work is published from:
 </p>
 
 This only applies to the Inform code, available here. Art, music, and user interfaces for Mobile and PC are still proprietary.
+
+The Android user interface is available separately at https://github.com/SimonChris/AndroidIF.
